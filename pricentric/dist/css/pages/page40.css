@@ -1,0 +1,45 @@
+.page40 .col-md-6:first-child{
+	width: 48.261%;
+	padding-right: 0px;
+	margin-right: 2.175%;
+}
+.page40 .col-md-6:last-child{
+	width: 49.55%;
+}
+
+/* Table Left */
+	.page40 table .country-col{
+		width: 37.6%;
+	}
+	.page40 table .product-col{
+		width: 32.1%;
+	}
+	.page40 table .app-date-col{
+		width: 28.5%;
+	}
+	
+	.page40 table.table thead tr:first-child th{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.page40 table thead tr:nth-child(2) th{
+		padding: 12px 15px;
+	}
+	.page40 table.table tbody.btn-wrap tr:hover{
+		border-left: 0px;
+	}
+
+/* Table Right */
+	.page40 table.table.table2.custom-table tbody tr.fweight500{
+		margin-top: 15px;
+	}
+	.page40 table.table.table2.custom-table tbody tr.checkbox-top{
+		background: transparent;
+		width: 64%;
+	}
+	.page40 table.table.table2.custom-table tbody tr.checkbox-top td.value-col{
+		border:0px;
+		background: transparent;
+		padding: 0px;
+		/*width: 72px;*/
+	}

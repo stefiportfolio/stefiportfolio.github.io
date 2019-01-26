@@ -1,0 +1,124 @@
+
+.navbar-default.custom-user .dropdown-container .bootstrap-select button{
+    color:var(--battleship-grey);
+    font-weight: 300;
+    font-size: 16px;
+    height: 59px;
+    border:0px;
+    border-radius: 0px;
+    padding-right: 35px;
+    border-right: 1px solid var(--pale-grey);
+}
+
+.navbar-default.custom-user .dropdown-container .bootstrap-select button .bs-caret{
+    position: absolute;
+    top: 20px;
+}
+
+.navbar-default.custom-user .dropdown-container .bootstrap-select.btn-group .dropdown-menu{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+/* Kurs Dropdown */
+    .navbar-default.custom-user #kurs{
+        width: 10.834%;
+    }
+    .navbar-default.custom-user #kurs .bootstrap-select{
+        width: 100%;
+    }
+    .navbar-default.custom-user #kurs.dropdown-container .bootstrap-select button{
+        padding-left: 19.24%;
+    }
+    .navbar-default.custom-user #kurs.dropdown-container .bootstrap-select button i{
+        margin-right: 10px;
+    }
+
+/* Price Type Dropdown */
+    .navbar-default.custom-user #price-type{
+        width: 14.653%;
+    }
+    .navbar-default.custom-user #price-type .bootstrap-select{
+        width: 100%;
+    }
+    .navbar-default.custom-user #price-type.dropdown-container .bootstrap-select button{
+        padding-left: 11.85%;
+    }
+
+/* Current Dropdown */
+    .navbar-default.custom-user #current{
+        width: 11.806%;
+    }
+    .navbar-default.custom-user #current .bootstrap-select{
+        width: 100%;
+    }
+    .navbar-default.custom-user #current.dropdown-container .bootstrap-select button{
+        padding-left: 14.71%;
+    }
+
+/* Display Option Dropdown */
+    .navbar-default.custom-user #display-opt{
+        width: 15.487%;
+    }
+    .navbar-default.custom-user #display-opt .bootstrap-select{
+        width: 100%;
+    }
+    .navbar-default.custom-user #display-opt.dropdown-container .bootstrap-select button{
+        padding-left: 11.214%;
+    }
+
+    .navbar-default.custom-user #export-wrap{
+        width: 13.334%;
+    }
+
+/* Price Change Dropdown */
+    .navbar-default.custom-user #price-change{
+        width: 14.653%;
+    }
+    .navbar-default.custom-user #price-change .bootstrap-select{
+        width: 100%;
+    }
+    .navbar-default.custom-user #price-change.dropdown-container .bootstrap-select button{
+        padding-left: 11.38%;
+    }
+
+/* Report Dropdown */
+    .navbar-default.custom-user #report{
+        width: 12.487%;
+    }
+    .navbar-default.custom-user #report .bootstrap-select{
+        width: 100%;
+    }
+    .navbar-default.custom-user #report.dropdown-container .bootstrap-select button{
+        padding-left: 15%;
+        padding-right: 20%;
+    }
+
+.dropdown-icon{
+    display: inline-block;
+  color: var(--cool-grey);
+  line-height: 59px;
+  vertical-align: -webkit-baseline-middle;
+}
+.navbar-default.custom-user .dropdown-container option span.money-icon{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: yellow;
+}
+
+.navbar-default.custom-user .glyphicon:before{
+    font-size: 16px;
+}
+.navbar-default.custom-user .glyphicon.a:before {
+  content: "A";
+  font-size:20px;
+}
+/*FROM FONT AWESOME*/
+    .navbar-default.custom-user .glyphicon.e:before {
+        content: "E";
+        font-size:20px;
+    }
+.navbar-default .navbar-right button.w310{
+    width: 310px;
+}

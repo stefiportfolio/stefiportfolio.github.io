@@ -1,0 +1,9 @@
+.curve-shape{
+	width: 396px;
+  height: 200px;
+  border: solid 15px #d5d7d9;
+  border-color: #d5d7d9 transparent transparent transparent;
+  border-radius: 50%/84px 24px 0 0;
+
+  position: absolute;
+}

@@ -1,0 +1,88 @@
+.page4 table.table1 thead tr:nth-child(2) th{
+	padding: 12px;
+}
+/* ALL TABLE SAME WITH PAGE2 THE DIFFERENT JUST TABLE2*/
+.page4 table.table2 thead button{
+}
+
+.page4 .non-capitalize{
+	text-transform: none;
+}
+.page4 .email-notif-desc{
+	padding: 18px 30px 30px 25px;
+	font-size: 12px;
+	line-height: 1.5;
+	vertical-align: top;
+}
+.page-content.page4 table.table2 tbody tr.email-opt td{
+	font-size: 12px;
+	height: 61px;
+	padding-right: 0px;
+}
+span.checkbox-wrap{
+	margin-right: 22px;
+	display: inline-block;
+}
+span.checkbox-text,
+span.checkbox-icon{
+	display: inline-block;
+	vertical-align: middle;
+}
+span.checkbox-icon{
+	margin-right: 10px;
+}
+span.checkbox-icon input[type='checkbox']{
+	height: 16px;
+	width: 16px;
+}
+
+.page4 table .org-col{
+	width: 31.65%;
+}
+.page4 table .status-col{
+	width: 20.51%;
+}
+.page4 table .date-col{
+	width: 20.35%;
+}
+.page4 table .by-col{
+	width: 18.56%;
+	padding-right: 9px;
+}
+
+.page4 table.table thead tr:first-child th.by-col{
+	padding-left: 9px;
+}
+.page4 table.table2 tr.btn-wrapper button:not(:last-child){
+	margin-left: 12px;
+}
+.page4 table.table2 tr.btn-wrapper button:last-child{
+	margin-right: 20px;
+}
+.page4 #editor{
+	display:none;
+}
+.page4 #editor.show{
+	display:block;
+}
+.page4 #email-notif-text{
+	display:block;
+}
+.page4 #email-notif-text.hide{
+	display:none;
+}
+.page4 .save-btn{
+	display:none;
+}
+.page4 .save-btn.show{
+	display:inline-block;
+	float: right;
+}.page4 .save-btn{
+	display:none;
+}
+.page4 #default-wrap.hide button{
+	display:none;
+}
+.page4 .attc-file.hide{
+	display: none;
+}

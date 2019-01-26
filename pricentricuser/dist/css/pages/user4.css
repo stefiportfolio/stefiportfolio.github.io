@@ -1,0 +1,52 @@
+.user4 table .country-col{
+	width: 9.55%;
+	padding-left: 28px;
+}
+.user4 table thead tr:first-child th.country-col{
+	padding-left: 28px;
+}
+
+.user4 table .company-col{
+	width: 11.19%;
+	padding-left: 12px;
+}
+.user4 table thead tr:first-child th.company-col{
+	padding-left: 28px;
+	padding-left: 12px;
+}
+
+.user4 table .product-col{
+	width: 6.42%;
+}
+.user4 table .pack-col{
+	width: 14.07%;
+	padding-right: 8px;
+}
+
+.user4 table .ind-col{
+	width: 10.95%;
+}
+.user4 table .thera-col{
+	width: 6.77%;
+}
+.user4 table .atc-col{
+	width: 6.07%;
+}
+.user4 table .start-date-col{
+	width: 7.07%;
+}
+.user4 table .mnf-col{
+	width: 5.21%;
+}
+.user4 table .unit-col{
+	width: 5.21%;
+}
+.user4 table .mg-col{
+	width: 5.21%;
+}
+.user4 table .dod-col{
+	width: 5.21%;
+}
+.user4 table .hosp-col{
+	width: 7.07%;
+}

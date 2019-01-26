@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="1406" viewBox="0 0 375 1406">
+    <defs>
+        <linearGradient id="b" x1="50%" x2="50%" y1="100%" y2="0%">
+            <stop offset="0%" stop-color="#627389"/>
+            <stop offset="100%" stop-color="#2C3A4E"/>
+        </linearGradient>
+        <path id="a" d="M3 74.871C12.316 31.687 34.03 7.326 68.14 1.788c51.165-8.306 89.773 15.02 123.86 15.02 32.864 0 66.147-22.7 115.197-15.02 32.7 5.12 57.301 19.48 73.803 43.08l-3 1360.398c-73.803-15.77-140.404-23.654-199.803-23.654S59.4 1389.497 0 1405.266L3 74.87z"/>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#4ADFD1"/>
+            <stop offset="100%" stop-color="#24BCA5"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-3)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <g fill="url(#d)" fill-opacity=".7" mask="url(#c)">
+            <g transform="rotate(180 247 723)">
+                <path d="M231.999 24.848c.022 27.724-16.21 45.217-48.697 52.479-48.73 10.893-8.065 75.624-114.931 81.857C-2.874 163.34-18.44 110.28 21.675 0H232l-.001 24.848z"/>
+                <ellipse cx="115.75" cy="137.605" rx="56.25" ry="56.395"/>
+            </g>
+        </g>
+    </g>
+</svg>

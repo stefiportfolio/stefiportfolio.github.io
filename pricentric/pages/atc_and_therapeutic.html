@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ATC and Therapeutic</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" href="../dist/img/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap tags input-->
+    <link href="../vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+    <!-- Bootstrap Select -->
+    <link href="../vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/custom.css" rel="stylesheet">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/40d2b684bc.js"></script>
+  </head>
+  <body>
+    <nav class="navbar  navbar-inverse">
+      <div class="container-fluid wrapper">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="../dist/img/logo.png">
+          </a>
+        </div>
+        <form class="search">
+          <div class='search-container'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+          <input type="text"  " data-role="tagsinput" placeholder="Enter your Search" id='search-taginput'/>
+          <div class='remove-container hide'><span id="remove" aria-hidden="true">X</span></div>
+        </form>
+        <div class="navbar-right">
+          <div class="menu-container">
+            <span class="admin-name">Admin</span>
+            <span class="icon icon-gear"></span>
+            <div class='list-popup hide'>
+              <ul>
+                <li><a href="./anatomy_management.html">Anatomy Management</a></li>
+                <li><a href="./atc_and_therapeutic.html">ATC and Therapeutic</a></li>
+                <li><a href="./brand_type_management.html">Brand Type Management</a></li>
+                <li><a href="./company_management.html">Company Management</a></li>
+                <li><a href="./country_and_atc.html">Country and ATC</a></li>
+                <li><a href="./country_and_products.html">Country and Product</a></li>
+                <li><a href="./country_page.html">Country</a></li>
+                <li><a href="./create_new_organization.html">New Organization</a></li>
+                <li><a href="./create_new_user.html">New User</a></li>
+                <li><a href="./define_competitor_pricentric.html">Define competitor</a></li>
+                <li><a href="./dosing_assumption_management.html">Dosing assumption management</a></li>
+                <li><a href="./drug_theraphy_management.html">Drug theraphy management</a></li>
+                <li><a href="./email_notification.html">Email Notification</a></li>
+                <li><a href="./exchange_rate_management.html">Exchange rate management</a></li>
+                <li><a href="./fill_unit_management.html">Fill unit management</a></li>
+                <li><a href="./formulation_management.html">Formulation Management</a></li>
+                <li><a href="./import_type_management.html">Import type management</a></li>
+                <li><a href="./indication_management.html">Indication management</a></li>
+                <li><a href="./line_of_therapy_management.html">Line of theraphy management</a></li>
+                <li><a href="./margin_rules.html">Margin Rules</a></li>
+                <li><a href="./marketing_authority_management.html">Marketing authority Management</a></li>
+                <li><a href="./new.html">New</a></li>
+                <li><a href="./news_feed_approval.html">News Feed Approval</a></li>
+                <li><a href="./news_feed_new_approvals.html">News Feed New Approval</a></li>
+                <li><a href="./organization_management.html">Organization Management</a></li>
+                <li><a href="./pack_unit_management.html">Pack Unit Management</a></li>
+                <li><a href="./price_type_class_management.html">Price Type Class Management</a></li>
+                <li><a href="./price_type_management.html">Price Type Management</a></li>
+                <li><a href="./product_management.html">Product Management</a></li>
+                <li><a href="./reference_country_mapping.html">Reference Country Mapping</a></li>
+                <li><a href="./reimbursement_status_management.html">Reimbursement Status Management</a></li>
+                <li><a href="./role_access.html">Role Access</a></li>
+                <li><a href="./source_management.html">Source Management</a></li>
+                <li><a href="./strength_unit_management.html">Strength Unit Management</a></li>
+                <li><a href="./therapeutic_area.html">Therapeutic Area</a></li>
+                <li><a href="./user_management.html">User Management</a></li>
+                <li><a href="./user_tracking.html">User Tracking</a></li>
+                <li><a href="./who_atc_number.html">WHO ATC Number</a></li>
+                <li><a href="./who_atc_value_management.html">WHO ATC Value Management</a></li>
+              </ul>
+            </div>
+            <div class="vbar2"></div>
+            <span class='icon icon-thead'></span>
+          </div>
+          <div class="user-container"><span>SB</span></div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar  navbar-default">
+      <div class="container-fluid wrapper">
+        <div class="navbar-right">
+          <button type="button" class="btn btn2 w113"><span class="icon icon-export"></span> Export</button>
+        </div>
+      </div>
+    </nav>
+    <div class='wrapper'>
+      <div class="page-content page11">
+        <div class="row">
+          <div class="col-md-2">
+            <table class="table table1 table-striped">
+              <thead>
+                <tr align="left">
+                  <th colspan="2">ATC CODES</th>
+                </tr>
+                <tr>
+                  <th class="check-col"><input type="checkbox"/></th>
+                  <th class="country-col"><input type="text" class="form-control"/></th>
+                </tr>
+              </thead>
+              <tbody class="scroll scroll-without-btn">
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4">
+            <table class="table table1 table-striped">
+              <thead>
+                <tr align="left">
+                  <th colspan="2">THERAPEUTIC AREAS</th>
+                </tr>
+                <tr>
+                  <th class="check-col"><input type="checkbox"/></th>
+                  <th class="country-col"><input type="text" class="form-control"/></th>
+                </tr>
+              </thead>
+              <tbody class="scroll scroll-full">
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="atc-col">THERAPEUTIC AREA</td>
+                </tr>
+              </tbody>
+              <tbody class="btn-wrap">
+                <tr class="btn-wrapper" align="right">
+                  <td colspan="2" align="right"> 
+                    <button type="button" class="btn blue-btn assign-select-btn mright10">Assign Selected</button>
+                    <button type="button" class="btn grey-type-btn assign-all-btn">Assign All</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <table class="table table1 table-striped">
+              <thead>
+                <tr align="left">
+                  <th colspan="3">Who atc to therapeutic area mapping</th>
+                </tr>
+                <tr>
+                  <th class="check-col"><input type="checkbox"/></th>
+                  <th class="country-col"><input type="text" class="form-control"/></th>
+                  <th class="area-mapping-col"><input type="text" class="form-control"/></th>
+                </tr>
+              </thead>
+              <tbody class="scroll scroll-full">
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+                <tr>
+                  <td class="check-col"><input type="checkbox"/></td>
+                  <td class="country-col">ATC VALUE</td>
+                  <td class="area-mapping-col">THERAPEUTIC AREA</td>
+                </tr>
+              </tbody>
+              <tbody class="btn-wrap">
+                <tr class="btn-wrapper" align="right">
+                  <td colspan="3" align="right"> 
+                    <button type="button" class="btn blue-btn remove-select-btn mright10" data-toggle="modal" data-target="#myModalConfirmCountryDelete">Remove Selected</button>
+                    <button type="button" class="btn grey-type-btn remove-all-btn">Remove All</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div id="myModalConfirmCountryDelete" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-reg-delete mb49'></div>
+            <div class='title-content-popup'>Confirm Removal of Assigned Mappings !</div>
+            <div class='desc-content-popup'>Are you sure you want to remove these client mappings?</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default cancel-btn" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-default yes-btn" data-dismiss="modal">Yes, I do</button>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker JavaScript -->
+    <script src="../vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- Bootstrap  tags input -->
+    <script src="../vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- Bootstrap  tags input -->
+    <script src="../dist/js/custom.js"></script>
+  </body>
+</html>

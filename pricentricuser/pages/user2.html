@@ -1,0 +1,883 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Price Change Report</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" href="../dist/img/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap tags input-->
+    <link href="../vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker -->
+    <link href="../vendor/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+    <!-- Bootstrap Select -->
+    <link href="../vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+    <!-- datepicker -->
+    <link href="../vendor/jquery-date-range-picker/daterangepicker.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="../dist/css/custom-user.css" rel="stylesheet">
+    <link href="../dist/css/pages/user2.css" rel="stylesheet">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid wrapper">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="../dist/img/logo.png">
+          </a>
+        </div>
+        <form class="search">
+          <div class='search-container'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+          <input type="text"  " data-role="tagsinput" placeholder="Enter your Search" id='search-taginput'/>
+          <div class='remove-container hide'><span id="remove" aria-hidden="true">X</span></div>
+        </form>
+        <div class="navbar-right">
+          <div class="menu-container">
+            <span class='icon icon-thead'></span>
+          </div>
+          <div class="menu-container"><span class="glyphicon glyphicon-th" id='menu-laucher-id' aria-hidden="true"></span>
+          </div>
+          <div class="user-container" id='user-popup-id'><span>SB</span></div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar navbar-default custom-user">
+      <div class="container-fluid">
+        <div class="row">
+          <div>
+            <span class='dropdown-container fleft'  id='kurs'>
+              <select class="selectpicker">
+                <option data-content="<span class='icon ic-currency-dollar'></span> USD"></option>
+                <option data-content="<span class='icon ic-currency-euro'></span> EUR"></option>
+                <option data-content="<span class='icon ic-currency-chf'></span> CHF"></option>
+                <option data-content="<span class='icon ic-currency-loc'></span> LOC"></option>
+                <option data-content="<span class='icon ic-currency-bms'></span> BMS"></option>
+                <option data-content="<span class='icon ic-currency-amg'></span> AMG"></option>
+              </select>
+            </span>
+            <span class='dropdown-container not-change-input fleft' id="price-type">
+              <select class="selectpicker" multiple title="<span class='icon ic-knob'></span> Price Price"> 
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span><span class='radio-box'></span> MNF"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>HOSP"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>PPP"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>PPI VAT"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>PPE VAT"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>NET MNF"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>NET HOSP"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>NET PPI VAT"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>NET PPE VAT"></option>
+                <option title="<span class='icon icon-display' aria-hidden='true'></span>Display Options" data-content="<span class='icon icon-display' aria-hidden='true'></span> <span class='radio-box'></span>NET PPP"></option>
+              </select>
+            </span>
+
+            <span id="current">
+              <span class="icon ic-calendar"></span>
+              <input type="text" id='datepicker-current-single' placeholder="Current">
+              <span class="glyphicon glyphicon-menu-down"></span>
+            </span>
+            <span id="export-wrap" class="fright">
+              <button type="button" class="btn export-btn fright" data-toggle="modal" data-target="#exportModal"><span class="icon-png icon-export"></span> Export</button>
+            </span>
+            
+            <span class='dropdown-container fright' id='price-change'>
+              <select class="selectpicker">
+                <option data-content="<span class='icon ic-reporting' aria-hidden='true'></span> Price Change"></option>
+                <option data-content="<span class='icon ic-reporting' aria-hidden='true'></span> Full View"></option>
+                <option data-content="<span class='icon ic-reporting' aria-hidden='true'></span> Historical"></option>
+                <option data-content="<span class='icon ic-reporting' aria-hidden='true'></span> Detailed"></option>
+              </select>
+            </span>
+            <span class='dropdown-container not-change-input  fright pos-r' id='report'>
+              <select class="selectpicker" title="<span class='icon ic-paper' aria-hidden='true'></span> Report">
+                <option data-content="<span class='icon ic-paper' aria-hidden='true'></span> <span class='type-option' title='Save'>Save</span>"></option>
+                <option data-content="<span class='icon ic-paper' aria-hidden='true'></span> <span class='type-option' title='Load'>Load</span>"></option>
+                <option data-content="<span class='icon ic-paper' aria-hidden='true'></span> <span  class='type-option'title='Shared Report'>Shared Report</span>"></option>
+                <option data-content="<span class='icon ic-paper' aria-hidden='true'></span> <span  class='type-option'title='Market Baskets'>Market Baskets</span>"></option>
+              </select>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class='user-wrapper'>
+      <div class='page-content user2'>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table1">
+              <thead>
+                <tr>
+                  <th class='country-col'>Country</th>
+                  <th class="company-col">Company</th>
+                  <th class='product-col'>Product</th>
+                  <th class="pack-col">Pack Description</th>
+                  <th class="price-col">MNF</th>
+                  <th class="percent-col">Change</th>
+                  <th class="price-col">HOSP</th>
+                  <th class="percent-col">HOSP Change</th>
+                  <th class="price-col">PPP</th>
+                  <th class="percent-col">PPP Change</th>
+                  <th class="price-col">PPI VAT</th>
+                  <th class="percent-col">PPI Change</th>
+                  <th class="price-col">PPE VAT</th>
+                  <th class="percent-col">PPE Chg.</th>
+                </tr>
+                <tr>
+                  <th class='country-col'><input type="text" class="form-control"></th>
+                  <th class="company-col"><input type="text" class="form-control"></th>
+                  <th class='product-col'><input type="text" class="form-control"></th>
+                  <th class="pack-col"><input type="text" class="form-control"></th>
+                  <th class="price-col"></th>
+                  <th class="percent-col"></th>
+                  <th class="price-col"></th>
+                  <th class="percent-col"></th>
+                  <th class="price-col"></th>
+                  <th class="percent-col"></th>
+                  <th class="price-col"></th>
+                  <th class="percent-col"></th>
+                  <th class="price-col"></th>
+                  <th class="percent-col"></th>
+                </tr>
+              </thead>
+              <tbody class='scroll scroll-without-btn'>
+                <tr>
+                  <td class='country-col wrap-text'>UNITED KINGDOM</td>
+                  <td class="company-col wrap-text">BRISTOL MYERS SQUIBB</td>
+                  <td class='product-col'>OBDIVO</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 MLsdfdsfsdfsdfsdf</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                </tr>
+                <tr>
+                  <td class='country-col wrap-text'>UNITED KINGDOM</td>
+                  <td class="company-col wrap-text">BRISTOL MYERS SQUIBB</td>
+                  <td class='product-col'>OBDIVO</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 MLsdfdsfsdfsdfsdf</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="green">+2.50</span> (5.2%)</td>
+                </tr>
+                <tr>
+                  <td class='country-col wrap-text'>UNITED KINGDOM</td>
+                  <td class="company-col wrap-text">BRISTOL MYERS SQUIBB</td>
+                  <td class='product-col'>OBDIVO</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 MLsdfdsfsdfsdfsdf</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                </tr>
+                <tr>
+                  <td class='country-col wrap-text'>UNITED KINGDOM</td>
+                  <td class="company-col wrap-text">BRISTOL MYERS SQUIBB</td>
+                  <td class='product-col'>OBDIVO</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 MLsdfdsfsdfsdfsdf</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                </tr>
+                <tr>
+                  <td class='country-col wrap-text'>UNITED KINGDOM</td>
+                  <td class="company-col wrap-text">BRISTOL MYERS SQUIBB</td>
+                  <td class='product-col'>OBDIVO</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 MLsdfdsfsdfsdfsdf</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col"><span class="red">-1.28</span> (3.6%)</td>
+                </tr>
+                <tr>
+                  <td class='country-col wrap-text'>UNITED KINGDOM</td>
+                  <td class="company-col wrap-text">BRISTOL MYERS SQUIBB</td>
+                  <td class='product-col'>OBDIVO</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 MLsdfdsfsdfsdfsdf</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                  <td class="price-col">1,234.50</td>
+                  <td class="percent-col">+2.50 (5.2%)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div> 
+    
+    <!-- MODAL POP UP -->
+    <div class="modal fade" id="reportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">REPORT MANAGEMENT</h4>
+          </div>
+          <div class="modal-body">
+            <div class="opt-wrapper">
+              <span class="tab1 tab-opt" mod="save-report">Save Report</span>
+              <span class="tab2 tab-opt" mod="my-report">My Report</span>
+              <span class="tab3 tab-opt" mod="team-report">Team Report</span>
+            </div>
+            <div class="save-report-wrapper fleft tab hide">
+              <table class="popup-table">
+                <thead>
+                  <tr>
+                    <th valign="middle" class="basket-col">REPORT NAME</th>
+                    <th valign="middle" class="mod-col">MODULE VIEW</th>
+                    <th valign="middle" class="shared-col">SHARED</th>
+                    <th valign="middle" class="date-col">DATE</th>
+                    <th valign="middle" class="comment-col">COMMENT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="basket-col"><input type="text" placeholder="Report Name"></td>
+                    <td class="mod-col">Pricing Database</td>
+                    <td class="shared-col"><span class="icon-png icon-blue-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col"><input type="text" placeholder="User comment go here"></td>
+                  </tr>
+                  <tr></tr>
+                </tbody>
+              </table>
+              <div class="btn-wrapper">
+                <button type="button" class="btn blue-btn save-btn fright">Save</button>
+                <button type="button" class="btn border-blue-btn cancel-btn mright10 fright" data-dismiss="modal">Cancel</button>
+              </div>
+            </div>
+            <div class="my-report-wrapper fleft tab hide">
+              <table class="popup-table">
+                <thead>
+                  <tr>
+                    <th class="search-col"></th>
+                    <th valign="middle" class="basket-col">REPORT NAME</th>
+                    <th valign="middle" class="mod-col">MODULE VIEW</th>
+                    <th valign="middle" class="shared-col">SHARED</th>
+                    <th valign="middle" class="date-col">DATE</th>
+                    <th valign="middle" class="comment-col">COMMENT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Pricing Database</td>
+                    <td class="shared-col"><span class="icon-png icon-blue-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Pricing Database</td>
+                    <td class="shared-col"><span class="icon-png icon-blue-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Pricing Database</td>
+                    <td class="shared-col"><span class="icon-png icon-grey-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Pricing Database</td>
+                    <td class="shared-col"><span class="icon-png icon-grey-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="team-report-wrapper fleft tab hide">
+              <table class="popup-table">
+                <thead>
+                  <tr>
+                    <th class="search-col"></th>
+                    <th valign="middle" class="basket-col">REPORT NAME</th>
+                    <th valign="middle" class="mod-col">MODULE VIEW</th>
+                    <th valign="middle" class="shared-by-col">SHARED BY</th>
+                    <th valign="middle" class="date-col">DATE</th>
+                    <th valign="middle" class="comment-col">COMMENT</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Pricing Database</td>
+                    <td class="shared-by-col">Emmanuel Doe</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Historical</td>
+                    <td class="shared-by-col">Andrew Hanhauser</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Pricing Change</td>
+                    <td class="shared-by-col">Emmanuel Doe</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="basket-col">Report Name</td>
+                    <td class="mod-col">Historical</td>
+                    <td class="shared-by-col">Andrew Hanhauser</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="comment-col">User comment go here</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="marketModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">MARKET BASKETS</h4>
+          </div>
+          <div class="modal-body">
+            <div class="opt-wrapper">
+              <span class="active" mod="my-basket">My Baskets</span>
+              <span mod="team-basket">Team Baskets</span>
+              <span mod="default-basket">Default Baskets</span>
+            </div>
+            <div class="my-basket-wrapper tab fleft">
+              <table class="popup-table">
+                <thead>
+                  <tr>
+                    <th class="search-col"></th>
+                    <th valign="middle" class="bask-name-col">BASKET NAME</th>
+                    <th valign="middle" class="bask-alo-col">BASKET ALLOCATION</th>
+                    <th valign="middle" class="shared-col">SHARED</th>
+                    <th valign="middle" class="date-col">DATE</th>
+                    <th valign="middle" class="scope-col">Scope</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">ATC</td>
+                    <td class="shared-col"><span class="icon-png icon-blue-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Molecules</td>
+                    <td class="shared-col"><span class="icon-png icon-blue-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Product</td>
+                    <td class="shared-col"><span class="icon-png icon-grey-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Product</td>
+                    <td class="shared-col"><span class="icon-png icon-grey-shared"></span></td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="team-basket-wrapper tab fleft hide">
+              <table class="popup-table">
+                <thead>
+                  <tr>
+                    <th class="search-col"></th>
+                    <th valign="middle" class="bask-name-col">BASKET NAME</th>
+                    <th valign="middle" class="bask-alo-col">BASKET ALLOCATION</th>
+                    <th valign="middle" class="shared-by-col">SHARED BY</th>
+                    <th valign="middle" class="date-col">DATE</th>
+                    <th valign="middle" class="scope-col">Scope</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">ATC</td>
+                    <td class="shared-by-col">Emmanuel Doe</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Molecules</td>
+                    <td class="shared-by-col">Emmanuel Doe</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Product</td>
+                    <td class="shared-by-col">Andrew Hanhauser</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Product</td>
+                    <td class="shared-by-col">Andrew Hanhauser</td>
+                    <td class="date-col">18/10/2017</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="default-basket-wrapper tab fleft hide">
+              <table class="popup-table">
+                <thead>
+                  <tr>
+                    <th class="search-col"></th>
+                    <th valign="middle" class="bask-name-col">BASKET NAME</th>
+                    <th valign="middle" class="bask-alo-col">BASKET ALLOCATION</th>
+                    <th valign="middle" class="shared-by-col">SHARED BY</th>
+                    <th valign="middle" class="scope-col">Scope</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">ATC</td>
+                    <td class="shared-by-col">Picentric</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Molecules</td>
+                    <td class="shared-by-col">Picentric</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Product</td>
+                    <td class="shared-by-col">Picentric</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                  <tr>
+                    <td class="search-col"><span class="icon-png icon-search"></span></td>
+                    <td class="bask-name-col">Report Name</td>
+                    <td class="bask-alo-col">Product</td>
+                    <td class="shared-by-col">Picentric</td>
+                    <td class="scope-col">10 ATC / All Countries</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="configureModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog small-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">CONFIGURE COMPETITORS BY MOLECULE</h4>
+          </div>
+          <div class="modal-body">
+            <div class='body'>
+              <div class='search-wrap'></div>
+              <div class='search-right'>
+                <div class='search-result-wrap'>
+                  <div class='list-body'><span class='glyphicon glyphicon-menu-hamburger'></span>PRODUCT A WITHIN MOLECULE</div>
+                  <div class='list-body'><span class='glyphicon glyphicon-menu-hamburger'></span>PRODUCT A WITHIN MOLECULE</div>
+                  <div class='list-body'><span class='glyphicon glyphicon-menu-hamburger'></span>PRODUCT A WITHIN MOLECULE</div>
+                  <div class='list-body'><span class='glyphicon glyphicon-menu-hamburger'></span>PRODUCT A WITHIN MOLECULE</div>
+                </div>
+              </div>
+            </div>
+            <div class='footer'>
+              <div>
+                <label><input type="checkbox"> Save as Master Mapping</label>
+              </div>
+              <button type="button" class="btn blue-border-btn save-btn" data-dismiss="modal">Cancel</button>
+              <button type="button" class="btn blue-btn save-btn">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="customizeModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog small-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">CUSTOMIZE VIEW</h4>
+          </div>
+          <div class="modal-body">
+            <div class='body'>
+              <div class='search-wrap'>
+                <span class='glyphicon glyphicon-search'></span><input type="text" placeholder="Search Columns">
+              </div>
+              <div class='search-result-wrap'>
+                <div><label><input type="checkbox"> Basket Name</label></div>
+                <div><label><input type="checkbox"> Basket Name</label></div>
+                <div><label><input type="checkbox"> Basket Name</label></div>
+                <div><label><input type="checkbox"> Basket Name</label></div>
+                <div><label><input type="checkbox"> Basket Name</label></div>
+                <div><label><input type="checkbox"> Basket Name</label></div>
+                <div><label><input type="checkbox"> Basket Name</label></div>
+              </div>
+            </div>
+            <div class='footer'>
+              <div>
+                <label><input type="checkbox"> Remember Setting</label>
+              </div>
+              <button type="button" class="btn blue-btn save-btn fright">Update View</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="exportModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog small-modal" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">Export</h4>
+          </div>
+          <div class="modal-body">
+            <div class="body">
+              <div class="lpart">
+                <div class="lpart-1">
+                  <div class="top">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Price Types
+                      </label>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> MNF
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> HDSP
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> PPP
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> PPE VAT
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> PPI VAT
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="lpart-2">
+                  <div class="top">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Include Data
+                      </label>
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> PCID
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Therapeutic Areas
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> WHO ATC Code
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Effective Start Date
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Effective Emd Date
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Package Notes
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Notes and Assumption
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Availabilty Matrix
+                      </label>
+                    </div>
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Source Grid
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="rpart">
+                <div class="top">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Options
+                    </label>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Net Prices
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Negotiated Prices
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Indication & Reimbursment Data
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Historical Data
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Per: Unit / MG / DDD
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Price Type Classification
+                    </label>
+                  </div>
+
+                  <hr>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> List Prices
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Estimated Prices
+                    </label>
+                  </div>
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Calculated Prices
+                    </label>
+                  </div>
+
+                  <hr>
+
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox"> Export Only Current Page
+                    </label>
+                  </div>
+
+                  <span>Currency:</span>
+                  <div class="radio-wrapper">
+                    <label class="radio-inline">
+                      <input type="radio" name="currency" id="currency1" value="Local"> Local
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="currency" id="currency2" value="€"> €
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="currency" id="currency3" value="$" checked="checked"> $
+                    </label>
+                    <label class="radio-inline">
+                      <input type="radio" name="currency" id="currency3" value="$(BMS)"> $(BMS)
+                    </label>
+                  </div>
+                  
+                </div>
+              </div>
+              <div class="btn-wrapper">
+                <button type="button" class="btn exprt-btn green-type-btn fright"><span class="glyphicon glyphicon-save"></span> Export</button>
+                <button type="button" class="btn border-blue-btn cancel-btn mright15 fright" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn border-blue-btn cancel-btn fleft" data-dismiss="modal">Email</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- POP UP -->
+    <div class='menu-launcher hide'>
+      <div class='menu-icon-wrap'><span class='icon-png icon-home'></span><div>Home</div></div>
+      <div class='menu-icon-wrap'><span class='icon-png icon-pricing'></span><div>Pricing</div></div>
+      <div class='menu-icon-wrap'><span class='icon-png icon-landscape'></span><div>Landscape</div></div>
+      <div class='menu-icon-wrap'><span class='icon-png icon-cost'></span><div>COST OF TREATMENT</div></div>
+      <div class='menu-icon-wrap'><span class='icon-png icon-insight'></span><div>Insight</div></div>
+      <div class='menu-icon-wrap'><span class='icon-png icon-training'></span><div>Training</div></div>
+      <div class='menu-icon-wrap'><span class='icon-png icon-admin'></span><div>Admin</div></div>
+      <div class='menu-icon-wrap'><span class='icon-png icon-setting'></span><div>Settings</div></div>
+    </div>
+
+    <div class='user-popup hide'>
+      <div class='user-img-wrap'>
+        <div class='user-img'></div>
+        <div class='user-name'>Shannie Brown</div>
+      </div>
+      <div class='quick-setting'>
+        <div class='quick-header'>Quick Setting</div>
+        <div class='set-opt'>
+          <div>
+            <span class='icon-png-old icon-dollar'></span>Default Currency
+            <span class='dropdown-container'  id='kurs'>
+              <select class="selectpicker">
+                <option data-content="<span class='icon ic-currency-dollar'></span> USD"></option>
+                <option data-content="<span class='icon ic-currency-euro'></span> EUR"></option>
+                <option data-content="<span class='icon ic-currency-chf'></span> CHF"></option>
+                <option data-content="<span class='icon ic-currency-loc'></span> LOC"></option>
+                <option data-content="<span class='icon ic-currency-bms'></span> BMS"></option>
+                <option data-content="<span class='icon ic-currency-amg'></span> AMG"></option>
+              </select>
+            </span>
+          </div>
+          <div>
+            <span class='icon  ic-search-main'></span>Default Search View
+            <span class='dropdown-container'  id='pricing'>
+              <select class="selectpicker">
+                <option data-content="Pricing"></option>
+                <option data-content="Pricing 1"></option>
+                <option data-content="Pricing 2"></option>
+              </select>
+            </span>
+          </div>
+          <div> 
+            <span class='icon ic-arrows'></span>Display Parallel Imports
+            <span class='display-icon-set fright'></span>
+          </div>
+          <div><span class='icon ic-power'></span>Logout</div>
+        </div>
+        <div class='more-setting'>
+          <span>More Setting</span>
+          <span class='glyphicon glyphicon-menu-down'></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker JavaScript -->
+    <script src="../vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- Bootstrap  tags input -->
+    <script src="../vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- jquery ui -->
+    <script src="../vendor/jquery-ui-1.12.1/jquery-ui.js"></script>
+    <!-- moment -->
+    <script src="../vendor/moment/moment.min.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/jquery-date-range-picker/jquery.daterangepicker.min.js"></script>
+    <!-- Custom -->
+    <script src="../dist/js/custom-user.js"></script>
+  </body>
+</html>

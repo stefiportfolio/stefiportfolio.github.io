@@ -1,0 +1,34 @@
+.user3 table .country-col{
+	width: 9.42%;
+	padding-left: 28px;
+	padding-right: 8px;
+}
+.user3 table thead tr:first-child th.country-col{
+	padding-left: 28px;
+}
+
+.user3 table .company-col{
+	width: 10.58%;
+	padding-left: 12px;
+}
+.user3 table thead tr:first-child th.company-col{
+	padding-left: 28px;
+	padding-left: 12px;
+}
+
+.user3 table .product-col{
+	width: 7.13%;
+}
+.user3 table .pack-col{
+	width: 14.07%;
+	padding-right: 8px;
+}
+.user3 table .exc-rate-col{
+	width: 9%;
+}
+.user3 table .curr-col{
+	width: 7.5%;
+}
+.user3 table .month-col{
+	width: 4.7%;
+}

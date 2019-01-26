@@ -1,0 +1,81 @@
+/*SPECIAL page content FOR USER PAGE*/
+.page-content.user1{
+	overflow:scroll;
+}
+/* LAYOUT TABLE TYPE 1*/
+table.table3{
+	min-width: 1325px;
+}
+table.table3 thead tr:first-child th{
+	border:0px;
+	vertical-align: middle;
+	text-transform: capitalize;
+	font-size: 13px;
+	padding: 21px 0px 19px;
+	height: 55.8px;
+}
+table.table3 tbody tr td{
+	border:none;
+	border-bottom: 1px solid var(--pale-grey);
+	font-size: 11px;
+	padding: 11px 0px;
+}
+table.table3 .country-col{
+	width: 10.6%;
+	max-width: 140px;
+	padding-right: 30px;
+	padding-left: 20px;
+	/*padding: 12px 30px 12px 20px;*/
+}
+
+table.table3 thead tr:first-child th.country-col{
+	padding: 21px 30px 19px 20px;
+}
+table.table3 .company-col{
+	width: 11.9%;
+	max-width: 157px;
+	padding-right: 31px;
+}
+table.table3 .product-col{
+	width: 5.4%;
+	max-width: 71px;
+	padding-right: 20px;
+}
+table.table3 .pack-col{
+	width: 14.7%;
+	max-width: 195px;
+	padding-right: 24px
+}
+table.table3 .ind-col{
+	width: 12.2%;
+	max-width: 162px;
+	padding-right: 25px
+}
+table.table3 .thera-col{
+	width: 7.3%;
+	max-width: 97px;
+	padding-right: 25px;
+}
+table.table3 .whd-col{
+	width: 78px;
+	max-width: 78px;
+	padding-right: 20px;
+}
+table.table3 .start-col{
+	width: 6.5%;
+	max-width: 86px;
+	padding-right: 20px;
+}
+table.table3 .mnf-col,
+table.table3 .unit-col,
+table.table3 .dod-col,
+table.table3 .mg-col,
+table.table3 .hosp-col{
+	width: 5.2%;
+	max-width: 68px;
+	padding-right: 28px;
+}
+/*.user1*/
+.m11{
+	margin:0px 11px;
+}

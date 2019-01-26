@@ -1,0 +1,99 @@
+.page6 .col-md-6{
+	width: 48.873%;
+}
+.page6 table.table1 thead tr:nth-child(2) th{
+  padding: 12px;
+}
+.page6 .col-md-6:first-child{
+	padding-right: 0px;
+	margin-right: 2.202%;
+}
+.page6 table .first-name-col{
+	width: 22.44%;
+}
+.page6 table .last-name-col{
+	width: 22.22%;
+}
+.page6 table .end-col{
+	width: 19.8%;
+}
+.page6 table.table2 tbody tr td.value-col.pleft20{
+	padding-left: 20px;
+}
+.page6 table.table2 .value-col .bootstrap-select button{
+	padding-left: 20px;
+	font-size: 12px;
+}
+.page6 .act-log-btn{
+	width: 130px;
+  height: 24px;
+  border-radius: 2px;
+  background-color: #2962ff;
+  background-color: var(--clear-blue);
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  color: var(--white);
+  float: right;
+  padding-top: 4px;
+  cursor: pointer;
+  position: absolute;
+  right: 19px;
+  top: 8px;
+}
+
+.page6 table.table2 tr.btn-wrapper button.blue-btn{
+  margin-left: 12px;
+}
+
+.page6 table.table2 thead .active-label{
+  height: 26px;
+  font-size: 14px;
+  padding: 0px;
+  width: 120px;
+  background-color: #2458e9;
+  font-weight: 500;
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  float: right;
+}
+
+.page6 table.table2 thead tr:first-child th:first-child{
+  border-top-right-radius: 0px;
+}
+.page6 table.table2 thead tr:first-child th:last-child{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top-left-radius: 0px;
+}
+
+
+/* BLUE STYLE RIGHT TABLE */
+  .page6 table.table2 tbody .mtop0{
+    margin-top: 0px !important;
+  }
+  .page6 table.table2 thead tr th{
+    padding: 13px 17px;
+  }
+  .page6 table.table2 tr.dropdown-wrapper td.value-col {
+    padding: 0px 8px;
+    position: relative;
+  }
+  .page6 table.table2 .value-col .dropdown-custom{
+    padding: 0px 0px;
+    position: relative;
+  }
+  .page6 table.table2 .value-col .dropdown-custom button{
+    border: solid 1px #e6ebf2;
+    text-transform: uppercase;
+    padding: 4.5px 7px;
+  }
+  .page6 table.table2 .value-col .dropdown-custom button .bs-caret{
+    margin-left: -22px; 
+  }
+  .page6 table.table2 .btn-wrap tr{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }

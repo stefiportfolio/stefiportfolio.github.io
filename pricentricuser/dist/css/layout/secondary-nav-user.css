@@ -1,0 +1,324 @@
+
+.navbar-default.custom-user .dropdown-container .bootstrap-select button{
+	color:var(--battleship-grey);
+	font-weight: 300;
+	font-size: 16px;
+	height: 59px;
+	border:0px;
+	border-radius: 0px;
+	padding-right: 35px;
+	border-right: 1px solid var(--pale-grey);
+}
+
+.navbar-default.custom-user .dropdown-container .bootstrap-select button .bs-caret{
+	position: absolute;
+	top: 20px;
+}
+
+.navbar-default.custom-user .dropdown-container .bootstrap-select.btn-group .dropdown-menu{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+/* Kurs Dropdown */
+	.navbar-default.custom-user #kurs{
+		width: 10.834%;
+		max-width: 156px;
+	}
+	.navbar-default.custom-user #kurs .bootstrap-select{
+		width: 100%;
+	}
+	.navbar-default.custom-user #kurs.dropdown-container .bootstrap-select button{
+		padding-left: 19.24%;
+	}
+	.navbar-default.custom-user #kurs.dropdown-container .bootstrap-select button i{
+		margin-right: 10px;
+	}
+
+/* Price Type Dropdown */
+	.navbar-default.custom-user #price-type{
+		width: 14.653%;
+		max-width: 211px;
+	}
+	.navbar-default.custom-user #price-type .bootstrap-select{
+		width: 100%;
+	}
+	.navbar-default.custom-user #price-type.dropdown-container .bootstrap-select button{
+		padding-left: 11.85%;
+	}
+
+/* Current Dropdown */
+	.navbar-default.custom-user #current{
+		/*width: 11.806%;
+		max-width: 170px;*/
+		position: relative;
+	}
+	.navbar-default.custom-user #current .bootstrap-select{
+		width: 100%;
+	}
+	.navbar-default.custom-user #current.dropdown-container .bootstrap-select button{
+		padding-left: 14.71%;
+	}
+
+/* Display Option Dropdown */
+	.navbar-default.custom-user #display-opt{
+		width: 15.487%;
+		max-width: 223px;
+	}
+	.navbar-default.custom-user #display-opt .bootstrap-select{
+		width: 100%;
+	}
+	.navbar-default.custom-user #display-opt.dropdown-container .bootstrap-select button{
+		padding-left: 11.214%;
+	}
+
+	.navbar-default.custom-user #export-wrap{
+		width: 13.334%;
+		max-width: 192px;
+	}
+	.navbar-default.custom-user #export-wrap .icon-png{
+		position: absolute;
+    left: 16px;
+    top: 11px;
+	}
+
+/* Price Change Dropdown */
+	.navbar-default.custom-user #price-change{
+		width: 15%;
+		max-width: 211px;
+		position: relative;
+	}
+
+	.navbar-default.custom-user #price-change .ic-gearsetting{
+		position: absolute;
+    top: 19px;
+    right: 10px;
+    z-index: 5;
+    cursor: pointer;
+	}
+	.navbar-default.custom-user .dropdown-container#price-change.modif-caret .bootstrap-select button .bs-caret{
+		right: 44px;
+	}
+	.navbar-default.custom-user #price-change .bootstrap-select{
+		width: 100%;
+	}
+	.navbar-default.custom-user #price-change.dropdown-container .bootstrap-select button{
+		padding-left: 11.38%;
+	}
+
+/* Report Dropdown */
+	.navbar-default.custom-user #report{
+		width: 15.487%;
+		max-width: 160px;
+		height: 59px;
+		color: #707c84;
+		font-size: 16px;
+		font-weight: 300;
+		display: block;
+		cursor: pointer;
+	}
+	.navbar-default.custom-user #report .bootstrap-select{
+		width: 100%;
+	}
+	.navbar-default.custom-user #report.dropdown-container .bootstrap-select button{
+		padding-left: 10px;
+		padding-right: 18%;
+	}
+	.navbar-default.custom-user #report.dropdown-container .bootstrap-select button:active{
+		box-shadow: none;
+	}
+	.navbar-default.custom-user #report.dropdown-container .bootstrap-select button .bs-caret{
+		right: 12px;
+	}
+
+.dropdown-icon{
+	display: inline-block;
+  color: var(--cool-grey);
+  line-height: 59px;
+  vertical-align: -webkit-baseline-middle;
+}
+.navbar-default.custom-user .dropdown-container option span.money-icon{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: yellow;
+}
+
+.navbar-default.custom-user .glyphicon:before{
+	font-size: 16px;
+}
+.navbar-default.custom-user .glyphicon.a:before {
+  content: "A";
+  font-size:20px;
+}
+/*FROM FONT AWESOME*/
+	.navbar-default.custom-user .glyphicon.e:before {
+	    content: "E";
+	    font-size:20px;
+	}
+	
+/*SPRITE*/
+.navbar-default .bootstrap-select.btn-group .dropdown-menu li.dropdown-header{
+    padding-left: 16px;
+    font-size: 12px;
+    line-height: auto;
+    color: #707c84;
+}
+.user1.navbar-default .dropdown-menu>li>a{
+	padding:10px 25px;
+	/*padding: 0px;*/
+}
+.navbar-default #d2 .dropdown-menu>li>a{
+	padding:10px 17px;
+}
+#d2 .dropdown-menu.open li a span.icon,
+#kurs .dropdown-menu.open li a span.icon{
+	display: inline-block;
+	margin:0px;
+	margin-right: 10px;
+}
+.bootstrap-select.btn-group .dropdown-menu li a.opt{
+	padding: 10px 20px;
+}
+.radio-circle{
+	display: inline-block;
+	 width: 15px;
+  	height: 15px;
+  	border-radius: 100%;
+  	background-color: #ffffff;
+	border: solid 1px #d7dee8;
+	vertical-align: sub;
+	margin-right: 15px;
+}
+.radio-box{
+	content: '✔';
+	display: inline-block;
+	 width: 15px;
+  	height: 15px;
+  	border-radius: 2px;
+  	background-color: #ffffff;
+	border: solid 1px #d7dee8;
+	vertical-align: sub;
+	margin-right: 15px;
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.radio-box{
+	border:0px;
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.radio-box:after{
+    content: '✔';
+    position: absolute;
+    top: 18px;
+    left: 27px;
+    font-size: 13px;
+    line-height: 0.8;
+    color: #f0f5f4;
+    transition: all .2s;
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark,
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark,
+#display-opt .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.check-mark{
+	display: none;
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.radio-circle,
+#display-opt .bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.radio-circle{
+	border: solid 5px #3386fe;
+}
+.bootstrap-select.btn-group.show-tick .dropdown-menu li.selected a span.radio-box{
+	background: #3386fe;
+}
+#d3 .bootstrap-select.btn-group .dropdown-menu li a span.icon-png-old{
+	display: none;
+}
+#current{
+	display: inline-block;
+	padding-left: 25px;
+  line-height: 55px;
+  color: #999;
+  cursor: pointer;
+}
+#current input{
+	padding-left: 30px;
+	border:0px;
+	padding-top: 3px;
+	outline:none;
+	cursor: pointer;
+	width: 223px;
+}
+#current input#datepicker-current-single{
+	width: 156px;
+}
+#current input::placeholder{
+	font-size: 16px;
+  text-align: left;
+  color: #999;
+  font-weight: 300;
+}
+#current .glyphicon{
+	vertical-align: middle;
+  color: #999;
+  position: absolute;
+  right: 0;
+  line-height: inherit;
+  pointer-events: none;
+}
+#current .icon.ic-calendar{
+  position: absolute;
+  top: 17px;
+  pointer-events: none;
+}
+.ui-button .ui-icon{
+	display: none;
+}
+.navbar-default.custom-user .dropdown-container .bootstrap-select button{
+	background: white;
+}
+.navbar-default.custom-user .dropdown-container .bootstrap-select.open button{
+	/*color:#0f48b1;*/
+	font-weight: 500;
+}
+.navbar-default .bootstrap-select.btn-group .dropdown-menu li{
+	background: white;
+}
+.additional-datepicker{
+	    position: absolute;
+    width: 300px;
+    /*background: blue;*/
+    /*display: none;*/
+    margin-top: 302px;
+    /*margin-left: 37px;*/
+    font-size: 12px;
+}
+
+.additional-datepicker.show{
+	display: block;
+}
+.additional-datepicker ul{
+	float: left;
+	width: 133px;
+	padding:0px;
+}
+.additional-datepicker ul:first-child{
+	margin-right: 15px;
+}
+.additional-datepicker ul li{
+	list-style: none;
+	height: auto;
+	line-height: initial;
+}
+.additional-datepicker ul li:first-child{
+	margin-bottom: 10px;
+	color:black;
+}
+.additional-datepicker ul li input{
+	 width: 133px;
+  height: 32px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #dfdfdf;
+  padding-left: 10px;
+  border-radius: 0px;
+  font-size: 12px;
+}
+.additional-datepicker ul li input::placeholder{
+	font-size:12px;
+ }

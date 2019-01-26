@@ -1,0 +1,35 @@
+.page29 .col-md-5{
+	width: 34.211%;
+	margin-right: 2.256%;
+}
+.page29 table tbody td.check-col{
+	padding-left: 17px;
+	padding-right: 15px;
+}
+
+.page29 table.prod-table thead tr:last-child input{
+  width: 86.66%;
+}
+
+.page29 table .hamb-col{
+  width: 47px;
+}
+
+.page29 .star-wrapper{
+	font-size: 12px;
+  text-align: left;
+  color: #707c84;
+  color: var(--battleship-grey);
+}
+.page29 .star-wrapper span{
+	margin-right: 6px;
+}
+
+.page29 table tbody.scroll-full tr:last-child td, .page29 table tbody.scroll-without-btn tr:last-child td {
+  border-bottom: 1px solid var(--pale-grey);
+}
+.page29 .reg-2-col.pos-r input{
+    width: 85%;
+    display: inline-block;
+    margin-right: 16px;
+}

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="-143.263%" y2="106.267%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-color="#FFF"/>
+        </linearGradient>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#202020"/>
+            <stop offset="100%" stop-color="#333"/>
+        </linearGradient>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#202020"/>
+            <stop offset="100%" stop-color="#BABABA"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <circle cx="23" cy="23" r="23" fill="url(#a)"/>
+        <g fill-rule="nonzero">
+            <path fill="#FFF" d="M26.578 22.56c-1.986-1.061-3.888-2.037-5.832-3.056v6.095c2.046-1.112 4.202-2.13 5.84-3.039h-.008z"/>
+            <path fill="#FFF" d="M26.578 22.56c-1.986-1.061-5.832-3.056-5.832-3.056l5.128 3.446.704-.39z"/>
+            <path fill="url(#b)" d="M7.424 15.182c-.59 0-.485-.227-.697-.788L5 8.697 15.727 2l1.258.333-1.046 2.849-8.515 10z" transform="translate(12 16)"/>
+            <path fill="url(#c)" d="M11.576 8.606c.454 0 .651-.212.909-.454.394-.38 5.454-5.304 5.454-5.304l-3.106-.757-2.878 1.818-.38 4.546v.151z" transform="translate(12 16)"/>
+            <path fill="url(#b)" d="M7.738 10.944l7.334 5.41c.833.454 1.44.227 1.651-.773l2.985-14.06c.303-1.228-.47-1.774-1.273-1.41L.92 6.869C-.277 7.353-.262 8.02.708 8.308l4.5 1.409 10.41-6.56c.484-.304.939-.137.575.196l-8.455 7.591z" transform="translate(12 16)"/>
+        </g>
+    </g>
+</svg>

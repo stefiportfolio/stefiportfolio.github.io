@@ -1,0 +1,131 @@
+.btn1{
+  /*background: #fff;*/
+  border-radius: 2px;
+  color: var(--cool-grey);
+  font-weight: normal;
+  border-color: var(--pale-grey);
+  font-size: 16px;
+}
+.btn1:hover{
+  color: #59bb22!important;
+  border: solid 1px #52ab20;
+}
+.green-type-btn,.btn2{
+  background: var(--apple);
+  border-radius: 2px;
+}
+
+.green-type-btn{
+  background-color: #2962ff;
+  font-weight: 300;
+  color:#fff;
+  font-size: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+.green-type-btn:hover{
+  color: white;
+  background-color: #2358ea;
+  font-weight: 600;
+}
+.green-type-btn:hover,.btn2:hover{
+  background:#59bb22; 
+  color:white;
+}
+.grey-type-btn,.btn3{
+  background-color: #e6ebf2;
+  background: var(--pale-grey);
+  color:var(--cool-grey);
+  border:0px;
+  border-radius: 2px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+.grey-type-btn:hover,.btn3:hover,.btn1:hover{
+  background-color: #dbe4f0;
+  box-shadow: 0 2px 4px 0 rgba(13, 12, 12, 0.12);
+  color:var(--cool-grey);
+}
+.btn{
+  outline: none!important;  
+}
+.grey-type-btn:focus,.btn3:focus,.btn1:focus{
+  box-shadow: 0px;
+  color:var(--cool-grey);
+}
+.blue-btn{
+  background-color: #2962ff;
+  font-weight: 300;
+  color:#fff;
+  font-size: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+.blue-btn:hover, .blue-btn:focus{
+  background: #2358ea;
+  color:white;
+}
+.save-btn, .edit-btn, .delete-btn, .clear-btn, .assign-all-btn, .remove-all-btn, .notify-client-btn, .reset-pass, .lock-acc-btn, .del-acc-btn, .w140-btn{
+  width: 140px;
+}
+.active-btn{
+  width: 120px;
+  height: 26px;
+  padding-top: 2px;
+}
+.assign-select-btn, .remove-select-btn{
+  width: 150px;
+}
+
+.create-org-btn, .create-user{
+  width: 200px;
+}
+.cancel-btn{
+  width: 110px;
+}
+
+.w140-responsive{
+  width: 21.64%;
+}
+
+.save-email-btn{
+  width: 50px;
+  height: 25px;
+  text-align: center;
+  background-color: #2962ff;
+  color: white;
+  display: block;
+  border-radius: 2px;
+  margin-top: 6px;
+  position: relative;
+  cursor: pointer;
+}
+.save-email-btn span{
+  position: absolute;
+  top: -5px;
+  right: 12px;
+}
+.f16{
+  font-size: 16px;
+}
+
+.export-btn{
+  width: 113px;
+  height: 41px;
+  border-radius: 2px;
+  background-color: #69c735;
+  background-color: var(--apple);
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  font-size: 16px;
+  color: #ffffff;
+  margin-right: 30px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+.export-btn:hover{
+  background-color: #59bb22;
+  color: white;
+}
+.export-btn .glyphicon{
+  margin-right: 10px;
+}

@@ -1,0 +1,77 @@
+.page34 table thead tr:nth-child(2) th{
+	padding: 12px 15px;
+}
+.page34 table thead tr:nth-child(2) th.check-col{
+  padding-left: 20px;
+}
+.page34 table .app-date-col{
+	/*width: 228px;*/
+	width: 12.6%;
+}
+.page34 table .app-date-col .glyphicon-menu-down{
+	right: 25px;
+  pointer-events: none;
+}
+.page34 table .app-status-col{
+	width: 14.2%;
+}
+.page34 table .company-col{
+	width: 18%;
+}
+.page34 table .product-col{
+	/*width: 189px;*/
+	width: 13%;
+}
+.page34 table .theurap-col{
+	/*width: 190px;*/
+	width: 17%;
+}
+.page34 table .source-col{
+	/*width: 279px;*/
+	width: 21%;
+	text-transform: inherit;
+}
+
+.page34 table tbody td.modified{
+	padding: 5px 8px;
+}
+.page34 table tbody td.modified input{
+	width: 100%;
+	height: 27px;
+	border: solid 1px #e6ebf2;
+  border: solid 1px var(--pale-grey);
+  padding-left: 11px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+.page34 table tbody td.modified.source-col input{
+	text-transform: inherit;
+}
+.page34 table .bootstrap-select{
+	width: 100%;
+}
+.page34 table .bootstrap-select button{
+	height: 26px;
+	padding-top: 5px;
+	font-size: 12px;
+	border: solid 1px #e6ebf2;
+  border: solid 1px var(--pale-grey);
+  color: var(--clear-blue);
+  text-transform: uppercase;
+  padding-left: 9px;
+}
+
+.page34 table .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn).bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 76%;
+	float: right;
+}
+
+.page34 .circle-custom{
+	margin-right: 0px;
+  margin-left: 12px;
+  margin-top: 8px;
+}
+
+.page34 .bs-caret .glyphicon.glyphicon-menu-down{
+	color: #707c84;
+}

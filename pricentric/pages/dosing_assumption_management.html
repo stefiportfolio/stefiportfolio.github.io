@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Dosing Assumption Management</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" href="../dist/img/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap tags input-->
+    <link href="../vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+    <!-- Bootstrap Datepicker -->
+    <link href="../vendor/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet">
+    <!-- Bootstrap Select -->
+    <link href="../vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/custom.css" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link href="../vendor/jquery-date-range-picker/daterangepicker.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar  navbar-inverse">
+      <div class="container-fluid wrapper">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="../dist/img/logo.png">
+          </a>
+        </div>
+        <form class="search">
+          <div class='search-container'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+          <input type="text"  " data-role="tagsinput" placeholder="Enter your Search" id='search-taginput'/>
+          <div class='remove-container hide'><span id="remove" aria-hidden="true">X</span></div>
+        </form>
+        <div class="navbar-right">
+          <div class="menu-container">
+            <span class="admin-name">Admin</span>
+            <span class="icon icon-gear"></span>
+            <div class='list-popup hide'>
+              <ul>
+                <li><a href="./anatomy_management.html">Anatomy Management</a></li>
+                <li><a href="./atc_and_therapeutic.html">ATC and Therapeutic</a></li>
+                <li><a href="./brand_type_management.html">Brand Type Management</a></li>
+                <li><a href="./company_management.html">Company Management</a></li>
+                <li><a href="./country_and_atc.html">Country and ATC</a></li>
+                <li><a href="./country_and_products.html">Country and Product</a></li>
+                <li><a href="./country_page.html">Country</a></li>
+                <li><a href="./create_new_organization.html">New Organization</a></li>
+                <li><a href="./create_new_user.html">New User</a></li>
+                <li><a href="./define_competitor_pricentric.html">Define competitor</a></li>
+                <li><a href="./dosing_assumption_management.html">Dosing assumption management</a></li>
+                <li><a href="./drug_theraphy_management.html">Drug theraphy management</a></li>
+                <li><a href="./email_notification.html">Email Notification</a></li>
+                <li><a href="./exchange_rate_management.html">Exchange rate management</a></li>
+                <li><a href="./fill_unit_management.html">Fill unit management</a></li>
+                <li><a href="./formulation_management.html">Formulation Management</a></li>
+                <li><a href="./import_type_management.html">Import type management</a></li>
+                <li><a href="./indication_management.html">Indication management</a></li>
+                <li><a href="./line_of_therapy_management.html">Line of theraphy management</a></li>
+                <li><a href="./margin_rules.html">Margin Rules</a></li>
+                <li><a href="./marketing_authority_management.html">Marketing authority Management</a></li>
+                <li><a href="./new.html">New</a></li>
+                <li><a href="./news_feed_approval.html">News Feed Approval</a></li>
+                <li><a href="./news_feed_new_approvals.html">News Feed New Approval</a></li>
+                <li><a href="./organization_management.html">Organization Management</a></li>
+                <li><a href="./pack_unit_management.html">Pack Unit Management</a></li>
+                <li><a href="./price_type_class_management.html">Price Type Class Management</a></li>
+                <li><a href="./price_type_management.html">Price Type Management</a></li>
+                <li><a href="./product_management.html">Product Management</a></li>
+                <li><a href="./reference_country_mapping.html">Reference Country Mapping</a></li>
+                <li><a href="./reimbursement_status_management.html">Reimbursement Status Management</a></li>
+                <li><a href="./role_access.html">Role Access</a></li>
+                <li><a href="./source_management.html">Source Management</a></li>
+                <li><a href="./strength_unit_management.html">Strength Unit Management</a></li>
+                <li><a href="./therapeutic_area.html">Therapeutic Area</a></li>
+                <li><a href="./user_management.html">User Management</a></li>
+                <li><a href="./user_tracking.html">User Tracking</a></li>
+                <li><a href="./who_atc_number.html">WHO ATC Number</a></li>
+                <li><a href="./who_atc_value_management.html">WHO ATC Value Management</a></li>
+              </ul>
+            </div>
+            <div class="vbar2"></div>
+            <span class='icon icon-thead'></span>
+          </div>
+          <div class="user-container"><span>SB</span></div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar  navbar-default user1">
+      <div class="container-fluid wrapper">
+        <div class="navbar-right dropdown">
+          <span class='dropdown-container dropdown-org' id='dropdown-dosing'>
+            <select class="selectpicker">
+              <option data-content="<span class='icon icon-dosing mleft10' aria-hidden='true'></span> Base Dosing Assumption"></option>
+              <option data-content="<span class='icon icon-dosing mleft10' aria-hidden='true'></span> Company A"></option>
+              <option data-content="<span class='icon icon-dosing mleft10' aria-hidden='true'></span> Organization B"></option>
+              <option data-content="<span class='icon icon-dosing mleft10' aria-hidden='true'></span> Organization C"></option>
+            </select>
+          </span>
+          <button type="button" class="btn btn1 btn-default w280 mright10" data-toggle="modal" data-target="#myModalChooseFile"><span class="icon icon-upload"></span> Upload Dosing Assumption</button>
+          <button type="button" class="btn btn2"><span class="icon icon-export"></span> Export</button>
+        </div>
+      </div>
+    </nav>
+    <div class='wrapper'>
+      <div class='page-content page25'>
+        <div class="row">
+          <div class="col-md-6">
+            <table class="table table1  table-striped without-border">
+              <thead>
+                  <tr>
+                      <th class='hamb-col'></th>
+                      <th class="country-col">COUNTRY</th>
+                      <th class='indic-col'>INDICATION</th>
+                      <th class='product-col'>PRODUCT</th>
+                      <th class="pack-col">Pack Description</th>
+                  </tr>
+                  <tr>
+                      <th class='hamb-col'></th>
+                      <th class="country-col"><input type="text" class="form-control"/></th>
+                      <th class='indic-col'><input type="text" class="form-control"/></th>
+                      <th class='product-col'><input type="text" class="form-control"/></th>
+                      <th class="pack-col"><input type="text" class="form-control"/></th>
+                  </tr>
+              </thead>
+              <tbody class='scroll scroll-without-btn'>
+                <tr>
+                  <td class="hamb-col"><span class='glyphicon glyphicon-menu-hamburger'></span></td>
+                  <td class='country-col wrap-text'>BRISTOL MYERS SQUIBB</td>
+                  <td class="indic-col wrap-text">METASTATIC MELANOMA</td>
+                  <td class="product-col wrap-text">OBDIVO</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 ML 100 MG</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-6">
+            <table class='top-detail'>
+              <tr class="no-hover">
+                <td class='col-top-detail'>
+                  <div class='title-detail'>OPDIVO INFUSION 1 VIAL 10 ML 100 MG</div>
+                  <div class='location-detail'>
+                    <span>Region : <b>European Union</b></span>
+                    <span>Country : <b>United Kingdom</b></span>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <table class="table table2 custom-table bottom-detail">
+              <thead>
+                <tr>
+                  <th>Assumption</th>
+                </tr>
+              </thead>
+                   
+              <tbody class="scroll scroll-special no-hover">
+              <!-- GROUP 1 -->
+                <tr class='fweight500 nomtop'>
+                  <td class='attr-col bg-skyblue'></td> 
+                  <td class='value-col-1 bg-skyblue'>LOADING DOSE</td> 
+                  <td class='value-col-2 bg-skyblue'>MAINTENANCE DOSE</td> 
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Product Dosing</td>
+                  <td class='value-col-1 pleft20'>
+                    <div class="input-group">
+                      <input type="text" class="form-control" aria-describedby="basic-addon2">
+                      <span class="input-group-addon" id="basic-addon2">mg</span>
+                    </div>
+                  </td>
+                  <td class='value-col-2 pleft20 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Frequency</td>
+                  <td class='value-col-1 pleft20'>
+                    <span class='input-in'>
+                      <input type="text" value='1'>
+                      <span class='notexttrans'>IN</span> 
+                      <input type="text" value='1'>
+                    </span>
+                    <select class="selectpicker">
+                      <option>Month</option>
+                      <option>Jan</option>
+                      <option>Feb</option>
+                    </select>
+                  </td>
+                  <td class='value-col-2 pleft20 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Durations</td>
+                  <td class='value-col-1 pleft20'>
+                    <span class='input-in'>
+                      <input type="text" value='1'>
+                    </span>
+                    <select class="selectpicker durations-select">
+                      <option>Select</option>
+                      <option>Select 1</option>
+                      <option>Select 2</option>
+                    </select>
+                  </td>
+                  <td class='value-col-2 pleft20 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Duration</td>
+                  <td class='value-col-1 pleft20'>
+                    <span class='input-in'>
+                      <input type="text" value='1'>
+                    </span>
+                    <span class='duration-col wrap-text '>Lyofilized Powder Vial</span>
+                  </td>
+                  <td class='value-col-2 pleft20 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Average Weight</td>
+                  <td class='value-col-1 pleft20 bright0'>
+                    <div class="input-group w114">
+                      <input type="text" class="form-control tcenter" aria-describedby="basic-addon2">
+                      <span class="input-group-addon" id="basic-addon2">kg</span>
+                    </div>
+                  </td>
+                  <td class='value-col-2 pleft20 bleft0 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Body Surface Area</td>
+                  <td class='value-col-1 pleft20 bright0'>
+                    <div class="input-group w114">
+                      <input type="text" class="form-control tcenter" aria-describedby="basic-addon2">
+                      <span class="input-group-addon" id="basic-addon2">m2</span>
+                    </div>
+                  </td>
+                  <td class='value-col-2 pleft20 bleft0 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Number of Cycles</td>
+                  <td class='value-col-1 pleft20 bright0'>
+                    <span class='input-in'>
+                      <input type="text" value='1'>
+                    </span>
+                  </td>
+                  <td class='value-col-2 pleft20 bleft0 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Recommended Dose?</td>
+                  <td class='value-col-1 pleft20 bright0'>
+                      <input type="checkbox" id="checkbox-1-1"/>
+                  </td>
+                  <td class='value-col-2 pleft20 bleft0 bright0'>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">SPC Link</td>
+                  <td class='value-col-3 bright0'><input type="text" placeholder="HTTP://INSERT-LINK-HERE.COM"></td>
+                </tr>
+                <tr class='box-shadow-bottom'>
+                  <td class="attr-col bbottom0">PI Link</td>
+                  <td class='value-col-3 bright0'><input type="text" placeholder="HTTP://INSERT-LINK-HERE.COM"></td>
+                </tr>
+              <!-- GROUP 2 -->
+                <tr class='fweight500 '>
+                  <td colspan="3">ADDITIONAL INFORMATION</td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Approval Date</td>
+                  <td class='value-col-3 bright0'>    
+                    <input type="text"  class='datepicker-current-single '>  <span class='icon icon-calendar icon-calendar-input'></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Anatomy</td>
+                  <td class='value-col-3 bright0'>
+                    <select class="selectpicker" title='SELECT OPTION'>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Line of Therapy</td>
+                  <td class='value-col-3 bright0'>
+                    <select class="selectpicker" title='SELECT OPTION'>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="attr-col bbottom0">Dose Type</td>
+                  <td class='value-col-3 bright0'>
+                    <select class="selectpicker" title='SELECT OPTION'>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class='box-shadow-bottom'>
+                  <td class="attr-col bbottom0">Comments</td>
+                  <td class='value-col-3 bright0'>
+                    <input type="text" placeholder="INSERT COMMENT" class='pleft10'>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="btn-wrap">
+                <tr class='btn-wrapper'>
+                  <td colSpan='3'>
+                    <button type="button" class="btn blue-btn w140-btn add-con-btn w200"  data-toggle="modal" data-target="#myModalSaveAssump">Save Assumptions</button>
+                    <button type="button" class="btn grey-type-btn w140-btn edt-btn w200"  data-toggle="modal" data-target="#myModalConfirmAssump">Apply to All Packs</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal choose Upload -->
+    <div id="myModalChooseFile" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-bulk-upload'></div>
+            <div class='title-content-popup'>Drag and drop file here</div>
+            <div class='desc-content-popup'><span class='line'>OR</span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default blue-btn" data-dismiss="modal"  data-toggle="modal" data-target="#myModalUploadFile">Choose File</button>
+            <button type="button" class="btn btn-default grey-type-btn" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal file upload -->
+    <div id="myModalUploadFile" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-bulk-file'></div>
+            <div class='title-content-popup'>bulk-competitor-upload.xlsx <span class='change-file'  data-dismiss="modal"  data-toggle="modal" data-target="#myModalChooseFile">X</span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default blue-btn" data-dismiss="modal"  data-toggle="modal" data-target="#myModalComplete">Upload File</button>
+            <button type="button" class="btn btn-default grey-type-btn" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL SUCCESS -->
+    <div id="myModalComplete" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-check mb49'></div>
+            <div class='title-content-popup'>Congratulations !</div>
+            <div class='desc-content-popup'>Assumption created successfully.</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Yeah, Got it</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL save assumptions -->
+    <div id="myModalSaveAssump" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup icon-dosing-check mb49'></div>
+            <div class='title-content-popup'>Confirm Update !</div>
+            <div class='desc-content-popup'>Are you sure you want to import and update the attached dosing assumptions? </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default cancel-btn" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-default yes-btn" data-dismiss="modal">Yes, I do</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL confirm upload assumptions -->
+    <div id="myModalConfirmAssump" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup icon-dosing-check mb49'></div>
+            <div class='title-content-popup'>Confirm Update !</div>
+            <div class='desc-content-popup'>Are you sure you want to apply the changes above to all packs defined within the current scope? </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default cancel-btn" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-default yes-btn" data-dismiss="modal">Yes, I do</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker JavaScript -->
+    <script src="../vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- Bootstrap  tags input -->
+    <script src="../vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- moment -->
+    <script src="../vendor/moment/moment.min.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/jquery-date-range-picker/jquery.daterangepicker.min.js"></script>
+    
+    <!-- Custom -->
+    <script src="../dist/js/custom-batch2.js"></script>
+  </body>
+</html>

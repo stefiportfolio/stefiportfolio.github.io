@@ -1,0 +1,52 @@
+.wrapper.ppage36{
+  /*width: 1390px;*/
+  padding-left: 1.7%;
+  padding-right: 1.7%;
+}
+
+.page36 table.table thead tr:first-child th{
+  padding: 17px 12px;
+}
+
+.page36 table tbody{
+  font-size: 11px;
+}
+.page36 table.table tbody tr td{
+  padding-left: 12px;
+  padding-right: 12px
+}
+.page36 table .loc-col .icon-map{
+  vertical-align: middle;
+  float: right;
+}
+
+.page36 table .user-col{
+  width: 10.92%;
+}
+.page36 table .org-col{
+  width: 11.57%;
+}
+.page36 table .loc-col{
+  width: 14.45%;
+}
+.page36 table .time-col{
+  width: 7.905%;
+}
+.page36 table .date-col{
+  width: 7.97%;
+}
+.page36 table .screen-col{
+  width: 10.42%;
+}
+.page36 table .event-col{
+  width: 5.96%;
+}
+.page36 table .criteria-col{
+  width: 15.31%;
+}
+.page36 table .brow-col{
+  width: 7.97%;
+}
+.page36 table .os-col{
+  width: 7.97%;
+}

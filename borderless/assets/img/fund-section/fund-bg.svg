@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="2162" viewBox="0 0 1920 2162">
+    <defs>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#627389"/>
+            <stop offset="100%" stop-color="#333F51"/>
+        </linearGradient>
+        <path id="a" d="M961 0c319.708 0 639.375 111.76 959 335.281V2161.5c-428.375-158.74-760.002-183.896-994.882-75.469C723.236 2179.226 414.863 2139.49 0 1966.821V310.593C320.958 103.53 641.292 0 961 0z"/>
+        <linearGradient id="c" x1="10.788%" x2="71.304%" y1="22.255%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#4ADFD1"/>
+            <stop offset="100%" stop-color="#24BCA5"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <path fill="url(#c)" fill-opacity=".4" d="M1963.836-410c11.176 271.966-135.352 417.767-439.582 437.402-456.346 29.452-550.154 697.513 0 735.339C2074.408 800.566 1977.499 976.877 2006 1162" mask="url(#d)" opacity=".72"/>
+        <g fill-opacity=".9" mask="url(#d)">
+            <path fill="url(#e)" d="M0 21.018c-.018 23.451 13.617 38.248 40.904 44.39 40.931 9.214 6.775 63.968 96.538 69.241C197.284 138.165 210.36 93.281 176.665 0H0v21.018z" transform="matrix(-1 0 0 1 361.87 0)"/>
+        </g>
+        <g fill="url(#e)" mask="url(#d)">
+            <g transform="matrix(-1 0 0 1 581 1739)">
+                <path fill-opacity=".6" d="M.003 455.498C-.06 376.28 46.367 326.295 139.284 305.545 278.66 274.42 162.352 89.46 468.008 71.647c203.771-11.875 248.29 139.742 133.557 454.851H0l.003-71z"/>
+                <circle cx="360.5" cy="96.5" r="96.5" fill-opacity=".5"/>
+            </g>
+        </g>
+        <g fill="url(#e)" fill-opacity=".7" mask="url(#d)">
+            <g transform="matrix(-1 0 0 1 2006 -23)">
+                <path d="M663.557 71c.062 79.219-46.365 129.203-139.281 149.953C384.9 252.078 501.208 437.04 195.55 454.852-8.219 466.727-52.739 315.109 61.994 0H663.56l-.003 71z"/>
+                <circle cx="332" cy="393" r="161"/>
+            </g>
+        </g>
+    </g>
+</svg>

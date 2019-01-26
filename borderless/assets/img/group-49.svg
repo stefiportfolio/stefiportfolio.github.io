@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="263" height="236" viewBox="0 0 263 236">
+    <defs>
+        <linearGradient id="a" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#21B5A3"/>
+            <stop offset="100%" stop-color="#0F90B1"/>
+        </linearGradient>
+        <linearGradient id="b" x1="100%" x2="0%" y1="50%" y2="50%">
+            <stop offset="0%" stop-color="#61C9BE"/>
+            <stop offset="100%" stop-color="#4FA4CC"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path stroke="url(#a)" d="M178 180l37.002 47.242h37.075"/>
+        <path stroke="url(#a)" d="M183.088 79.227l65.99 1.71" transform="matrix(1 0 0 -1 0 160.164)"/>
+        <path stroke="url(#a)" d="M141.328 9.547l42.656 40.53 69.006-1.048" transform="matrix(1 0 0 -1 0 59.623)"/>
+        <g transform="translate(244 217)">
+            <circle cx="9.5" cy="9.5" r="9.5" fill="#7F8A9A" opacity=".6"/>
+            <circle cx="9.5" cy="9.5" r="4.5" fill="url(#b)"/>
+        </g>
+        <path stroke="url(#a)" d="M10 171l22.486 19.6 40.631-1.172" transform="matrix(-1 0 0 1 83.117 0)"/>
+        <path stroke="url(#a)" d="M11 60l22.486 19.6 40.631-1.172" transform="rotate(180 42.559 69.8)"/>
+        <g transform="matrix(-1 0 0 1 19 180)">
+            <circle cx="9.5" cy="9.5" r="9.5" fill="#7F8A9A" opacity=".6"/>
+            <circle cx="9.5" cy="9.5" r="4.5" fill="url(#b)"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 23 51)">
+            <circle cx="9.5" cy="9.5" r="9.5" fill="#7F8A9A" opacity=".6"/>
+            <circle cx="9.5" cy="9.5" r="4.5" fill="url(#b)"/>
+        </g>
+        <g transform="translate(244 70)">
+            <circle cx="9.5" cy="9.5" r="9.5" fill="#7F8A9A" opacity=".6"/>
+            <circle cx="9.5" cy="9.5" r="4.5" fill="url(#b)"/>
+        </g>
+        <g transform="translate(244)">
+            <circle cx="9.5" cy="9.5" r="9.5" fill="#7F8A9A" opacity=".6"/>
+            <circle cx="9.5" cy="9.5" r="4.5" fill="url(#b)"/>
+        </g>
+    </g>
+</svg>

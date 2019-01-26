@@ -1,0 +1,38 @@
+.user2 table .country-col{
+	width: 10.28%;
+	padding-left: 28px;
+}
+.user2 table thead tr:first-child th.country-col{
+	padding-left: 28px;
+}
+
+.user2 table .company-col{
+	width: 11.49%;
+	padding-left: 12px;
+}
+.user2 table thead tr:first-child th.company-col{
+	padding-left: 28px;
+	padding-left: 12px;
+}
+
+.user2 table .product-col{
+	width: 5.49%;
+}
+.user2 table .pack-col{
+	width: 13.71%;
+	padding-right: 8px;
+}
+.user2 table .price-col{
+	width: 4.85%;
+}
+.user2 table .percent-col{
+	width: 7.02%;
+}
+.user2 table tbody td:nth-child(5),.user2 table tbody td:nth-child(6),.user2 table tbody td:nth-child(9),.user2 table tbody td:nth-child(10),.user2 table tbody td:nth-child(13),.user2 table tbody td:nth-child(14){
+	background-color: #e6ebf2;
+}
+
+/* Tbody */
+	.user2 tbody .mnf-col, .user2 tbody .change-col, .user2 tbody .ppp-col, .user2 tbody .pp-ch-col, .user2 tbody .ppe-col, .user2 tbody .ppe-col{
+		background-color: #e6ebf2 !important;
+	}

@@ -1,0 +1,135 @@
+.page3 table.table1 thead tr:nth-child(2) th{
+	padding: 12px;
+}
+
+/* ALL TABLE SAME WITH PAGE2 THE DIFFERENT JUST TABLE2*/
+.page3 table.table2 thead .active-label{
+	height: 26px;
+	font-size: 14px;
+	padding: 0px;
+	width: 120px;
+	background-color: #2458e9;
+	font-weight: 500;
+  display: block;
+  text-align: center;
+  padding-top: 4px;
+  float: right;
+}
+.page3 table.table2 thead tr:first-child th:first-child{
+	border-top-right-radius: 0px;
+	padding: 13px 17px;
+}
+.page3 table.table2 thead tr:first-child th:last-child{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-top-left-radius: 0px;
+}
+
+.page3 table.table2 tbody .mtop0{
+	margin-top: 0px !important;
+}
+
+.page3 table.table2 tbody .email-set{
+	margin-right: 23px;
+}
+.page3 table.table2 tbody span.icon{
+	cursor: pointer;
+}
+
+.page-content.page3 table.table2 tbody tr.client-email td{
+	height: auto;
+}
+.page-content.page3 table.table2 tbody tr.client-email td.value-col{
+	padding: 0px;
+	border: 0px;
+}
+
+.page3 table.table2 tbody tr.client-email div.email-rowspan{
+	height: 37px;
+	line-height: 37px;
+}
+.page3 table.table2 tbody tr.client-email div.email-rowspan{
+	border-bottom:1px solid var(--pale-grey);
+}
+.page3 table.table2 tbody tr.client-email td.attr-col{
+	vertical-align: top;
+	padding-top: 12px;
+}
+.page3 table.table2 tr.btn-wrapper button.blue-btn{
+	margin-left: 12px;
+}
+.page3 table.table2 tr.btn-wrapper button.blue-btn:focus{
+	color: white;
+}
+
+.page3 table.table2 tbody tr td.value-col.pleft20{
+	padding-left: 20px;
+}
+.page3 table.table2 tbody tr td.value-col.pleft8{
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.page3 table.table2 .value-col .bootstrap-select button {
+  font-size: 12px;
+  padding-left: 20px;
+}
+
+.page3 table.table2 .value-col.p0{
+	padding: 0px;
+}
+
+.page3 table.table2 tr .bs-caret {
+    margin-left: -36px;
+}
+
+.page3 table .edit-email{
+	float: left;
+	width: 80%;
+}
+
+.page3 table .edit-email input{
+  width: 100%;
+  margin-left: 10px;
+}
+
+.page3 table.table2 .value-col .dropdown-custom{
+	padding: 4px 8px;
+	position: relative;
+}
+.page3 table.table2 .value-col .dropdown-custom button{
+	border: solid 1px #e6ebf2;
+	text-transform: uppercase;
+}
+.page3 table.table2 .value-col .dropdown-custom button .bs-caret{
+	margin-left: -22px; 
+}
+
+.page3 table.table2 .value-col .dropdown-circle{
+	padding: 0px 8px;
+	position: relative;
+}
+.page3 table.table2 .value-col .dropdown-circle .bootstrap-select{
+	width: 92.52% !important;
+	float: right;
+}
+.page3 table.table2 .value-col .dropdown-circle span.org-status{
+	position: absolute;
+	top: 12px;
+	left: 15px;
+	margin-right: 0px;
+}
+.page3 table.table2 .value-col .dropdown-circle button{
+	border: solid 1px #e6ebf2;
+	text-transform: uppercase;
+}
+.page3 table.table2 .value-col .dropdown-circle button .bs-caret{
+	margin-left: -22px; 
+}
+.page3 table.table2 .btn-wrap tr{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.page3 table.table2 tbody.btn-wrap tr:hover{
+	border-left: 0px;
+}

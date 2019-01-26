@@ -1,0 +1,304 @@
+.navbar-default{
+	background: #fff;
+	height: 60px;
+ 	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+ 	z-index: 1;
+}
+.navbar-default .navbar-right{
+	line-height: 60px;
+	border-left: 1px solid var(--pale-grey);
+}
+.navbar-default .navbar-right button{
+	height: 41px;
+	width: 113px;
+}
+.navbar-default .navbar-right button:first-child:not(:last-child){
+	margin-right: 10px;
+	color: var(--cool-grey);
+	color: #9aa5ad;
+	font-weight: normal;
+}
+.navbar-default .navbar-right button:first-child:not(:last-child):hover{
+	color: #52ab20;
+	border: 1px solid #52ab20;
+}
+.navbar-default .navbar-right button:first-child{
+	margin-left: 20px;
+}
+
+.navbar-default .navbar-right button.w113{
+	width: 113px;
+}
+.navbar-default .navbar-right button.w170{
+	width: 170px;
+}
+.navbar-default .navbar-right button.w180{
+	width: 180px;
+}
+.navbar-default .navbar-right button.w190{
+	width: 190px;
+}
+.navbar-default .navbar-right button.w200{
+	width: 200px;
+}
+.navbar-default .navbar-right button.w205{
+	width: 205px;
+}
+.navbar-default .navbar-right button.w220{
+	width: 220px;
+}
+.navbar-default .navbar-right button.w235{
+	width: 235px;
+}
+.navbar-default .navbar-right button.w250{
+	width: 250px;
+}
+.navbar-default .navbar-right button.mright10{
+	margin-right: 10px;
+}
+.navbar-default .navbar-right button span{
+	margin-right: 6px;
+}
+.navbar-default .navbar-right button span.glyphicon-menu-down{
+	/*float: right;*/
+  margin-right: 0px;
+}
+/* Dropdown in secondary nav (ex page9)*/
+.navbar-default .navbar-right.dropdown .btn-group{
+	width: inherit;
+}
+
+/* NAVIGASI IN USER PAGE */
+.navbar-default.user1 .nav-child{
+	display: inline-block;
+}
+.navbar-default.user1 .nav-child.rnav{
+	float: right;
+}
+.navbar-default.user1 .dropdown-container .bootstrap-select{
+	width: auto;
+	/*margin-right: 25px;*/
+}
+.navbar-default.user1 .dropdown-container .bootstrap-select button{
+	color:var(--battleship-grey);
+	font-weight: 300;
+	font-size: 16px;
+	height: 59px;
+	border:0px;
+	border-radius: 0px;
+	padding-left: 5px;
+	padding-right: 35px;
+	border-right: 1px solid var(--pale-grey);
+}
+.navbar-default.user1 .dropdown-container:not(:first-child) .icon{
+	margin-left: 10px;
+}
+.dropdown-icon{
+	display: inline-block;
+  color: var(--cool-grey);
+  line-height: 59px;
+  vertical-align: -webkit-baseline-middle;
+}
+.navbar-default.user1 .dropdown-container option span.money-icon{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: yellow;
+}
+/*
+if icon dollar not define in & glyphicon
+font awesome icon : http://fontawesome.io/icons/;
+*/
+.navbar-default.user1 .glyphicon{
+	/*top:0px;*/
+}
+.navbar-default.user1 .glyphicon:before{
+	font-size: 16px;
+}
+.navbar-default.user1 .glyphicon.a:before {
+    content: "A";
+    font-size:20px;
+}
+/*FROM FONT AWESOME*/
+.navbar-default.user1 .glyphicon.e:before {
+    content: "E";
+    font-size:20px;
+}
+.navbar-default.user1 .dropdown-container .bootstrap-select,
+.navbar-default.user1 .btn1{
+	/*margin-right: 11px;*/
+}
+.navbar-default .navbar-right button span.glyphicon-chevron-down{
+	margin-right: 0px;
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+/* DROPDWON STYLING*/
+.navbar-default .navbar-default .dropdown-menu:not(.datepicker){
+	max-height: 407px;
+  overflow: hidden;
+  background: #fafcfe;
+  border-radius: 0px;
+  margin-top: 0px;
+  border: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.dropdown-menu.open li a span.icon{
+	display: none;
+}
+.dropdown-menu.open li{
+	font-size: 16px;
+}
+.dropdown-menu.open div.notify{
+	color:black;
+}
+.dropdown-menu .divider{
+	background: var(--pale-grey)!important;
+	margin:0px;
+}
+.dropdown-menu .dropdown-header{
+	padding: 0px;
+}
+.bootstrap-select.btn-group .icon{
+	margin-right: 10px;
+}
+.bootstrap-select.btn-group .dropdown-menu{
+	border:0px;
+	border-radius: 0px;
+	width: auto;
+}
+.bootstrap-select.btn-group .dropdown-menu li{
+	position: relative;
+    background-color: #fafcfe;
+    vertical-align: middle;
+    line-height: 39px;
+}
+.navbar-default .bootstrap-select.btn-group .dropdown-menu li{
+	position: relative;
+    background-color: #fafcfe;
+    vertical-align: middle;
+    line-height: 39px;
+}
+.navbar-default .bootstrap-select.btn-group .dropdown-menu li.selected,
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background: transparent;
+}
+.navbar-default .bootstrap-select.btn-group .dropdown-menu li.selected a{
+	font-weight: 500;
+}
+.navbar-default .btn-group.open .dropdown-toggle{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.navbar-default .btn-default.focus, .btn-default:focus{
+     background-color: transparent; 
+     border-color: 0; 
+}
+.navbar-default .bootstrap-select .dropdown-toggle:focus,
+.navbar-default .bootstrap-select.btn-group .dropdown-menu li a:focus{
+    outline: none !important;
+    outline-offset: 0;	
+}
+.navbar-default .dropdown-menu>li>a{
+	padding:10px 25px;
+}
+.dropdown-menu>li>a:hover{
+	background: #eef2f9;
+}
+.datepicker-wrap{
+	display: inline-block;
+	position: relative;
+}
+.datepicker-wrap .icon-calendar{
+	position: absolute;
+    margin-left: 10px;
+    margin-top: 18px;
+}
+.datepicker-wrap .glyphicon-menu-down{
+	color: var(--cool-grey);
+    margin-left: -26px;
+}
+/*.navbar-default .navbar-right button:first-child:not(:last-child)*/
+.navbar-default .navbar-right .dropdown-org.dropdown-container button{
+	border-radius: 2px;
+	width: 230px;
+	border: solid 1px var(--pale-grey);
+}
+.navbar-default .navbar-right .dropdown-org.dropdown-container .bs-caret{
+	margin-left: -10px;
+}
+.navbar-default .navbar-right .page14.dropdown-container button{
+	border-radius: 2px;
+	width: 210px;
+	border: solid 1px var(--pale-grey);
+}
+.navbar-default .navbar-right .page14 button:first-child{
+	margin-left: 0px;
+}
+.navbar-default .navbar-right .page14 .filter-option{
+	padding-left: 40px;
+	margin-right: 0px;
+}
+.navbar-default .navbar-right .page14 .icon-map{
+  position: absolute;
+  left: 20px;
+  top: 8px;
+}
+.w190{
+	width: 190px;
+}
+/*.dropdown-menu>li>a:focus, */
+.navbar-default .dropdown-menu>li>a:hover{
+	background: #eef2f9;
+}
+.navbar-default .bootstrap-select.btn-group .dropdown-toggle .caret{
+	
+}
+
+/*Page 4 custom*/
+.navbar-default .navbar-right.month-btn div.btn-group.bootstrap-select{
+	width: 180px;
+	font-weight: 300;
+  border-color: var(--pale-grey);
+  font-size: 14px;
+  color: #9aa5ad;
+  margin-left: 0px;
+  margin-right: 10px;
+}
+.navbar-default .navbar-right.month-btn div.btn-group.bootstrap-select button{
+	margin-left: 0px;
+	margin-right: 0px;
+	width: 100%;
+	border-color: var(--pale-grey);
+}
+.navbar-default .navbar-right.month-btn button span.glyphicon-menu-down{
+	position: absolute;
+  right: 8px;
+  top: 12px;
+}
+.navbar-default .navbar-right.month-btn .bootstrap-select.btn-group .dropdown-toggle .filter-option{
+	padding-left: 35px;
+  padding-top: 2px;
+}
+.navbar-default .navbar-right.month-btn .icon-calendar{
+	position: absolute;
+  top: 9px;
+  left: 16px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li a{
+	color: #707c84;
+	font-weight: 300;
+}
+.navbar-default .navbar-right #dropdown-dosing.dropdown-container button{
+    width: 270px;
+    height: 41px;
+    /*font-size: 16px;*/
+  text-align: left;
+  color: #9aa5ad;
+}
+.mleft10{
+	margin-left: 10px;
+}

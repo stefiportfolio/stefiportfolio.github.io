@@ -1,0 +1,158 @@
+/* LAYOUT GLOBAL TABLE*/
+	table.table{
+		background: #fff;
+		/*border-radius: 5px;*/
+		background-color: #ffffff;
+		/*box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);*/
+		color:var(--battleship-grey);
+	}
+	table.table thead tr:first-child th{
+		padding: 14px 0px;
+		padding-left: 8px;
+	}
+	table.table tbody{
+		font-size: 12px;
+	}
+	table.table tbody tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover){
+		height: 37px;
+		cursor: pointer;
+		border-left:3px solid none;
+	}
+	table.table tbody tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover):hover{
+		color:var(--clear-blue);
+	}
+	table.table tbody tr td{
+		position: relative;
+	}
+	.tr-hover{
+		display: inline-block;
+		width: 2px!important;
+		background: blue;
+		height: 37px;
+		position: absolute;
+		left: 0;
+		top:0;
+	}
+	table.table tbody.no-hover tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover):hover{
+		border-left: 0px;
+		color: inherit;
+		cursor: default;
+	}
+	table.table tbody.no-hover tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover){
+		cursor: default;
+	}
+	table.table tbody.btn-wrap tr:hover{
+		border-left: 1px solid white;
+	}
+	table.table tbody tr td{
+		padding: 4px 0px 0px 8px;
+	  text-transform: uppercase;
+	  vertical-align: middle;
+	  font-size: 11px;
+	}
+	table.table th{
+	  font-weight: 500;
+	}
+
+	table .check-col{
+	  width: 50px;
+	}
+	table .check-col input[type=checkbox]{
+	  width: 16px;
+	  height: 16px;
+	  box-shadow: none;
+	}
+
+	table thead tr:nth-child(2){
+		/*background: var(--pale-grey);*/
+		background-color: #fafbfd;
+	}
+	table tbody tr.btn-wrapper, .table-striped>tbody>tr.btn-wrapper{
+		height: 60px;
+		background-color: white;
+	}
+	table tbody td.status-col.modified{
+		padding: 5px 8px;
+	}
+	table .bootstrap-select button .bs-caret{
+		color: black;
+	}
+	table td.blue-font .bootstrap-select button{
+		color: var(--clear-blue);
+	}
+	.table>tbody.btn-wrap{
+		border-top:0px;
+	}
+	tbody.scroll {
+	  display:block;
+	  overflow:auto;
+	}
+	
+	.user-wrapper thead,.user-wrapper tbody tr {
+	  display:table;
+	  width:100%;
+	}
+
+	.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+	  background-color: #fafbfd;
+	  background-color: var(--pale-grey-five);
+	}
+
+/* TABLE1 */
+	table.table1 input[type="checkbox"]{
+		box-shadow: none;
+	}
+	table.table1 thead tr th{
+		font-size: 13px;
+	  font-weight: 500;
+	  text-align: left;
+	  color: #707c84;
+	  color: var(--battleship-grey);
+	  table-layout: fixed;
+	}
+	table.table1 thead tr:first-child th:first-child{
+		border-left: 0px;
+	}
+	table.table1 thead tr:first-child th:last-child{
+		border-right: 0px;
+	}
+	/*table.table1 tbody:last-child tr:last-child, table.table1 tbody:last-child tr:last-child td:first-child{
+		border-bottom-left-radius: 5px;
+	}
+	table.table1 tbody:last-child tr:last-child, table.table1 tbody:last-child tr:last-child td:last-child{
+		border-bottom-right-radius: 5px;
+	}*/
+	table.table1 tbody tr td:first-child{
+		border-left: 0px;
+	}
+	table.table1 tbody tr td:last-child{
+		border-right: 0px;
+	}
+	table.table1 tbody tr:last-child td{
+		border-bottom: 1px solid var(--pale-grey);
+	}
+
+	table.table1 tbody .dropdown-menu.open li a span.red-circle, table.table1 tbody .dropdown-menu.open li a span.green-circle{
+		display: none;
+	}
+
+	table.table1 thead input{
+		width: 100%;
+		height: 32px;
+	  border-radius: 2px;
+	  background-color: #ffffff;
+	  border: solid 1px #dfdfdf;
+	}
+	.table-striped > tbody > tr:nth-child(odd) > td{
+		background-color: white;
+	}
+	.table-striped > tbody > tr:nth-child(even) > td{
+		background-color: #fafbfd;
+	}
+
+	table tbody tr td span.green{
+		color: #69c735;
+	}
+	table tbody tr td span.red{
+		color: #cd1714;
+	}

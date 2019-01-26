@@ -1,0 +1,23 @@
+/*-----------------------------------------------------
+  variable color, width, calculatation
+
+  Requirement
+  min-width : 1280;
+  max-width:1920;
+  max-height: max resolution screen;
+-------------------------------------------------------*/
+:root {
+  /*************************** Page-wide variables ****************************/
+  /* Colors. */
+  --dark-blue :#333f51;
+  --green-default : #21b8a2;
+  --bg-white: #f5f5f6;
+  /* Resolution */
+  --width:1220px;
+  --height:1100px;
+  --min-width: 1220px;
+  --max-width: 1920px;
+  /*WRAPPER*/
+  --min-width-wrapper:calc(var(--width) - 110px);
+  --max-width-wrapper:calc(var(--max-width) - 110px);
+}

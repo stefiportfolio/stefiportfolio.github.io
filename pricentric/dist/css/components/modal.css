@@ -1,0 +1,529 @@
+.modal-allpage .modal-dialog{
+	width: 350px;
+}
+.modal-allpage .modal-dialog .modal-content{
+	text-align: center;
+	margin:0px;
+	padding: 0px;
+	min-height: 400px;
+}
+.modal-allpage .modal-dialog .modal-content .modal-body{
+	margin:0px;
+	padding: 0px;
+}
+.modal-allpage .modal-dialog .modal-footer{
+	text-align: center;
+	border:0px;
+	padding: 0px;
+	margin:0px;
+}
+.modal-allpage .modal-dialog .icon-popup,
+.modal-allpage .modal-dialog .icon-popup2,
+.modal-allpage .modal-dialog .icon-popup3{
+	margin: 66px 0px 53px;
+}
+.title-content-popup{
+	width: 275.3px;
+	margin:0px auto;
+	font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #425c6f;
+  margin-bottom: 12px;
+}
+.desc-content-popup{
+	width: 275.3px;
+	margin:0px auto;
+	font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: #707c84;
+  color: var(--battleship-grey);
+  margin-bottom: 33px;
+}
+.modal-allpage .modal-dialog .modal-footer button{
+	width: 48%;
+	font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #2962ff;
+  color: var(--clear-blue);
+  border:0px;
+  padding: 0px;
+  margin-bottom: 40px;
+}
+
+.modal-allpage .modal-dialog .modal-footer button.cancel-btn{
+	color: #707c84;
+  color: var(--battleship-grey);
+}
+@media (min-width: 768px){
+	.modal-dialog {
+	    margin: 7% auto;
+	}
+}
+
+.modal-footer button:active{
+	box-shadow: none;
+}
+
+.modal-upload .drop-file-label{
+	font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  color: #707c84;
+  margin-bottom: 32px;
+}
+.modal-upload .one-row{
+	text-align: center;
+}
+.modal-upload .drop-file-label.underline{
+	text-decoration: underline;
+	margin-right: 15px;
+	display: inline-block;
+}
+.modal-upload .bar{
+	width: 260px;
+  height: 2px;
+  border: solid 1px #e6ebf2;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-upload .one-row span{
+	font-size: 14px;
+  font-weight: 500;
+  line-height: 1.57;
+  text-align: center;
+  color: #707c84;
+  cursor: pointer;
+}
+
+.modal-upload .pos-r span{
+	width: 60px;
+	background-color: white;
+	position: absolute;
+	margin-right: auto;
+	margin-left: auto;
+	left: 0;
+	right: 0;
+	top: -8px;
+}
+
+.modal-allpage.modal-upload .modal-dialog .modal-footer .choose-btn{
+  width: 260px;
+  height: 41px;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.modal-allpage.modal-upload .modal-dialog .modal-footer .cancel-btn{
+	width: 260px;
+  height: 41px;
+  font-size: 16px;
+  text-align: center;
+  color: #9aa5ad;
+  padding-top: 4px;
+  margin-left: 0px;
+  font-weight: normal;
+ }
+
+/* WIDTH MODAL SETTING */
+	.modal-addform.w510 .modal-dialog{
+		width: 510px;
+	}
+	.modal-addform.w690 .modal-dialog{
+		width: 690px;
+	}
+	.modal-addform.w870 .modal-dialog{
+		width: 870px;
+	}
+	.modal-addform.w1050 .modal-dialog{
+		width: 1050px;
+	}
+
+.modal-addform .modal-dialog .modal-footer{
+	border-top: 0px;
+  margin-bottom: 15px;
+  margin-top: 45px;
+  margin-right: 20px;
+}
+
+.modal-addform .modal-body{
+	padding: 0px 50px;
+}
+
+.modal-addform .modal-dialog .modal-body .title{
+	font-size: 24px;
+  text-align: center;
+  color: #707c84;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+}
+
+.modal-addform .modal-dialog .modal-body .record-row{
+	padding-left: 9px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.modal-addform .modal-dialog .modal-body .record-row.bg-on{
+	background-color: #f5f8ff;
+}
+.modal-addform .modal-dialog .modal-body .record-row .icon-close{
+	position: absolute;
+	bottom: 19px;
+	right: 10px;
+	cursor: pointer;
+}
+.modal-addform .modal-dialog .modal-body .record-row span.label{
+	font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  color: #707c84;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.modal-addform .modal-dialog .modal-body span.add-more{
+	font-size: 14px;
+  font-style: italic;
+  text-align: left;
+  color: #347cff;
+  margin-top: 15px;
+  cursor: pointer;
+  padding-left: 10px;
+}
+
+.modal-addform .modal-dialog .bootstrap-select > .dropdown-toggle, .modal-addform .modal-dialog select{
+	width: 350px;
+	height: 36px;
+  border-radius: 3px;
+  border: solid 1px #e6ebf2;
+  padding: 8px 14px;
+  font-size: 12px;
+  text-align: left;
+  color: #707c84;
+  -moz-appearance: none;
+  /*for chrome*/
+  -webkit-appearance:none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.modal-addform .modal-dialog .fa-chevron-down{
+  position: absolute;
+  right: 70px;
+  bottom: 22px;
+  color: #9aa5ad;
+  pointer-events: none;
+}
+
+	.modal-addform .modal-dialog .modal-body .record-row input{
+		width: 100%;
+	  height: 36px;
+	  border-radius: 3px;
+	  border: solid 1px #e6ebf2;
+	  font-size: 12px;
+	  text-align: left;
+	  color: #707c84;
+	  padding:8px 14px;
+	}
+
+/* 2 Column form in Modal , w690 type */
+	#addTherapeuticModal.modal-addform .modal-dialog .modal-body .record-row .lpart1, 
+	#addAnatomyModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addCompanyModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addDrugModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addUnitModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addFormulaModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addTherapyModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addPackModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addProductModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addStrengthModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addBrandModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addIndicationModal.modal-addform .modal-dialog .modal-body .record-row .lpart1,
+	#addImportModal.modal-addform .modal-dialog .modal-body .record-row .lpart1{
+		width: 350px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	#addTherapeuticModal.modal-addform .modal-dialog .modal-body .record-row .lpart2, 
+	#addAnatomyModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addCompanyModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addDrugModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addUnitModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addFormulaModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addTherapyModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addPackModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addProductModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addStrengthModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addBrandModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addIndicationModal.modal-addform .modal-dialog .modal-body .record-row .lpart2,
+	#addImportModal.modal-addform .modal-dialog .modal-body .record-row .lpart2{
+		width: 170px;
+		float: left;
+		margin-right: 10px;
+	}
+	#addTherapeuticModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select, 
+	#addAnatomyModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addCompanyModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addDrugModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addUnitModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addFormulaModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addTherapyModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addPackModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addProductModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addStrengthModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addBrandModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addIndicationModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select,
+	#addImportModal.modal-addform .modal-dialog .modal-body .record-row .lpart2 select{
+		width: 100%;
+	}
+	#addTherapeuticModal.modal-addform .modal-dialog .fa-chevron-down, 
+	#addAnatomyModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addCompanyModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addDrugModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addUnitModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addFormulaModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addTherapyModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addPackModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addProductModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addStrengthModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addBrandModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addIndicationModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addImportModal.modal-addform .modal-dialog .fa-chevron-down,
+	#addApprovalModal.modal-addform .modal-dialog .fa-chevron-down{
+	  right: 20px;
+	  bottom: 13px;
+	}
+
+/* 2 Column form in Modal , w870 type */
+	#addPriceTypeModal.modal-addform .modal-dialog .modal-body .record-row .lpart1{
+		width: 170px;
+		float: left;
+		margin-right: 10px;
+	}
+
+	#addPriceTypeModal.modal-addform .modal-dialog .modal-body .record-row .lpart2{
+		width: 530px;
+		float: left;
+		margin-right: 10px;
+	}
+	#addPriceTypeModal.modal-addform .modal-dialog .modal-body .record-row .lpart1 select{
+		width: 100%;
+	}
+	#addPriceTypeModal.modal-addform .modal-dialog .fa-chevron-down{
+	  right: 20px;
+	  bottom: 13px;
+	}
+	
+
+/* addCountryModal */
+
+	#addCountryModal.modal-addform .modal-dialog .modal-body .record-row .lpart1{
+		width: 170px;
+		float: left;
+		margin-right: 10px;
+	}
+	#addCountryModal.modal-addform .modal-dialog .modal-body .record-row .lpart1 select{
+		width: 100%;
+	}
+	#addCountryModal.modal-addform .modal-dialog .modal-body .record-row .lpart1 .fa-chevron-down{
+		right: 20px;
+  	bottom: 13px;
+  	pointer-events: none;
+	}
+	#addCountryModal.modal-addform .modal-dialog .modal-body .record-row .lpart1 .fixed-form{
+		width: 170px;
+  	height: 36px;
+		border-radius: 3px;
+	  background-color: #e6ebf2;
+	  border: solid 1px #e6ebf2;
+	  font-size: 12px;
+	  text-align: left;
+	  color: #707c84;
+	  padding-left: 14px;
+	  padding-top: 8px;
+	}
+
+/* ADD ATC MODAL */
+	#addAtcModal.modal-addform .modal-dialog .modal-body .record-row .lpart1{
+		width: 170px;
+		float: left;
+		margin-right: 10px;
+	}
+	#addAtcModal.modal-addform .modal-dialog .modal-body .record-row .lpart2{
+		width: 250px;
+		float: left;
+		margin-right: 10px;
+	}
+	#addAtcModal.modal-addform .modal-dialog .modal-body .record-row .lpart3{
+		width: 130px;
+		float: left;
+		margin-right: 10px;
+	}
+	#addAtcModal.modal-addform .modal-dialog .modal-body .record-row .lpart1 select, #addAtcModal.modal-addform .modal-dialog .modal-body .record-row .lpart3 select{
+		width: 100%;
+	}
+	#addAtcModal.modal-addform .modal-dialog .modal-body .record-row .lpart1 .fa-chevron-down{
+		right: 20px;
+  	bottom: 13px;
+  	pointer-events: none;
+	}
+	#addAtcModal.modal-addform .modal-dialog .modal-body .record-row .lpart3 .fa-chevron-down{
+		right: 12px;
+  	bottom: 13px;
+  	pointer-events: none;
+	}
+
+/*MODAL CHOOSE FILE*/
+	#myModalChooseFile .title-content-popup{
+		font-size: 14px;
+	  	line-height: 1.57;
+	  	text-align: center;
+	  	color: #707c84;
+	  	font-weight: 300;
+	}
+	#myModalChooseFile .desc-content-popup{
+		font-size: 14px;
+	  	line-height: 1.57;
+	  	text-align: center;
+	  	color: #707c84;
+	  	margin-top: 22px;
+	}
+
+	#myModalChooseFile .desc-content-popup{
+		border-bottom: 1px solid #e6ebf2; 
+		line-height:0.1em; 
+	}
+	#myModalChooseFile .desc-content-popup span.line{
+		background:#fff; padding:0 10px; 
+	}
+	#myModalChooseFile .modal-footer,
+	#myModalUploadFile .modal-footer{
+		margin-bottom: 38px;
+	}
+	#myModalChooseFile .modal-footer button,
+	#myModalUploadFile .modal-footer button{
+		display: inline-block;
+	    margin: 0px;
+	    padding: 11px 0px;
+	    width: 260px;
+		font-weight: 300;
+	}
+	#myModalChooseFile .modal-footer button:not(:last-child),
+	#myModalUploadFile .modal-footer button:not(:last-child){
+		margin-bottom: 10px;
+		color:white;
+	}
+	#myModalChooseFile .modal-footer button.blue-btn:hover,
+	#myModalUploadFile .modal-footer button.blue-btn:hover{
+		color:#2962ff;
+		font-weight: 500;
+		padding: 10px 0px;
+		border:1px solid #2962ff;
+	}
+	#myModalChooseFile .icon-popup{
+		margin: 52px 0px 27px;
+	}
+	#myModalUploadFile .icon-popup{
+		margin:71px 0px 33.5px;
+	}
+	#myModalUploadFile .title-content-popup{
+		font-weight: 300;
+		margin-bottom: 51px;
+	}
+	#myModalUploadFile .modal-dialog .modal-content span.change-file{
+		display: inline-block;
+		margin-left: 17px;
+		font-weight: 500;
+		color:#707c84;
+		cursor: pointer;
+	}
+/*MODAL PAGE27*/
+	#addNewPriceType .lpart1{
+		width: 170px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#addNewPriceType .lpart2{
+		width: 170px;
+		display: inline-block;
+		margin-right: 10px;
+	}
+	#addNewPriceType .modal-dialog .bootstrap-select > .dropdown-toggle, .modal-addform .modal-dialog select{
+		width: 100%;
+	}
+	#addNewPriceType .lpart3{
+		width: 530px;
+		display: inline-block;
+	}
+	#addNewPriceType .modal-dialog{
+		width: 1050px;
+	}
+	#addNewPriceType .modal-dialog .fa-chevron-down{
+		right: 13px;
+		top:37px;
+	}
+
+/* ADD REGION MODAL */
+	#addRegionModal.modal-addform .modal-dialog .modal-body .record-row input{
+		width: 85%;
+	}
+/* ADD APPROVAL*/
+	#addApprovalModal .modal-dialog{
+		width: 1100px;
+  height: 520px;
+	}
+	#addApprovalModal .pr10{
+		padding-right: 10px;
+	}
+	#addApprovalModal .modal-dialog .modal-body .pos-r{
+		/*display: inline-block;*/
+	}
+	#addApprovalModal .modal-dialog .modal-body .lpart1{
+		width: 130px;
+		float: left;
+	}
+	#addApprovalModal .modal-dialog .modal-body .lpart2{
+		width: 130px;
+		float: left;
+	}
+	#addApprovalModal .modal-dialog .modal-body .lpart3{
+		width: 200px;
+		float: left;
+	}
+	#addApprovalModal .modal-dialog .modal-body .lpart4{
+		width: 130px;
+		float: left;
+	}
+	#addApprovalModal .modal-dialog .modal-body .lpart5{
+		width: 130px;
+		float: left;
+	}
+	#addApprovalModal .modal-dialog .modal-body .lpart6{
+		width: 200px;
+		float: left;
+	}
+
+
+#addRegionModal .record-row .row{
+	width: 350px;
+}
+.modal-addform.w510 .modal-dialog{
+	width: 510px;
+}
+
+.modal-addform.w510 .modal-dialog .lpart1 .row{
+	width: 350px;
+	position: relative;
+}
+.modal-addform.w510 .modal-dialog .lpart1 .fa-chevron-down{
+  top: 10px;
+  right: 13px;
+}

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="2163" viewBox="0 0 1440 2163">
+    <defs>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#627389"/>
+            <stop offset="100%" stop-color="#333F51"/>
+        </linearGradient>
+        <path id="a" d="M0 181.263C227.119 60.42 467.119 0 720 0c252.881 0 492.881 60.42 720 181.263V2086.03c-326.523-90.438-578.484-90.438-755.882 0-198.765 101.331-426.804 101.331-684.118 0V181.263z"/>
+        <linearGradient id="c" x1="10.788%" x2="71.304%" y1="22.255%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="e" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#4ADFD1"/>
+            <stop offset="100%" stop-color="#24BCA5"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="d" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <path fill="url(#c)" fill-opacity=".4" d="M1722.836-410c11.176 271.966-135.352 417.767-439.582 437.402-456.346 29.452-550.154 697.513 0 735.339C1833.408 800.566 1736.499 976.877 1765 1162" mask="url(#d)" opacity=".72"/>
+        <g fill="url(#e)" mask="url(#d)">
+            <g transform="matrix(-1 0 0 1 340 1739)">
+                <path fill-opacity=".6" d="M.003 455.498C-.06 376.28 46.367 326.295 139.284 305.545 278.66 274.42 162.352 89.46 468.008 71.647c203.771-11.875 248.29 139.742 133.557 454.851H0l.003-71z"/>
+                <circle cx="360.5" cy="96.5" r="96.5" fill-opacity=".5"/>
+            </g>
+        </g>
+        <g fill="url(#e)" fill-opacity=".7" mask="url(#d)">
+            <g transform="matrix(-1 0 0 1 1765 -23)">
+                <path d="M663.557 71c.062 79.219-46.365 129.203-139.281 149.953C384.9 252.078 501.208 437.04 195.55 454.852-8.219 466.727-52.739 315.109 61.994 0H663.56l-.003 71z"/>
+                <circle cx="332" cy="393" r="161"/>
+            </g>
+        </g>
+    </g>
+</svg>

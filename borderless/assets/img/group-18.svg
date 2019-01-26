@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="799" viewBox="0 0 1920 799">
+    <defs>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#627389"/>
+            <stop offset="100%" stop-color="#333F51"/>
+        </linearGradient>
+        <path id="a" d="M960 57.5c325.49-111.24 645.49-58.768 960 157.414v583.578c-288.792-137.63-608.458-157.828-959-60.594C610.458 835.133 290.125 803.94 0 644.32V23.297C314.51 157.339 634.51 168.74 960 57.5z"/>
+        <linearGradient id="d" x1="21.191%" x2="71.304%" y1="5.89%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="e" x1="10.788%" x2="71.304%" y1="22.255%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <g fill="url(#d)" fill-opacity=".4" mask="url(#c)" opacity=".185">
+            <circle cx="289" cy="289" r="289" transform="matrix(-1 0 0 1 1166 -109)"/>
+        </g>
+        <path fill="url(#e)" fill-opacity=".4" d="M371.692 293c5.913 143.941-71.61 221.108-232.57 231.5-241.438 15.588-291.07 369.168 0 389.187C430.193 933.707 378.923 1027.022 394 1125" mask="url(#c)" opacity=".72" transform="matrix(-1 0 0 1 333 0)"/>
+        <g fill-opacity=".4" mask="url(#c)">
+            <g transform="matrix(-1 0 0 1 2055 463)">
+                <circle cx="289" cy="352" r="289" fill="url(#e)"/>
+                <circle cx="458" cy="289" r="289" fill="url(#d)" opacity=".185"/>
+            </g>
+        </g>
+    </g>
+</svg>

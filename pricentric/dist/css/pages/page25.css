@@ -1,0 +1,283 @@
+.page25 .table2.custom-table .btn-wrap tr{
+	border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/*LEFT*/
+.page25 table.table1 .hamb-col{
+	width: 7.8%;
+	padding: 0px;
+	text-align: center;
+	/*width: 49px;*/
+}
+.page25 table.table1 .hamb-col .glyphicon-menu-hamburger{
+	font-size: 20px;
+}
+.page25 table.table1 .country-col{
+	width: 21.6%;
+	/*width: 137px;*/
+}
+.page25 table.table1 .indic-col{
+	width: 26.7%;
+	/*width:169px;*/
+}
+.page25 table.table1 .product-col{
+	/*width: 26.7%;*/
+	width: 106px;
+	/*width:169px;*/
+}
+/*RIGHT*/
+.page25 .top-detail{
+	 /*width: 650px;*/
+  	width: 100%;
+  	/*height: 96px;*/
+	border-radius: 5px;
+	background-color: var(--white);
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+.page25 .top-detail .col-top-detail{
+	padding: 22px 30px;
+	height: 96px;
+	display: inline-block;
+	width: 100%;
+}
+.page25 .top-detail .amount-statistic{
+	font-size: 24px;
+}.page25 .top-detail .diff-statistic{
+	font-weight: 300;
+}
+.page25 .top-detail .title-detail{
+	font-size: 18px;
+}
+.page25 .top-detail .location-detail{
+	margin-top: 8px;
+}
+.page25 .top-detail .location-detail span:not(:last-child){
+	margin-right: 18px;
+}
+
+.page25 .col-scroll{
+	overflow: auto;
+	overflow-x: hidden;
+	border-radius: 5px;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.12);
+}
+.page25 .bottom-detail{
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+.page25 table.table2.bottom-detail thead tr:first-child th{
+     border-top-left-radius: 0px; 
+     border-top-right-radius: 0px; 
+     border:0px;
+}
+.page25 table.table2.bottom-detail thead tr:first-child th:first-child{
+     border-top-left-radius: 5px; 
+}
+
+.page25 table.table2.bottom-detail thead tr:first-child th:last-child{
+    border-top-right-radius: 5px; 
+}
+.page25 .bottom-detail .attr-col{
+	/*width: 185px;*/
+	width:27.6%;
+}
+.page25 .bottom-detail .value-col-1{
+	/*width: 222px;*/
+	width:33.5%;
+}
+.page25 .bottom-detail .value-col-2{
+	/*width: 230px;*/
+	width: 32.4%;
+}
+.page25 .bottom-detail .value-col-3{
+	/*width: 452px;*/
+	width: 65.6%;
+}
+.page25 .bottom-detail tbody .value-col-1,
+.page25 .bottom-detail tbody .value-col-2,
+.page25 .bottom-detail .value-col-3{
+	padding: 5px 8px;
+	background: white;
+}
+.page25 .bottom-detail tbody .bg-skyblue{
+	background: #e8f2ff;
+	text-align: center;
+}
+.page25 .bottom-detail tbody .value-col-2,
+.page25 .bottom-detail .value-col-3,
+.page25 table.table2 tr.btn-wrapper td{
+	padding-right: 17px;
+}
+.page25 .bottom-detail .input-group input{
+	height: 28px;
+	border-radius: 2px;
+  	border: solid 1px #e6ebf2;
+}
+.page25 .bottom-detail .input-group input.tcenter{
+	text-align: center;
+}
+.page25 .bottom-detail .input-group{
+	width: 100%;
+}
+.page25 .bottom-detail .input-group .input-group-addon{
+	text-transform: lowercase;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+	color: #707c84;
+	background: #e8f2ff;
+	width: 50px;
+	height: 28px;
+	font-size: 14px;
+	border: solid 1px #e6ebf2;
+	border-left: 0px;
+}
+.page25 .bottom-detail tbody span.input-in span:not(.notexttrans){
+	text-transform: lowercase;
+	display: inline-block;
+	/*width: 36px;*/
+	width: 16.37%;
+	text-align: center;
+}
+.page25 .bottom-detail tbody span.input-in input{
+	/*width: 36px;*/
+	width: 16.37%;
+	height: 26px;
+	border-radius: 2px;
+	border: solid 1px #e6ebf2;
+	text-align: center;
+}
+.page25 .bottom-detail tbody .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	/*width: 93px;*/
+	/*width: 42.2%;*/
+	width: 52.2%;
+	border-radius: 2px;
+  	border: solid 1px #e6ebf2;
+  	margin-left: 4%;
+}
+.page25 .bottom-detail tbody .value-col-2 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	margin-left: 3%;
+}
+.page25 .bottom-detail tbody .bootstrap-select button{
+	height: 28px;
+	border:0px;
+	padding:0px 25px 0px 8px;
+  	color:#707c84;
+  	font-size: 12px;
+}
+.page25 table.bottom-detail .bootstrap-select button .bs-caret{
+	color:#707c84;
+}
+.page25 .bottom-detail tbody .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn).durations-select{
+	width: 77%;
+}
+.page25 .bottom-detail .duration-col{
+	margin-left: 10px;
+	display: inline-block;
+	width: 75%;
+	max-width: 160px;
+	vertical-align: middle;
+}
+.page25 .bottom-detail tbody .value-col-1.bright0{
+  border-right: 0px;
+}
+.page25 .bottom-detail tbody .value-col-2.bleft0{
+  border-left: 0px;
+}
+.page25 .bottom-detail .value-col{
+	width: 
+}
+.page25 .bottom-detail .value-col-3 input{
+	 border-radius: 2px;
+  border: solid 1px #e6ebf2;
+  height: 28px;
+  width: 100%;
+}
+.page25 .bottom-detail input[type='checkbox']{
+	/*font-size: 100%;*/
+	    width: 9%;
+    height: 26px;
+}
+.page25 .bottom-detail tbody .value-col-3 .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	margin-left: 0px;
+	width: 100%;
+}
+.page25 .ptopbottom20{
+	padding-top: 20px;
+	padding-bottom: 20px; 
+}
+.w114{
+	width: 52%;
+}
+.w200{
+	width: 200px;
+}
+
+
+label {
+	display: inline;
+}
+.regular-checkbox {
+	display: none;
+}
+.regular-checkbox + label {
+	width: 36px;
+	  height: 26px;
+	  border-radius: 2px;
+	  background-color: #e6ebf2;
+	  border: solid 1px #e6ebf2;
+	border-radius: 3px;
+	display: inline-block;
+	position: relative;
+	margin-bottom: 0px;
+}
+.regular-checkbox + label:active, .regular-checkbox:checked + label:active {
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);
+}
+
+.regular-checkbox:checked + label {
+	/*background-color: #e9ecee;
+	border: 1px solid #adb8c0;
+	box-shadow: 0 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05), inset 15px 10px -12px rgba(255,255,255,0.1);
+	color: #99a1a7;*/
+}
+
+.regular-checkbox:checked + label:after {
+	content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 9px;
+	color: #9aa5ad;
+}
+.page25 table.table2.bottom-detail tbody tr.fweight500.nomtop{
+	margin-top: 0px;
+}
+.page25 table.table2.custom-table tbody tr td.attr-col{
+	padding-top: 14px;
+	padding-bottom: 14px;
+}
+.page25 table.table2.custom-table tbody tr td.bright0{
+	border-right: 0px;
+}
+.page25 table.table2.custom-table tbody.scroll{
+	padding-left: 11px;
+	padding-right: 11px;
+}
+.page25 .icon-calendar-input{
+	right: 26px;
+  top: 11px;
+}
+.pleft10{
+    padding-left: 10px;
+}
+.page25 .table.without-border>thead>tr>th,.page25 .table.without-border>tbody>tr>td{
+	border:0px;
+}
+.page25 table thead tr:nth-child(2){
+	background: #fafbfd;
+}
+.page25 table.table1 thead input{
+	 border: solid 1px #dfdfdf;
+	 box-shadow: none;
+}

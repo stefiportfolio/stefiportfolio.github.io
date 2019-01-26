@@ -1,0 +1,38 @@
+.page38 .col-md-6:first-child{
+	width: 48.261%;
+	padding-right: 0px;
+	margin-right: 2.175%;
+}
+.page38 .col-md-6:last-child{
+	width: 49.55%;
+}
+
+/* Table Left */
+	.page38 table .country-col{
+		width: 33.6%;
+	}
+	.page38 table .rule-col{
+		width: 15.1%;
+	}
+	.page38 table .rule-name-col{
+		width: 25.5%;
+	}
+	.page38 table .status-col{
+		width: 25.8%;
+	}
+	.page38 table .status-col .icon-trash{
+		margin-top: -2px;
+	}
+
+	.page38 table.table thead tr:first-child th{
+		padding-left: 24px;
+		padding-right: 24px;
+	}
+	.page38 table thead tr:nth-child(2) th{
+		padding: 12px 15px;
+	}
+	.page38 table.table tbody.btn-wrap tr:hover{
+		border-left: 0px;
+	}
+
+/* Table Right */

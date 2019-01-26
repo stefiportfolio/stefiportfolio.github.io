@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Exchange Rate Management</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" href="../dist/img/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap tags input-->
+    <link href="../vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+    <!-- Bootstrap Select -->
+    <link href="../vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/custom.css" rel="stylesheet">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <link href="../vendor/jquery-date-range-picker/daterangepicker.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/40d2b684bc.js"></script>
+  </head>
+  <body>
+    <nav class="navbar  navbar-inverse">
+      <div class="container-fluid wrapper">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="../dist/img/logo.png">
+          </a>
+        </div>
+        <form class="search">
+          <div class='search-container'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+          <input type="text"  " data-role="tagsinput" placeholder="Enter your Search" id='search-taginput'/>
+          <div class='remove-container hide'><span id="remove" aria-hidden="true">X</span></div>
+        </form>
+        <div class="navbar-right">
+          <div class="menu-container">
+            <span class="admin-name">Admin</span>
+            <span class="icon icon-gear"></span>
+            <div class='list-popup hide'>
+              <ul>
+                <li><a href="./anatomy_management.html">Anatomy Management</a></li>
+                <li><a href="./atc_and_therapeutic.html">ATC and Therapeutic</a></li>
+                <li><a href="./brand_type_management.html">Brand Type Management</a></li>
+                <li><a href="./company_management.html">Company Management</a></li>
+                <li><a href="./country_and_atc.html">Country and ATC</a></li>
+                <li><a href="./country_and_products.html">Country and Product</a></li>
+                <li><a href="./country_page.html">Country</a></li>
+                <li><a href="./create_new_organization.html">New Organization</a></li>
+                <li><a href="./create_new_user.html">New User</a></li>
+                <li><a href="./define_competitor_pricentric.html">Define competitor</a></li>
+                <li><a href="./dosing_assumption_management.html">Dosing assumption management</a></li>
+                <li><a href="./drug_theraphy_management.html">Drug theraphy management</a></li>
+                <li><a href="./email_notification.html">Email Notification</a></li>
+                <li><a href="./exchange_rate_management.html">Exchange rate management</a></li>
+                <li><a href="./fill_unit_management.html">Fill unit management</a></li>
+                <li><a href="./formulation_management.html">Formulation Management</a></li>
+                <li><a href="./import_type_management.html">Import type management</a></li>
+                <li><a href="./indication_management.html">Indication management</a></li>
+                <li><a href="./line_of_therapy_management.html">Line of theraphy management</a></li>
+                <li><a href="./margin_rules.html">Margin Rules</a></li>
+                <li><a href="./marketing_authority_management.html">Marketing authority Management</a></li>
+                <li><a href="./new.html">New</a></li>
+                <li><a href="./news_feed_approval.html">News Feed Approval</a></li>
+                <li><a href="./news_feed_new_approvals.html">News Feed New Approval</a></li>
+                <li><a href="./organization_management.html">Organization Management</a></li>
+                <li><a href="./pack_unit_management.html">Pack Unit Management</a></li>
+                <li><a href="./price_type_class_management.html">Price Type Class Management</a></li>
+                <li><a href="./price_type_management.html">Price Type Management</a></li>
+                <li><a href="./product_management.html">Product Management</a></li>
+                <li><a href="./reference_country_mapping.html">Reference Country Mapping</a></li>
+                <li><a href="./reimbursement_status_management.html">Reimbursement Status Management</a></li>
+                <li><a href="./role_access.html">Role Access</a></li>
+                <li><a href="./source_management.html">Source Management</a></li>
+                <li><a href="./strength_unit_management.html">Strength Unit Management</a></li>
+                <li><a href="./therapeutic_area.html">Therapeutic Area</a></li>
+                <li><a href="./user_management.html">User Management</a></li>
+                <li><a href="./user_tracking.html">User Tracking</a></li>
+                <li><a href="./who_atc_number.html">WHO ATC Number</a></li>
+                <li><a href="./who_atc_value_management.html">WHO ATC Value Management</a></li>
+              </ul>
+            </div>
+            <div class="vbar2"></div>
+            <span class='icon icon-thead'></span>
+          </div>
+          <div class="user-container"><span>SB</span></div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar  navbar-default">
+      <div class="container-fluid wrapper">
+        <div class="navbar-right">
+          <span class='dropdown-container dropdown-org fleft mleft25' id='current'>
+            <span class="icon icon-calendar"></span>
+            <input type="text" class='datepicker-current-single' placeholder="Current">
+            <span class="glyphicon glyphicon-menu-down"></span>
+          </span>
+          <span class='dropdown-container dropdown-org fleft mleft10' id='daily'>
+            <select class="selectpicker">
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Daily"></option>
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Monthly"></option>
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Annualy"></option>
+            </select>
+          </span>
+          <button type="button" class="btn btn1 btn-default mtop10 mleft10 fleft fontw-normal w240" data-toggle="modal" data-target="#myModalChooseFile">
+            <span class="icon icon-upload"></span> Upload Exchange Rates
+          </button>
+          <div class="fright ptop10">
+            <button type="button" class="btn btn2 fright mleft10"><span class="icon icon-export"></span> Export</button>
+          </div>
+          
+          <span class='dropdown-container dropdown-org fright w265' id='organization'>
+            <select class="selectpicker">
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Master Exchange Rates"></option>
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Organization 1"></option>
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Organization 2"></option>
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Organization 3"></option>
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Organization 4"></option>
+              <option data-content="<span class='icon icon-building mleft10' aria-hidden='true'></span> Organization 5"></option>
+            </select>
+          </span>
+          
+        </div>
+      </div>
+    </nav>
+    <div class='wrapper'>
+      <div class="page-content page30">
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table1 table-striped">
+              <thead>
+                <tr>
+                  <th class="rate-col" colspan="2">Rate Date</th>
+                  <th class="curr-iso-col">Currency ISO</th>
+                  <th class="comp-iso-col">Comparison ISO</th>
+                  <th class="ask-rate-col">ASK RATE</th>
+                  <th class="bid-col">Bid Rate</th>
+                  <th class="source-col">Source</th>
+                  <th class="mod-on-col">Modified on</th>
+                  <th class="mod-by-col">Modified by</th>
+                </tr>
+                <tr>
+                  <th class='check-col'><input type="checkbox"/></th>
+                  <th class="rate-col"><input type="text" class="form-control"/></th>
+                  <th class="curr-iso-col"><input type="text" class="form-control"/></th>
+                  <th class="comp-iso-col"><input type="text" class="form-control"/></th>
+                  <th class="ask-rate-col"><input type="text" class="form-control"/></th>
+                  <th class="bid-col"><input type="text" class="form-control"/></th>
+                  <th class="source-col"><input type="text" class="form-control"/></th>
+                  <th class="mod-on-col"><input type="text" class="form-control"/></th>
+                  <th class="mod-by-col"><input type="text" class="form-control"/></th>
+                </tr>
+              </thead>
+              <tbody class="scroll scroll-full">
+                <tr>
+                  <td class='check-col'><input type="checkbox"/></td>
+                  <td class="rate-col">10/01/2010</td>
+                  <td class="curr-iso-col">CHF</td>
+                  <td class="comp-iso-col">CHF</td>
+                  <td class="ask-rate-col">1.000000</td>
+                  <td class="bid-col">1.000000</td>
+                  <td class="source-col">BMS</td>
+                  <td class="mod-on-col">10 / 01 / 2010</td>
+                  <td class="mod-by-col">SMITA JOSEPH</td>
+                </tr>
+                <tr>
+                  <td class='check-col'><input type="checkbox"/></td>
+                  <td class="rate-col">10/01/2010</td>
+                  <td class="curr-iso-col">CHF</td>
+                  <td class="comp-iso-col">CHF</td>
+                  <td class="ask-rate-col">1.000000</td>
+                  <td class="bid-col">1.000000</td>
+                  <td class="source-col">BMS</td>
+                  <td class="mod-on-col">10 / 01 / 2010</td>
+                  <td class="mod-by-col">SMITA JOSEPH</td>
+                </tr>
+                <tr>
+                  <td class='check-col'><input type="checkbox"/></td>
+                  <td class="rate-col">10/01/2010</td>
+                  <td class="curr-iso-col">CHF</td>
+                  <td class="comp-iso-col">CHF</td>
+                  <td class="ask-rate-col">1.000000</td>
+                  <td class="bid-col">1.000000</td>
+                  <td class="source-col">BMS</td>
+                  <td class="mod-on-col">10 / 01 / 2010</td>
+                  <td class="mod-by-col">SMITA JOSEPH</td>
+                </tr>
+                <tr class="modified">
+                  <td class='check-col'><input type="checkbox"/></td>
+                  <td class="rate-col modified"><input type="text"  class='datepicker-current-single' placeholder="10/01/2010">
+                  <span class="glyphicon glyphicon-menu-down"></span>
+                  </td>
+                  <td class="curr-iso-col modified">
+                    <select class="selectpicker">
+                      <option>CHF</option>
+                      <option>CHF</option>
+                      <option>CHF</option>
+                    </select>
+                  </td>
+                  <td class="comp-iso-col modified">
+                    <select class="selectpicker">
+                      <option>CHF</option>
+                      <option>CHF</option>
+                      <option>CHF</option>
+                    </select>
+                  </td>
+                  <td class="ask-rate-col">1.000000</td>
+                  <td class="bid-col modified">
+                    <input type="text" value="1.000000">
+                  </td>
+                  <td class="source-col modified">
+                    <input type="text" value="BMS">
+                  </td>
+                  <td class="mod-on-col">10 / 01 / 2010</td>
+                  <td class="mod-by-col">AVINASH LIGADE</td>
+                </tr>
+              </tbody>
+              <tbody class="btn-wrap">
+                <tr class="btn-wrapper" align="right">
+                  <td colspan="5" align="right">
+                    <button type="button" class="btn blue-btn save-btn mright10">Save</button>
+                    <button type="button" class="btn grey-type-btn edit-btn mright10">Edit</button>
+                    <button type="button" class="btn grey-type-btn delete-btn" data-toggle="modal" data-target="#myModalConfirmDelete">Delete</button>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModalConfirmDelete" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-box-delete mb49'></div>
+            <div class='title-content-popup'>Confirm Records Deletion !</div>
+            <div class='desc-content-popup'>Are you sure you want to delete the selected records? </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default cancel-btn" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-default yes-btn" data-dismiss="modal">Yes, I do</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal choose Upload -->
+    <div id="myModalChooseFile" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-bulk-upload'></div>
+            <div class='title-content-popup'>Drag and drop file here</div>
+            <div class='desc-content-popup'><span class='line'>OR</span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn blue-btn choose-btn" data-dismiss="modal"  data-toggle="modal" data-target="#myModalUploadFile">Choose File</button>
+            <button type="button" class="btn grey-type-btn cancel-btn" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal file upload -->
+    <div id="myModalUploadFile" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-bulk-file'></div>
+            <div class='title-content-popup'>bulk-competitor-upload.xlsx <span class='change-file'  data-dismiss="modal"  data-toggle="modal" data-target="#myModalChooseFile">X</span></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default blue-btn" data-dismiss="modal"  data-toggle="modal" data-target="#myModalComplete">Upload File</button>
+            <button type="button" class="btn btn-default grey-type-btn" data-dismiss="modal">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="myModalConfirmUpload" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-bulk-update'></div>
+            <div class='title-content-popup'>Confirm Upload !</div>
+            <div class='desc-content-popup'>Are you sure you want to create 15 new users via the Bulk User Creation process?</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default cancel-btn" data-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-default yes-btn" data-dismiss="modal" data-toggle="modal" data-target="#myModalComplete">Yes, I do</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL SUCCESS -->
+    <div id="myModalComplete" class="modal fade modal-allpage" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class='icon-popup popup-check mb49'></div>
+            <div class='title-content-popup'>Congratulations !</div>
+            <div class='desc-content-popup'>Exchange rate created successfully.</div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Yeah, Got it</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker JavaScript -->
+    <script src="../vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- Bootstrap  tags input -->
+    <script src="../vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- moment -->
+    <script src="../vendor/moment/moment.min.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/jquery-date-range-picker/jquery.daterangepicker.min.js"></script>
+    <!-- Bootstrap  tags input -->
+    <script src="../dist/js/custom-batch2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+/* ICON SPRITE*/
+	.icon{
+		background: url('../../img/sprite-icon.png');
+		background-size: 171px 185px;
+		display: inline-block;
+		width: 18px;
+		height: 18px;
+		/*vertical-align: middle;*/
+	}
+	.navbar-default .icon{
+		vertical-align: text-top;
+	}
+	.icon-display{
+	    background-position: -43px -36px;
+	}
+	.icon-thead{
+		width: 16px;
+		height: 16px;
+	  background-position: -12px -275px;
+	}
+	.icon-dollar{
+	    background-position: -78px -63px;
+	}
+	.icon-view{
+		background-position: -44px -65px;
+	}
+	.icon-calendar{
+		width: 19px;
+		height: 19px;
+		background-position: -44px -8px;	
+		color: transparent;
+	}
+	.icon-arrow{
+		height: 54px;
+		background-position: -109px -12px;
+	}
+	.icon-export{
+		background-position: -13px -7px;    vertical-align: text-top;
+	}
+	.icon-user{
+		background-position: -79px  -37px;
+	}
+	.icon-lock{
+		background-position: -80px  -88px;    vertical-align: text-top;
+	}
+	.icon-trash{
+		background-position: -43px  -89px;
+	  vertical-align: text-top;
+	}
+	.icon-trash:hover{
+		background-position: -108px -113px;
+	}
+	.icon-edit{
+		width: 16px;
+		height: 16px;
+		background-position: -45px -115px;
+	  vertical-align: text-top;
+	}
+	.icon-edit:hover{
+		background-position: -110px -139px;
+	}
+	.icon-org{
+		background-position: -44px -141px; vertical-align: text-top;
+	}
+	.icon-building{
+		height: 16px;
+		background-position: -44px -326px;
+	}
+	.icon-chart-wrap{
+		position: absolute;
+		right: 31px;
+		width: 42px;
+		height: 42px;
+		border-radius: 100%;
+		background-color: #9aa5ad;
+	  	background-color: var(--cool-grey);
+	  	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+	  	padding:12px 13px;
+	  	cursor: pointer;
+	  	z-index: 2;
+	}
+	.icon-chart-wrap:hover{
+		background-color: #ccd0d2;
+	}
+	.icon-chart{
+		background-position: -12px -140px;
+	}
+	.icon-gear{
+		width: 20px;
+		height: 20px;
+		background-position: -106px -87px;
+	}
+	.icon-map{
+		width: 14px;
+		height: 19px;
+		background-position: -13px -113px;
+	}
+	.icon-close{
+		width: 17px;
+		height: 17px;
+		background-position: -140px -10px;
+	}
+	.icon-dosing{
+		height: 20px;
+		background-position: -141px -225px;
+	}
+	.icon-upload{
+		background-position: -141px -252px;
+	}
+/* ICON POP UP MODAL */
+	.icon-popup{
+		background: url('../../img/icon-popup.png');
+		display: inline-block;
+		width: 114px;
+		height: 114px;
+	}
+
+	.popup-form{
+		background-position: -85px -83px;
+		width: 120px;
+    height: 120px;
+	}
+	.popup-check{
+		width: 126px;
+		height: 126px;
+		background-position: -1077px -81px;
+	}
+	.popup-user-min{
+		width: 110px;
+		height: 125px;
+		background-position: -421px -82px;
+	}
+	.popup-user-delete{
+		width: 111px;
+		height: 125px;
+		background-position: -751px -82px;
+	}
+	.popup-lock{
+    width: 98px;
+    height: 122px;
+		background-position: -115px 174px;
+	}
+	.popup-user-lock{
+	  width: 111px;
+	  height: 125px;
+	  background-position: -409px 173px;
+	}
+	.popup-reg-delete{
+		width: 131px;
+		height: 132px;
+		background-position: -729px -328px;
+	}
+	.popup-reg-restore{
+		width: 131px;
+		height: 132px;
+		background-position: -1059px -329px;
+	}
+	.popup-bulk-update{
+		width: 131px;
+		height: 124px;
+		background-position: -1418px -79px;
+	}
+	.popup-notify-client{
+		width: 180px;
+		height: 97px;
+		background-position: -1393px -335px;
+	}
+	.popup-box-delete{
+		width: 156px;
+    height: 148px;
+    background-position: -1764px -68px;
+	}
+	.modal-allpage .modal-dialog .icon-popup.mb49, .modal-allpage .modal-dialog .icon-popup3.mb49{
+		margin-bottom: 49px;
+	}
+
+	.icon-popup.popup-circle-delete{
+		width: 130px;
+	  height: 130px;
+	  background-position: -2096px -315px;
+	}
+	.icon-popup.popup-bulk-upload{
+		width: 199.3px;
+	  height: 134px;
+	  background-position: -1754px -315px;
+	  margin-top: 52px !important;
+	  margin-bottom: 27px !important;
+	}
+	.icon-popup.popup-bulk-file{
+		width: 104px;
+	  height: 132.5px;
+	  background-position: -2100px -84px;
+	  margin-top: 71px !important;
+	  margin-bottom: 33px !important;
+	}
+	.icon-popup.popup-assign-all{
+		width: 112px;
+		height: 125px;
+		background-position: -2357px -87px;
+		margin-left: 10px !important;
+	}
+	.icon-dosing-check{
+		background-position: -2358px -298px;
+		width: 115px;
+    	height: 152px;
+	}
+	.icon-star{
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+		background-position: -12px -165px;
+	}
+	.icon-star-nocolor{
+		width: 16px;
+		height: 16px;
+		vertical-align: middle;
+		background-position: -46px -165px;
+	}

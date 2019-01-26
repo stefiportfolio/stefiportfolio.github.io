@@ -1,0 +1,139 @@
+/*-----------------------------------------------------
+  variable color, width, calculatation
+
+  Requirement
+  min-width : 1280;
+  max-width:1920;
+  max-height: max resolution screen;
+-------------------------------------------------------*/
+:root {
+  /*************************** Page-wide variables ****************************/
+  /* Colors. */
+  --white-two :#d8d8d8;
+  --white-three :#e4e4e4;
+  --pale-grey-two :#f1f5f8;
+  --nice-blue :#0f48b1;
+  --clear-blue :#2962ff;
+  --white :#ffffff;
+  --twilight-blue :#0d3c93;
+  --pastel-blue :#97bcff;
+  --pale-grey :#e6ebf2;
+  --pale-grey-four :#dbe1eb;
+  --apple :#69c735;
+  --cool-grey :#9aa5ad;
+  --battleship-grey :#707c84;
+  --pale-grey-five :#fafbfd;
+  --yellow-orange :#f4a800;
+  --rusty-red :#cd1714;
+  --pale-grey-six:#e7ebf3;
+  --lightish-blue:#366cff;
+  --tealish:#25c1d5;
+  --pale-grey-three:#f6f9fd;
+  /* Resolution */
+  --width:1220px;
+  --height:1100px;
+  --min-width: 1220px;
+  --max-width: 1920px;
+  /*WRAPPER*/
+  --min-width-wrapper:calc(var(--width) - 110px);
+  --max-width-wrapper:calc(var(--max-width) - 110px);
+}
+
+.inheritcase{
+  text-transform: inherit;
+}
+.lcase{
+  text-transform: lowercase;
+}
+
+/* Padding & Margin */
+  .mright10{
+    margin-right: 10px;
+  }
+  .mright12{
+    margin-right: 12px;
+  }
+  .mright15{
+    margin-right: 15px;
+  }
+  .mright20{
+    margin-right: 20px;
+  }
+  .mleft10{
+    margin-left: 10px;
+  }
+  .mleft25{
+    margin-left: 25px;
+  }
+  .mtop10{
+    margin-top: 10px;
+  }
+  .mbottom40{
+    margin-bottom: 40px;
+  }
+  .ptop10{
+    padding-top: 10px;
+  }
+  .pleft20{
+    padding-left: 20px;
+  }
+
+  .pos-r{
+    position: relative;
+  }
+/* PlaceHolder Style */
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-size: 12px;
+    text-align: left;
+    color: var(--battleship-grey);
+    font-weight: normal;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    font-size: 12px;
+    text-align: left;
+    color: var(--battleship-grey);
+    font-weight: normal;
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    font-size: 12px;
+    text-align: left;
+    color: var(--battleship-grey);
+    font-weight: normal;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    font-size: 12px;
+    text-align: left;
+    color: var(--battleship-grey);
+    font-weight: normal;
+  }
+
+/* Checkbox checked Effect change color */
+  .blue-font {
+    color: var(--clear-blue);
+  }
+/* FONT WEIGHT */
+.fweight500{
+  font-weight: 500;
+}
+/* MAKE IT RIGHT*/
+.btn-right, .span-right{
+  float: right;
+}
+.btn-left{
+  float: left;
+}
+.non-capitalize{
+  text-transform: none;
+}
+
+
+.w100{
+  width: 100px;
+}
+
+.bright0{
+  border-right: 0px;
+}
+.bleft0{
+  border-left: 0px;
+}

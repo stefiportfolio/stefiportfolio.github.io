@@ -1,0 +1,88 @@
+/* CUSTOM STYLE FOR PAGE 18 */
+.page18 table thead tr:first-child th:first-child{
+	padding-left: 17px;
+}
+.page18 table thead tr:first-child th:nth-child(2){
+	padding-left: 29px;
+}
+.page18 table thead tr:first-child th:nth-child(3){
+	padding-left: 24px;
+}
+.page18 table thead tr:first-child th:nth-child(4){
+	padding-left: 26px;
+}
+.page18 table thead tr:nth-child(2) th{
+	padding: 12px 15px;
+}
+.page18 table thead tr:nth-child(2) th.check-col input[type=checkbox]{
+	margin-left: 2px;
+}
+.page18 table .drug-col{
+	width: 57.1%;
+}
+.page18 table .status-col{
+	width: 13.48%;
+}
+.page18 table .mod-on-col, .page18 table .mod-by-col{
+	width: 12.85%;
+}
+
+.page18 table tbody td.pleft17{
+	padding-left: 17px;
+}
+.page18 table tbody tr:hover td.pleft17{
+	padding-left: 17px;
+}
+.page18 table tbody td.pleft25{
+	padding-left: 25px;
+}
+.page18 table tbody td.pleft30{
+	padding-left: 30px;
+}
+.page18 table tbody tr.modified{
+  color: var(--clear-blue);
+}
+.page18 table tbody td.drug-col.modified{
+	padding: 0px 10px;
+}
+.page18 table tbody td.status-col.modified{
+	padding: 5px 8px;
+}
+.page18 table tbody td.modified input{
+	width: 100%;
+	height: 27px;
+	border: solid 1px #e6ebf2;
+  border: solid 1px var(--pale-grey);
+  padding-left: 20px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.page18 table .bootstrap-select{
+	width: 100%;
+}
+.page18 table .bootstrap-select button{
+	height: 26px;
+	padding-top: 5px;
+	font-size: 12px;
+	border: solid 1px #e6ebf2;
+  border: solid 1px var(--pale-grey);
+  color: var(--clear-blue);
+  text-transform: uppercase;
+  padding-left: 9px;
+}
+
+.page18 table .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn).bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 76%;
+	float: right;
+}
+
+.page18 .circle-custom{
+	margin-right: 0px;
+  margin-left: 17px;
+  margin-top: 8px;
+}
+
+.page18 .bs-caret .glyphicon.glyphicon-menu-down{
+	color: #707c84;
+}

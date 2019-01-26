@@ -1,0 +1,60 @@
+.page5 .col-md-6{
+	width: 48.873%;
+}
+.page5 table.table1 thead tr:nth-child(2) th{
+	padding: 12px;
+}
+.page5 .col-md-6:first-child{
+	padding-right: 0px;
+	margin-right: 2.202%;
+}
+.page5 table thead tr:nth-child(2) th.check-col input[type=checkbox]{
+	margin-left: 4px;
+}
+.page5 table tbody td.check-col{
+	padding-left: 17px;
+	padding-right: 14px;
+}
+.page5 .col-md-6 table .check-col{
+	width: 7.7%;
+}
+.page5 .col-md-6 table .first-name-col, .page5 .col-md-6 table .last-name-col{
+	width: 33.95%;
+}
+.page5 .col-md-6 table .org-col{
+	width: 30.1%;
+}
+
+.page5 table.table2 .value-col .bootstrap-select button{
+  font-size: 12px;
+  color: #707c84;
+  padding-top: 8px;
+}
+
+
+.page5 table.table2 .value-col{
+	padding: 0px 8px;
+	position: relative;
+}
+.page5 table.table2 thead tr th{
+	padding: 13px 17px;
+}
+.page5 table.table2 tbody .mtop0{
+	margin-top: 0px !important;
+}
+.page5 table.table2 .value-col .dropdown-custom{
+	padding: 0px 0px;
+	position: relative;
+}
+.page5 table.table2 .value-col .dropdown-custom button{
+	border: solid 1px #e6ebf2;
+	text-transform: uppercase;
+	padding: 4.5px 7px;
+}
+.page5 table.table2 .value-col .dropdown-custom button .bs-caret{
+	margin-left: -22px; 
+}
+.page5 table.table2 .btn-wrap tr{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}

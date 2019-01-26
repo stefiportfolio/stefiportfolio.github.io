@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="1513" viewBox="0 0 375 1513">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#788997"/>
+            <stop offset="100%" stop-color="#43515E"/>
+        </linearGradient>
+        <linearGradient id="b" x1="10.788%" x2="71.304%" y1="22.255%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="c" x1="21.191%" x2="71.304%" y1="5.89%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" fill-opacity=".1" d="M187 22c56.374 15.957 118.57 23.935 186.59 23.935 68.018 0 130.822-7.978 188.41-23.935v1458.828c-62.055 21.242-124.406 31.863-187.055 31.863-62.648 0-125.297-10.621-187.945-31.863V22z" transform="translate(-187)"/>
+        <path fill="#333F51" d="M0 0c56.374 15.957 118.57 23.935 186.59 23.935C254.607 23.935 317.41 15.957 375 0v1458.828c-62.055 21.242-124.406 31.863-187.055 31.863-62.648 0-125.297-10.621-187.945-31.863V0z"/>
+        <g fill-opacity=".4" transform="translate(-187 104)">
+            <ellipse cx="144.693" cy="176.275" fill="url(#b)" rx="144.693" ry="144.725"/>
+            <ellipse cx="229.307" cy="144.725" fill="url(#c)" opacity=".185" rx="144.693" ry="144.725"/>
+        </g>
+        <g fill-opacity=".4" transform="matrix(-1 0 0 1 562 1216)">
+            <ellipse cx="144.693" cy="176.275" fill="url(#b)" rx="144.693" ry="144.725"/>
+            <ellipse cx="229.307" cy="144.725" fill="url(#c)" opacity=".185" rx="144.693" ry="144.725"/>
+        </g>
+    </g>
+</svg>

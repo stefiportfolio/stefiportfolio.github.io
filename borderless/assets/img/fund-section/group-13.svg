@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="2418" viewBox="0 0 375 2418">
+    <defs>
+        <linearGradient id="b" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#627389"/>
+            <stop offset="100%" stop-color="#333F51"/>
+        </linearGradient>
+        <path id="a" d="M11 48.629C75.214 16.209 141.214 0 209 0s130.453 16.21 188 48.629L386 2397.61c-87.526-24.262-155.066-24.262-202.618 0-53.28 27.185-114.408 27.185-183.382 0L11 48.63z"/>
+        <linearGradient id="d" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#4ADFD1"/>
+            <stop offset="100%" stop-color="#24BCA5"/>
+        </linearGradient>
+        <linearGradient id="e" x1="10.788%" x2="71.304%" y1="22.255%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(-11)">
+        <mask id="c" fill="#fff">
+            <use xlink:href="#a"/>
+        </mask>
+        <use fill="url(#b)" xlink:href="#a"/>
+        <g fill="url(#d)" mask="url(#c)">
+            <g transform="matrix(-1 0 0 1 144 2240)">
+                <path fill-opacity=".6" d="M.001 182.372c-.025-31.717 18.574-51.73 55.797-60.038 55.833-12.462 9.24-86.516 131.687-93.648 81.631-4.755 99.466 55.95 53.504 182.113H0l.001-28.427z"/>
+                <ellipse cx="144.417" cy="38.637" fill-opacity=".5" rx="38.658" ry="38.637"/>
+            </g>
+        </g>
+        <g mask="url(#c)">
+            <path fill="url(#e)" fill-opacity=".4" d="M195.9 0c2.677 65.396-32.421 100.455-105.295 105.177-109.31 7.082-131.781 167.722 0 176.818C222.386 291.09 199.173 333.485 206 378" opacity=".72" transform="translate(253 -89)"/>
+            <g fill="url(#d)" fill-opacity=".7" transform="matrix(-1 0 0 1 459 4.057)">
+                <path d="M158.945 17.073c.015 19.048-11.106 31.067-33.363 36.057-33.385 7.484-5.525 51.96-78.74 56.243C-1.969 112.228-12.634 75.77 14.85 0h144.096l-.001 17.073z"/>
+                <ellipse cx="79.526" cy="94.5" rx="38.565" ry="38.714"/>
+            </g>
+        </g>
+    </g>
+</svg>

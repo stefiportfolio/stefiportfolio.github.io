@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="98" height="98" viewBox="0 0 98 98">
+    <defs>
+        <linearGradient id="a" x1="127.491%" x2="-61.419%" y1="-44.896%" y2="174.462%">
+            <stop offset="0%" stop-color="#0062FF"/>
+            <stop offset="42.456%" stop-color="#05A4E9"/>
+            <stop offset="100%" stop-color="#09D9D7"/>
+        </linearGradient>
+        <linearGradient id="b" x1="90.581%" x2="-15.619%" y1="38.349%" y2="64.388%">
+            <stop offset="0%" stop-color="#FF5439"/>
+            <stop offset="100%" stop-color="#FF3259"/>
+        </linearGradient>
+        <linearGradient id="c" x1="50%" x2="50%" y1="82.363%" y2="13.322%">
+            <stop offset="0%" stop-color="#FF5439"/>
+            <stop offset="100%" stop-color="#FF3259"/>
+        </linearGradient>
+        <linearGradient id="d" x1="36.527%" x2="71.51%" y1="-64.944%" y2="129.497%">
+            <stop offset="0%" stop-color="#FF5439"/>
+            <stop offset="100%" stop-color="#FF3259"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="url(#a)" opacity=".39" transform="translate(15 17)">
+            <path d="M34.967 32.565l31.572-15.592v35.875l-31.572 17.47z"/>
+            <path d="M0 14.904l34.76 17.622.36 38.225L0 52.15z"/>
+            <path d="M34.5.697l32.292 15.83-31.62 15.832-35-17.05z"/>
+        </g>
+        <path fill="url(#b)" d="M34.967 32.565l31.572-15.592v35.875l-31.572 17.47z" transform="translate(15 17)"/>
+        <path fill="url(#c)" d="M0 14.904l34.76 17.622.36 38.225L0 52.15z" transform="translate(15 17)"/>
+        <path fill="url(#d)" d="M34.5.697l32.292 15.83-31.62 15.832-35-17.05z" transform="translate(15 17)"/>
+        <g stroke="#FF3259">
+            <path d="M6 72.758l43.564 23.818 41.94-23.818V27.652L49.564 7 6 26.578z"/>
+            <path d="M49.732 96.739V49.505L12.635 30.468 6.032 27.08M49.915 49.509l41.598-21.183"/>
+        </g>
+        <circle cx="92" cy="72" r="6" fill="#FF3259"/>
+        <circle cx="48" cy="6" r="6" fill="#FF3259"/>
+        <circle cx="6" cy="72" r="6" fill="#FF3259"/>
+    </g>
+</svg>

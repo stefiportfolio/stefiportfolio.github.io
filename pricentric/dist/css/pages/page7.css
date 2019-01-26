@@ -1,0 +1,25 @@
+.page7 .col-md-6.left-side{
+	width: 48.948%;
+}
+
+.page7 .col-md-6.right-side{
+	width: 50.301%;
+}
+
+.page7 table thead tr:nth-child(2) th {
+   padding: 12px 15px;
+}
+.page7 table thead tr:nth-child(2) th.check-col input[type=checkbox]{
+	margin-left: 4px;
+}
+
+.page7 table thead tr th.pleft74{
+    padding-left: 74px;
+  }
+.page7 table thead th.check-col{
+	padding-left: 17px;
+}
+
+.page7 table tbody.scroll-full tr:last-child td{
+  border-bottom: 1px solid var(--pale-grey);
+}

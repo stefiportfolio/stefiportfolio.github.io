@@ -1,0 +1,101 @@
+/*-----------------------------------------------------
+  define resolution, reset some bootstrap styling
+-------------------------------------------------------*/
+
+html, body{
+  height: 100%;
+}
+body{
+  width: 100%;
+  min-width: var(--min-width);
+  color:var(--battleship-grey);
+  background: var(--pale-grey-two);
+  font-family: 'Rubik', sans-serif;
+  padding-right: 0 !important;
+}
+.container-fluid{
+  padding: 0px;
+  margin:0px;
+}
+.wrapper{
+  /*width: 91%;*/
+  min-width: var(--min-width-wrapper);
+  max-width: var(--max-width-wrapper);
+  margin:0px auto;
+  padding-left: 3.82%;
+  padding-right: 3.82%;
+}
+.user-wrapper{
+  min-width: var(--min-width-wrapper);
+  margin:0px auto;
+  padding-left: 1.389%;
+  padding-right: 1.389%;
+}
+.navbar-right{
+  margin:0px;
+}
+@media (min-width: 768px){
+  .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+    margin-left: 0px; 
+  }
+}
+.page-content table tbody{
+  border: 1px solid #e6ebf2;
+  border-top: 0px;
+}
+.row{
+  margin:0px;
+}
+.fleft{
+  float: left;
+}
+.fright{
+  float: right;
+}
+.col-md-6:first-child{
+  padding-right: 30px;
+}
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9{
+  padding: 0px;
+}
+.table>thead>tr>th,.table>tbody>tr>td{
+  border:1px solid var(--pale-grey);
+  border-left:0px;
+  border-right: 0px;
+  border-bottom:0px;
+}
+.wrap-text{
+  max-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+div.input-group input.form-control{
+ -webkit-box-shadow: none; 
+   box-shadow: none;
+   -webkit-transition: none; 
+  -o-transition: none;
+  transition: none;
+  border-radius: 0px;
+}
+.input-group-addon {
+  padding:2.2px 8px 0px;
+  border-radius: 2px;
+  background: var(--pale-grey);
+  border:0px;
+}
+.form-control{
+  font-size: 12px;
+}
+@media only screen and (max-width: 1280px) and (min-width: 1220px){
+  table.table2 tr.btn-wrapper button:not(:first-child){
+    width: auto;
+    min-width: 100px;
+    padding: 6px 6px;
+  }
+}
+
+::-webkit-input-placeholder { font-size: 14px; color: red; }
+::-moz-placeholder { font-size: 14px; color: red; } /* firefox 19+ */
+:-ms-input-placeholder { font-size: 14px; color: red; } /* ie */
+input:-moz-placeholder { font-size: 14px; color: red; }

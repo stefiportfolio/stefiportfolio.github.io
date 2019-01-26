@@ -1,0 +1,180 @@
+.page-content table.table1 tbody td,.page-content table.table2 tbody td{
+	height: 37px;
+}
+/* LAYOUT TABLE TYPE 1*/
+.page2 table.table1 thead tr:nth-child(2) th{
+	padding: 12px;
+}
+table.table1 input{
+	border: 0px;
+	border-radius: 2px;
+}
+table.table1 thead input{
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+/* SIZE TABLE1 IN PAGE 2 */
+table.table1 .org-col{
+	width: 30.6%;
+}
+table.table1 .org-col span, span.org-status{
+	display: inline-block;
+	vertical-align: middle;
+}
+table.table1 .org-col span.org-status,span.org-status{
+	width: 10px;
+	height: 10px;
+	border-radius: 100%;
+	margin-right: 11px;
+}
+table.table1 .org-col span.org-name{
+	max-width: 225px;
+}
+table.table1 .org-col span.org-status.red,span.org-status.red{
+	background: var(--rusty-red);
+}
+table.table1 .org-col span.org-status.green,span.org-status.green{
+	background: var(--apple);
+}
+table.table1 .start-col{
+	width: 20%;
+}
+table.table1 .end-col{
+	width: 20%;
+}
+table.table1 .exp-col{
+	width: 20%;
+}
+/* LAYOUT TABLE TYPE 2*/
+table.table2 thead tr:first-child th{
+	background: var(--clear-blue);
+	border-top-left-radius: 5px; 
+	border-top-right-radius: 5px; 
+	color:#fff;
+}
+table.table2 tbody tr td.value-col{
+	padding: 5px 8px;
+	text-transform: capitalize;
+}
+/*SIZE TABLE 2 IN PAGE 2*/
+table.table2 .attr-col{
+	width: 175px;
+	background: var(--pale-grey);
+	font-weight: 500;
+	border:1px solid var(--pale-grey-four);
+	border-left: 0px;
+}
+table.table2 .value-col input{
+	width: 100%;
+	height: 26px;
+  	border: solid 1px #e6ebf2;
+  	color: var(--battleship-grey);
+  	padding-left: 10px;
+}
+table.table2 .value-col .date span.datepicker-icon{
+	display: inline-block;
+	width: 19px;
+	height: 19px;
+	color:var(--cool-grey);
+}
+
+table.table2 tr.dropdown-wrapper td.value-col{
+	padding: 0px;
+}
+table.table2 tr.dropdown-wrapper .bs-caret{
+	margin-left: -36px;
+}
+table.table2 .value-col .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+table.table2 .value-col .bootstrap-select button{
+	padding: 7px;
+	border:0px;
+	border-radius: 0px;
+}
+table.table2 tr.btn-wrapper td{
+	text-align: right;
+	padding: 10px 8px;
+}
+table.table2 tr.btn-wrapper button{
+	font-size: 16px;
+	font-weight: 300;
+}
+table.table2 tr.btn-wrapper button:not(:last-child){
+	margin-right: 10px;
+}
+table.table2 tr.empty-tr td{
+	height: 267px;
+}
+table.table2 tr span.org-status{
+	margin-right: 18px;
+}
+.page2 table.table2 .value-col .bootstrap-select button{
+	font-size: 12px;
+  padding-left: 20px;
+  color: #333;
+}
+input.mydatemonthpicker{
+    display: inline-block;
+    width: 184px;
+    background: transparent;
+    box-shadow: none;
+    font-size: 16px;
+    padding: 0px 12px;
+    padding-left: 38px;
+    height: 41px;
+    border-radius: 0px;
+    color: var(--cool-grey);
+    font-weight: 300;
+    border-color: var(--pale-grey);
+    font-size: 16px;
+}
+
+.page2 table.table2 tbody .mtop0{
+	margin-top: 0px !important;
+}
+.page2 table.table2 thead tr th{
+	padding: 13px 17px;
+}
+.page2 table.table2 .value-col{
+	padding: 0px 8px;
+	position: relative;
+}
+.page2 table.table2 .value-col .dropdown-custom{
+	padding: 4px 0px;
+	position: relative;
+}
+.page2 table.table2 .value-col .dropdown-custom button{
+	border: solid 1px #e6ebf2;
+	text-transform: uppercase;
+}
+.page2 table.table2 .value-col .dropdown-custom button .bs-caret{
+	margin-left: -22px; 
+}
+
+.page2 table.table2 .value-col .dropdown-circle{
+	height: 42px;
+	padding: 0px;
+	padding-top: 5px;
+	position: relative;
+}
+.page2 table.table2 .value-col .dropdown-circle .bootstrap-select{
+	width: 92.52% !important;
+	float: right;
+}
+.page2 table.table2 .value-col .dropdown-circle span.org-status{
+	position: absolute;
+	top: 15px;
+	left: 10px;
+	margin-right: 0px;
+}
+.page2 table.table2 .value-col .dropdown-circle button{
+	border: solid 1px #e6ebf2;
+	text-transform: uppercase;
+}
+.page2 table.table2 .value-col .dropdown-circle button .bs-caret{
+	margin-left: -22px; 
+}
+.page2 table.table2 .btn-wrap tr{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}

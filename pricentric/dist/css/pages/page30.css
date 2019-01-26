@@ -1,0 +1,76 @@
+.page30 table .rate-col{
+	width: 13.35%;
+}
+.page30 table .rate-col.modified{
+	width:13.5%;
+}
+.page30 table .rate-col .glyphicon-menu-down{
+ position: absolute;
+  right: 24px;
+  top: 11px;
+  pointer-events: none;
+}
+ .page30 table .curr-iso-col, .page30 table .comp-iso-col, .page30 table .source-col{
+	width: 12.03%;
+}
+.page30 table .ask-rate-col, .page30 table .bid-col {
+	width: 10.52%;
+}
+.page30 table .mod-on-col, .page30 table .mod-by-col{
+	width: 12.85%;
+}
+
+.page30 table thead tr:nth-child(2) th{
+	padding: 12px 17px;
+}
+.page30 table thead tr:nth-child(2) th.check-col input[type=checkbox]{
+	margin-left: 4px;
+}
+
+.page30 table tbody tr.modified{
+  color: var(--clear-blue);
+}
+.page30 table.table tbody tr.modified td.rate-col, .page30 table.table tbody tr.modified td.curr-iso-col, .page30 table.table tbody tr.modified td.comp-iso-col, .page30 table.table tbody tr.modified td.bid-col, .page30 table.table tbody tr.modified td.source-col{
+	padding: 0px 8px;
+}
+
+.page30 table tbody td.modified input{
+	width: 100%;
+	height: 27px;
+	border: solid 1px #e6ebf2;
+  border: solid 1px var(--pale-grey);
+  padding-left: 11px;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.page30 table .bootstrap-select{
+	width: 100%;
+}
+.page30 table .bootstrap-select button{
+	height: 26px;
+	padding-top: 5px;
+	font-size: 12px;
+	border: solid 1px #e6ebf2;
+  border: solid 1px var(--pale-grey);
+  color: var(--clear-blue);
+  text-transform: uppercase;
+  padding-left: 12px;
+}
+
+.page30 table .bootstrap-select button .bs-caret{
+	color: black;
+}
+
+.page30 table .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn).bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 100%;
+}
+
+.page30 table .status-col .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn).bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+	width: 80%;
+	float: right;
+}
+
+.page30 .bs-caret .glyphicon.glyphicon-menu-down{
+	color: #707c84;
+}

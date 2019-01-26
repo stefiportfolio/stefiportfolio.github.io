@@ -1,0 +1,143 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url('../../img/sprite.svg');
+  vertical-align: middle;
+}
+.ic-currency-amg {
+  width: 21px;
+  height: 21px;
+  background-position: 0 0;
+}
+.ic-currency-bms {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -34px;
+}
+.ic-currency-chf {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -68px;
+}
+.ic-currency-euro {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -102px;
+}
+.ic-currency-loc {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -136px;
+}
+.ic-big-books {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -170px;
+}
+.ic-big-charts {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -204px;
+}
+.ic-big-home {
+  width: 55px;
+  height: 55px;
+  background-position: 0 -238px;
+}
+.ic-big-map {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -272px;
+}
+.ic-big-money {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -306px;
+}
+.ic-big-pills {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -340px;
+}
+.ic-big-setting {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -374px;
+}
+.ic-big-userconfig {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -408px;
+}
+.ic-arrows {
+  width: 17px;
+  height: 17px;
+  background-position: 0 -442px;
+}
+.ic-calendar {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -476px;
+}
+.ic-export {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -510px;
+}
+.ic-power {
+  width: 17px;
+  height: 17px;
+  background-position: 0 -544px;
+  vertical-align: sub;
+}
+.ic-reporting {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -578px;
+}
+.ic-search-main {
+  width: 17px;
+  height: 17px;
+  background-position: 0 -612px;
+}
+.ic-search-secondary {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -646px;
+}
+.ic-usergroup-active {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -680px;
+}
+.ic-usergroup-inactive {
+  width: 32px;
+  height: 32px;
+  background-position: 0 -714px;
+}
+.ic-currency-dollar {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -748px;
+}
+.ic-eye {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -782px;
+}
+.ic-gearsetting {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -816px;
+}
+.ic-knob {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -850px;
+}
+.ic-paper {
+  width: 21px;
+  height: 21px;
+  background-position: 0 -884px;
+}
+

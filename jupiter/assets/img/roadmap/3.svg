@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="129" viewBox="0 0 128 129">
+    <defs>
+        <linearGradient id="a" x1="127.491%" x2="-61.419%" y1="-44.896%" y2="174.462%">
+            <stop offset="0%" stop-color="#0062FF"/>
+            <stop offset="42.456%" stop-color="#05A4E9"/>
+            <stop offset="100%" stop-color="#09D9D7"/>
+        </linearGradient>
+        <linearGradient id="b" x1="90.581%" x2="-15.619%" y1="38.349%" y2="64.388%">
+            <stop offset="0%" stop-color="#FF5439"/>
+            <stop offset="100%" stop-color="#FF3259"/>
+        </linearGradient>
+        <linearGradient id="c" x1="50%" x2="50%" y1="82.363%" y2="13.322%">
+            <stop offset="0%" stop-color="#FF5439"/>
+            <stop offset="100%" stop-color="#FF3259"/>
+        </linearGradient>
+        <linearGradient id="d" x1="36.527%" x2="71.51%" y1="-64.944%" y2="129.497%">
+            <stop offset="0%" stop-color="#FF5439"/>
+            <stop offset="100%" stop-color="#FF3259"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g fill="url(#a)" opacity=".39" transform="translate(16.244 19.605)">
+            <path d="M47.571 44.304L90.525 23.09v48.807L47.57 95.666z"/>
+            <path d="M0 20.276l47.289 23.975.49 52.003L0 70.949z"/>
+            <path d="M46.936.948l43.932 21.538-43.019 21.537L.233 20.827z"/>
+        </g>
+        <path fill="url(#b)" d="M47.571 44.304L90.525 23.09v48.807L47.57 95.666z" transform="translate(16.244 19.605)"/>
+        <path fill="url(#c)" d="M0 20.276l47.289 23.975.49 52.003L0 70.949z" transform="translate(16.244 19.605)"/>
+        <path fill="url(#d)" d="M46.936.948l43.932 21.538-43.019 21.537L.233 20.827z" transform="translate(16.244 19.605)"/>
+        <g stroke="#FF3259">
+            <path d="M4 95.462l59.268 32.404 57.058-32.404V34.097L63.268 6 4 32.635z"/>
+            <path d="M63.496 128.086v-64.26l-50.47-25.898-8.982-4.61M63.744 63.831l56.594-28.818"/>
+        </g>
+        <circle cx="64" cy="6" r="6" fill="#FF3259"/>
+        <circle cx="122" cy="68" r="6" fill="#FF3259"/>
+        <circle cx="6" cy="68" r="6" fill="#FF3259"/>
+    </g>
+</svg>

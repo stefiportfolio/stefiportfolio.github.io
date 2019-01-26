@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1709" viewBox="0 0 1920 1709">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#788997"/>
+            <stop offset="100%" stop-color="#43515E"/>
+        </linearGradient>
+        <linearGradient id="b" x1="10.788%" x2="71.304%" y1="22.255%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="c" x1="21.191%" x2="71.304%" y1="5.89%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" fill-opacity=".1" d="M2145 838v701.516c-383.766 120.98-692.099 176.969-925 167.969-232.901-9-564.568-80.761-995-215.282V835.36L2145 838z" transform="translate(-225)"/>
+        <path fill="#333F51" d="M994.923 155.716c267.177 0 575.536-51.692 925.077-155.075v1455.89C1552.916 1598.177 1246.333 1669 1000.25 1669c-246.084 0-579.5-70.823-1000.25-212.469V.641c396.105 103.383 727.745 155.075 994.923 155.075z"/>
+        <g fill-opacity=".4" transform="matrix(-1 0 0 1 2144 389)">
+            <circle cx="289" cy="352" r="289" fill="url(#b)"/>
+            <circle cx="458" cy="289" r="289" fill="url(#c)" opacity=".185"/>
+        </g>
+        <g fill-opacity=".4" transform="translate(-225 773)">
+            <circle cx="289" cy="352" r="289" fill="url(#b)"/>
+            <circle cx="458" cy="289" r="289" fill="url(#c)" opacity=".185"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,41 @@
+/*USER POPUP*/
+	.list-popup{
+		position: absolute;
+  	top: 76px;
+  	right: 151%;
+  	z-index: 10;
+  	width:843px;
+		height: 444px;
+		max-height: 510px;
+		border-radius: 8px;
+		background-color: #ffffff;
+		border: none;
+	  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+	  padding: 20px 30px;
+	}
+	.list-popup:before{
+		content: '';
+    top: -11px;
+    right: 2%;
+    width: 0;
+    height: 0;
+    border-color: transparent transparent white transparent;
+    border-style: solid;
+    border-width: 17px;
+    position: absolute;
+    border-top: 0px;
+	}
+	.list-popup ul{
+		padding: 0px;
+		margin: 0px;
+		max-height: 462px;
+		overflow: auto;
+	}
+	.list-popup ul li{
+		list-style: none;
+		height: 30px;
+		line-height: 30px;
+		float: left;
+		width: 260px;
+	}
+	.list-popup ul li{}

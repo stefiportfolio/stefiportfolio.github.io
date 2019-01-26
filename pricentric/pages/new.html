@@ -1,0 +1,857 @@
+<!doctype html>
+<html lang="EN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>NEW</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="icon" href="../dist/img/favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap tags input-->
+    <link href="../vendor/bootstrap-tagsinput/css/bootstrap-tagsinput.css" rel="stylesheet">
+    <!-- Bootstrap Select -->
+    <link href="../vendor/bootstrap-select/css/bootstrap-select.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../dist/css/custom.css" rel="stylesheet">
+    <link href="../vendor/jquery-date-range-picker/daterangepicker.css" rel="stylesheet">
+    
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://use.fontawesome.com/40d2b684bc.js"></script>
+  </head>
+  <body>
+    <nav class="navbar  navbar-inverse">
+      <div class="container-fluid wrapper">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img alt="Brand" src="../dist/img/logo.png">
+          </a>
+        </div>
+        <form class="search">
+          <div class='search-container'><span class="glyphicon glyphicon-search" aria-hidden="true"></span></div>
+          <input type="text"  " data-role="tagsinput" placeholder="Enter your Search" id='search-taginput'/>
+          <div class='remove-container hide'><span id="remove" aria-hidden="true">X</span></div>
+        </form>
+        <div class="navbar-right">
+          <div class="menu-container">
+            <span class="admin-name">Admin</span>
+            <span class="icon icon-gear"></span>
+            <div class='list-popup hide'>
+              <ul>
+                <li><a href="./anatomy_management.html">Anatomy Management</a></li>
+                <li><a href="./atc_and_therapeutic.html">ATC and Therapeutic</a></li>
+                <li><a href="./brand_type_management.html">Brand Type Management</a></li>
+                <li><a href="./company_management.html">Company Management</a></li>
+                <li><a href="./country_and_atc.html">Country and ATC</a></li>
+                <li><a href="./country_and_products.html">Country and Product</a></li>
+                <li><a href="./country_page.html">Country</a></li>
+                <li><a href="./create_new_organization.html">New Organization</a></li>
+                <li><a href="./create_new_user.html">New User</a></li>
+                <li><a href="./define_competitor_pricentric.html">Define competitor</a></li>
+                <li><a href="./dosing_assumption_management.html">Dosing assumption management</a></li>
+                <li><a href="./drug_theraphy_management.html">Drug theraphy management</a></li>
+                <li><a href="./email_notification.html">Email Notification</a></li>
+                <li><a href="./exchange_rate_management.html">Exchange rate management</a></li>
+                <li><a href="./fill_unit_management.html">Fill unit management</a></li>
+                <li><a href="./formulation_management.html">Formulation Management</a></li>
+                <li><a href="./import_type_management.html">Import type management</a></li>
+                <li><a href="./indication_management.html">Indication management</a></li>
+                <li><a href="./line_of_therapy_management.html">Line of theraphy management</a></li>
+                <li><a href="./margin_rules.html">Margin Rules</a></li>
+                <li><a href="./marketing_authority_management.html">Marketing authority Management</a></li>
+                <li><a href="./new.html">New</a></li>
+                <li><a href="./news_feed_approval.html">News Feed Approval</a></li>
+                <li><a href="./news_feed_new_approvals.html">News Feed New Approval</a></li>
+                <li><a href="./organization_management.html">Organization Management</a></li>
+                <li><a href="./pack_unit_management.html">Pack Unit Management</a></li>
+                <li><a href="./price_type_class_management.html">Price Type Class Management</a></li>
+                <li><a href="./price_type_management.html">Price Type Management</a></li>
+                <li><a href="./product_management.html">Product Management</a></li>
+                <li><a href="./reference_country_mapping.html">Reference Country Mapping</a></li>
+                <li><a href="./reimbursement_status_management.html">Reimbursement Status Management</a></li>
+                <li><a href="./role_access.html">Role Access</a></li>
+                <li><a href="./source_management.html">Source Management</a></li>
+                <li><a href="./strength_unit_management.html">Strength Unit Management</a></li>
+                <li><a href="./therapeutic_area.html">Therapeutic Area</a></li>
+                <li><a href="./user_management.html">User Management</a></li>
+                <li><a href="./user_tracking.html">User Tracking</a></li>
+                <li><a href="./who_atc_number.html">WHO ATC Number</a></li>
+                <li><a href="./who_atc_value_management.html">WHO ATC Value Management</a></li>
+              </ul>
+            </div>
+            <div class="vbar2"></div>
+            <span class='icon icon-thead'></span>
+          </div>
+          <div class="user-container"><span>SB</span></div>
+        </div>
+      </div>
+    </nav>
+    <nav class="navbar  navbar-default">
+      <div class="container-fluid wrapper">
+        <div class="navbar-right">
+          <div class="navbar-right">
+            <button type="button" class="btn btn1 btn-default w170" data-toggle="modal" data-target="#addBrandModal"><span class="plus-icon">+</span> Add New Pack</button>
+            <button type="button" class="btn btn2"><span class="icon icon-export"></span> Export</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class='wrapper pleftright30'>
+      <div class="page-content page39">
+        <div class="row">
+          <div class="col-md-6">
+            <table class="table table1 table-striped">
+              <thead>
+                <tr>
+                  <th class='country-col'>Country <span class="glyphicon glyphicon-menu-down"></span></th>
+                  <th class="company-col">Company <span class="glyphicon glyphicon-menu-down"></span></th>
+                  <th class='prod-col'>Product</th>
+                  <th class="pack-col">Pack Description</th>
+                </tr>
+                <tr>
+                  <th class='country-col'><input type="text" class="form-control"/></th>
+                  <th class="company-col"><input type="text" class="form-control"/></th>
+                  <th class='prod-col'><input type="text" class="form-control"/></th>
+                  <th class="pack-col"><input type="text" class="form-control"/></th>
+                </tr>
+              </thead>
+              <tbody class='scroll scroll-without-btn'>
+                <tr>
+                  <td class='country-col'>ARGENTINA</td>
+                  <td class="company-col">NOVARTIS</td>
+                  <td class='prod-col'>AFINITOR</td>
+                  <td class="pack-col wrap-text">AFINITOR TABLETS 1 PACK 30 TABS 1 Package for 1 year</td>
+                </tr>
+                <tr>
+                  <td class='country-col'>ARGENTINA</td>
+                  <td class="company-col">NOVARTIS</td>
+                  <td class='prod-col'>AFINITOR</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 ML 100 MG</td>
+                </tr>
+                <tr>
+                  <td class='country-col'>ARGENTINA</td>
+                  <td class="company-col">NOVARTIS</td>
+                  <td class='prod-col'>AFINITOR</td>
+                  <td class="pack-col wrap-text">OBDIVO INFUSION 1 VIAL 10 ML 100 MG</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="col-md-6  col-scroll">
+            <table class='top-detail'>
+              <tr class="no-hover">
+                <td class='col-top-detail'>
+                  <div class='title-detail'>REMICADE INFUSION 1 LYOPHILIZED POWDER VIAL 20 ML 100 MG</div>
+                  <div class='location-detail'>
+                    <span>Region : European Union</span>
+                    <span>Country : United Kingdom</span>
+                  </div>
+                </td>
+                <td class="right-content">
+                  <span class="label">PRICENTRIC ID</span>
+                  <span class="id-numb">839203</span>
+                </td>
+              </tr>
+            </table>
+
+            <div class='bottom-detail'>
+              <ul class="nav nav-tabs">
+                <li class="active">
+                  <a  href="#1" data-toggle="tab">PACK</a>
+                </li>
+                <li><a href="#2" data-toggle="tab">PRICING</a>
+                </li>
+                <li><a href="#3" data-toggle="tab">REIMBURSEMENT</a>
+                </li>
+                <li ><a href="#4" data-toggle="tab">UPDATE LOG</a>
+                </li>
+              </ul>
+              <div class="tab-content">
+                <div class="tab-pane active" id="1">
+                  <table class="table table2 custom-table">
+                    <tbody class="scroll scroll-without-btn no-hover">
+                    <!-- GROUP 1 -->
+                      <tr class='fweight500 '>
+                        <td colspan="2" class='ptopbottom20'>GENERAL INFORMATION</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">Regions</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="Select Region">
+                              <option>Region 1</option>
+                              <option>Region 2</option>
+                              <option>Region 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">Country</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="Select Country">
+                              <option>Country 1</option>
+                              <option>Country 2</option>
+                              <option>Country 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">Company</td>
+                        <td class='value-col'><div class="dropdown-box">
+                            <select class="selectpicker" title="Select Company">
+                              <option>Company 1</option>
+                              <option>Company 2</option>
+                              <option>Company 3</option>
+                            </select>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">PRODUCT GROUP</td>
+                        <td class='value-col' align="left"><div class="dropdown-box">
+                            <select class="selectpicker" title="Select Product Group">
+                              <option>Product Group 1</option>
+                              <option>Product Group 2</option>
+                              <option>Product Group 3</option>
+                            </select>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">MARKETING AUTHORITY</td>
+                        <td class='value-col'><div class="dropdown-box">
+                            <select class="selectpicker" title="Select Marketing Authority">
+                              <option>Marketing 1</option>
+                              <option>Marketing 2</option>
+                              <option>Marketing 3</option>
+                            </select>
+                          </div></td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">THERAPEUTIC AREA</td>
+                        <td class='value-col'><input type="text" placeholder="AUTO POPULATED THERAPEUTIC AREA"></td>
+                      </tr>
+                    <!-- GROUP 2 -->
+                      <tr class='fweight500 mtop40'>
+                        <td colspan="2" class='ptopbottom20'>PACK COMPOSITION</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">PACK SIZE / UNIT</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="PACK SIZE" class='col-2-input'>
+                          <div class="dropdown-box col-2-dd">
+                            <select class="selectpicker" title="Pack Unit">
+                              <option>Unit 1</option>
+                              <option>Unit 2</option>
+                              <option>Unit 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">FILL SIZE / UNIT</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="FILL SIZE" class='col-2-input'>
+                          <div class="dropdown-box col-2-dd">
+                            <select class="selectpicker" title="Fill Unit">
+                              <option>Unit 1</option>
+                              <option>Unit 2</option>
+                              <option>Unit 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">STRENGTH SIZE / UNIT</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="STRENGTH" class='col-2-input'>
+                          <div class="dropdown-box col-2-dd">
+                            <select class="selectpicker" title="STRENGTH UNIT">
+                              <option>Unit 1</option>
+                              <option>Unit 2</option>
+                              <option>Unit 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">FORMULATION</td>
+                        <td class='value-col' align="left"><div class="dropdown-box w313">
+                            <select class="selectpicker" title="Formulation">
+                              <option>Formulation 1</option>
+                              <option>Formulation 2</option>
+                              <option>Formulation 3</option>
+                            </select>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">PRESENTATION</td>
+                        <td class='value-col'>AUTO GENERATED PRESENTATION</td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">PACK DESCRIPTION</td>
+                        <td class='value-col'>AUTO GENERATED PACK DESCRIPTION</td>
+                      </tr>
+                    <!-- GROUP 3 -->
+                      <tr class='fweight500 mtop40'>
+                        <td colspan="2" class='ptopbottom20'>LOCAL INFORMATION</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">LOCAL PRODUCT NAME</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="INPUT LOCAL PRODUCT NAME" >
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">LOCAL PACK DESC.</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="INPUT LOCAL PRODUCT DESCRIPTION" >
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">LOCAL PACK CODE</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="INPUT LOCAL PRODUCT CODE" >
+                        </td>
+                      </tr>
+                    <!-- GROUP 4 -->
+                      <tr class='fweight500 mtop40'>
+                        <td colspan="2" class='ptopbottom20'>ATC INFORMATION</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">LEVEL 5 TC</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="SELECT LEVEL 5 ATC">
+                              <option>Level 1</option>
+                              <option>Level 2</option>
+                              <option>Level 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">GENERIC NAME</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="GENERIC NAME AUTO POPULATED" >
+                        </td>
+                      </tr>
+                    <!-- GROUP 5 -->
+                      <tr class='fweight500 mtop40'>
+                        <td colspan="2" class='ptopbottom20'>ADDITIONAL INFORMATION</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">BRAND TYPE</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="SELECT BRAND TYPE">
+                              <option>Brand 1</option>
+                              <option>Brand 2</option>
+                              <option>Brand 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">ORPHAN STATUS</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="SELECT ORPHAN STATUS">
+                              <option>Orphan 1</option>
+                              <option>Orphan 2</option>
+                              <option>Orphan 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">COMBINATION MOLECULE</td>
+                        <td class='value-col'><div class="dropdown-box">
+                            <select class="selectpicker" title="SELECT COMBINATION MOLECULE STATUS">
+                              <option>Status 1</option>
+                              <option>Status 2</option>
+                              <option>Status 3</option>
+                            </select>
+                          </div></td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">PARALLEL IMPORTANT</td>
+                        <td class='value-col'><div class="dropdown-box">
+                            <select class="selectpicker" title="SELECT PARALLEL IMPORTANT STATUS">
+                              <option>Status 1</option>
+                              <option>Status 2</option>
+                              <option>Status 3</option>
+                            </select>
+                          </div></td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">PACK NOTES</td>
+                        <td class='value-col'><input type="text" placeholder="INSERT PACK NOTES"></td>
+                      </tr>
+                    </tbody>
+                    <tbody class="btn-wrap">
+                      <tr class='btn-wrapper'>
+                        <td colSpan='2'>
+                          <button type="button" class="btn grey-type-btn w140-btn fleft">Delete</button>
+                          <button type="button" class="btn blue-btn w140-btn">Save</button>
+                          <button type="button" class="btn grey-type-btn cancel-btn">Edit</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane " id="2">
+                  <table class="table table2 custom-table">
+                    <tbody class="scroll scroll-without-btn no-hover">
+                    <!-- GROUP 1 -->
+                      <tr class='fweight500 '>
+                        <td colspan="2" class='ptopbottom20'>GENERAL INFORMATION</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">OVERRIDE VALIDATION</td>
+                        <td class='value-col pleft20'>
+                          ARE YOU SURE WANT TO OVERIDE VALIDATIONS?
+                          <input type="checkbox" class='fright' id='show-with-history'>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">MARGIN RULE</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="Select Margin Rule">
+                              <option>Rule 1</option>
+                              <option>Rule 2</option>
+                              <option>Rule 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">VAT PERCENT</td>
+                        <td class='value-col'><input type="text" placeholder="DEFINE VAT PERCENT"></td>
+                      </tr>
+                      <tr class='with-history hide'>
+                        <td class="attr-col bbottom0">DISCONTINUED</td>
+                        <td class='value-col pleft20'>
+                          ARE YOU SURE WANT TO DISCONTINUE THIS PACK?
+                          <input type="checkbox" class='fright'>
+                        </td>
+                      </tr>
+                    <!-- GROUP 2 -->
+                      <tr class='fweight500 mtop40'>
+                        <td colspan="2" class='ptopbottom20'>EFFECTIVE DATE</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">EFFECTIVE START DATE</td>
+                        <td class='value-col prelative'>
+                          <input type="text" placeholder="DEFINE START DATE "  class='datepicker-current-single' id='start-date'>
+                          <span class='icon icon-calendar icon-calendar-input'></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">EFFECTIVE END DATE</td>
+                        <td class='value-col prelative'>
+                          <input type="text" placeholder="DEFINE END DATE (IF APPLICABLE)"  class='datepicker-current-single' id='end-date'>
+                          <span class='icon icon-calendar icon-calendar-input'></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">DISCONTINUED</td>
+                        <td class='value-col pleft20'>
+                          ARE YOU SURE WANT TO DISCONTINUE THIS PACK?
+                          <input type="checkbox" class='fright'>
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">LOCAL CURRENCY</td>
+                        <td class='value-col pleft20'>EUR</td>
+                      </tr>
+                    <!-- GROUP 3 -->
+                      <tr class='special-table-mnf fweight500 mtop40'>
+                        <td></td>
+                        <td><span class='icon-head cgrey'></span>MNF</td>
+                        <td><span class='icon-head ctosca'></span>HOSP</td>
+                        <td><span class='icon-head cgrey'></span>PPP</td>
+                        <td><span class='icon-head cblue'></span>PPE VAT</td>
+                        <td><span class='icon-head cgrey'></span>PPI VAT</td>
+                      </tr>
+                      <tr class='special-table-mnf'>
+                        <td>Current</td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                      </tr>
+                      <tr class='special-table-mnf'>
+                        <td>Net</td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                      </tr>
+                      <tr class='special-table-mnf box-shadow-bottom'>
+                        <td>NEGOTIATED</td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                      </tr>
+                    <!-- GROUP 4 -->
+                      <tr class='fweight500 mtop40 info-table'>
+                          <td class='ptopbottom20'>
+                            <div class='info-list'>
+                              <span> <span class='icon-head cgrey'></span>List</span>
+                              <span><span class='icon-head ctosca'></span>Calculated</span>
+                              <span><span class='icon-head cblue'></span>Estimated</span>
+                            </div>
+                            <div class='info-important'>IMPORTANT: <span class='fweight300'>CALCULATED AND ESTIMATED PRICE TYPES ARE POPULATED BY THE SYSTEM AUTOMATICALLY 
+                            BASED ON ASSIGNED MARGIN RULES. PLEASE CONTACT THE PRICING LEADER TO MODIFY MARGIN RULES.</span></div>
+                          </td>
+                      </tr>
+                    <!-- BUTTON -->
+                      <tr class='fweight500 mtop40 button-historical with-history hide'>
+                        <td colspan="2" class='ptopbottom20'>
+                          
+                          <span class='dropdown-container fright w160'>
+                            <select class="selectpicker">
+                              <option data-content="<span class='icon icon-calendar'></span> 12 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 1 Month"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 2 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 3 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 4 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 5 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 6 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 7 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 8 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 9 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 10 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 11 Months"></option>
+                              <option data-content="<span class='icon icon-calendar'></span> 12 Months"></option>
+                            </select>
+                          </span>
+                          <span class='dropdown-container fright mright20'  id='kurs'>
+                            <select class="selectpicker">
+                              <option data-content="<span class='icon-svg ic-currency-dollar'></span> Current Prices"></option>
+                              <option data-content="<span class='icon-svg ic-currency-euro'></span> EUR"></option>
+                              <option data-content="<span class='icon-svg ic-currency-chf'></span> CHF"></option>
+                              <option data-content="<span class='icon-svg ic-currency-loc'></span> LOC"></option>
+                              <option data-content="<span class='icon-svg ic-currency-bms'></span> BMS"></option>
+                              <option data-content="<span class='icon-svg ic-currency-amg'></span> AMG"></option>
+                            </select>
+                          </span>
+                        </td>
+                      </tr>
+                    <!-- GROUP 5 -->
+                      <tr class='fweight500 mtop20 with-history hide'>
+                        <td colspan="2" class='ptopbottom20'>HISTORICAL DATA</td>
+                      </tr>
+                      <tr class='special-table-mnf fweight500 with-history hide'>
+                        <td colspan="2"  class='text-left'>Date</td>
+                        <td><span class='icon-head cgrey'></span>MNF</td>
+                        <td><span class='icon-head ctosca'></span>HOSP</td>
+                        <td><span class='icon-head cgrey'></span>PPP</td>
+                        <td><span class='icon-head cblue'></span>PPE VAT</td>
+                        <td><span class='icon-head cgrey'></span>PPI VAT</td>
+                      </tr>
+                      <tr class='special-table-mnf  with-history hide'>
+                        <td>Current</td>
+                        <td class='td-star' id='make-all-star'><span class='icon icon-star'></span></td>
+                        <td><input type="text" placeholder="xxxx"></td>
+                        <td><input type="text" placeholder="xxxx"></td>
+                        <td><input type="text" placeholder="xxxx"></td>
+                        <td><input type="text" placeholder="xxxx"></td>
+                        <td><input type="text" placeholder="xxxx"></td>
+                      </tr>
+                      <tr class='special-table-mnf data-mnf  with-history hide'>
+                        <td>05/02/2017</td>
+                        <td class='td-star'><span class='icon icon-star'></span></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                      </tr>
+                      <tr class='special-table-mnf data-mnf  with-history hide'>
+                        <td>05/02/2017</td>
+                        <td class='td-star'><span class='icon icon-star-nocolor'></span></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                        <td><input type="text" placeholder="-"></td>
+                      </tr>
+
+                      <tr class='legend  with-history hide'>
+                        <td>
+                          <span class='icon icon-star'></span>Represents Launch Price
+                        </td>
+                      </tr>
+                    </tbody>
+                    <tbody class="btn-wrap">
+                      <tr class='btn-wrapper'>
+                        <td colSpan='2'>
+                          <button type="button" class="btn blue-btn w140-btn">Save</button>
+                          <button type="button" class="btn grey-type-btn cancel-btn">Edit</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane " id="3">
+                  <table class="table table2 custom-table">
+                    <tbody class="scroll scroll-without-btn no-hover">
+                    <!-- GROUP 1 -->
+                      <tr class='fweight500 '>
+                        <td colspan="2" class='ptopbottom20'>ADD INDICATION</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">INDICATON LEVEL INFO?</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="INDICATON LEVEL INFO?" class='w370'>
+                          <div class='split-input fright' id='change-level'>
+                            <span class='yes active'>YES</span>
+                            <span class='no'>NO</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">ADD INDICATION</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="SEARCH VIA TYPE AHEAD INPUT" class='w330'>
+                          
+                          <button type="button" class="btn blue-btn w140-btn fright">ADD INDICATION</button>
+                        </td>
+                      </tr>
+                    <!-- GROUP WARNING -->
+                      <tr class='fweight500 mtop40 info-table warning-yellow'>
+                        <td colspan="2" class='ptopbottom20 '>
+                            <b>IMPORTANT:</b> THE FOLLOWING REIMBURSEMENT INFORMATION WILL BE APPLIED TO ALL INDICATIONS ADDED
+                        </td>
+                      </tr>
+                    <!-- GROUP 2 -->
+                      <tr class='fweight500 mtop20'>
+                        <td colspan="2" class='ptopbottom20'>ASSIGNED INDICATIONS</td>
+                      </tr>
+                      <tr>
+                        <td class='value-col no-left-border fweight500'>
+                          INDICATION 1
+                          <span class='icon icon-trash fright'></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class='value-col no-left-border fweight500'>
+                          INDICATION 2
+                          <span class='icon icon-trash fright'></span>
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class='value-col no-left-border fweight500'>
+                          INDICATION 3
+                          <span class='icon icon-trash fright'></span>
+                        </td>
+                      </tr>
+                    <!-- GROUP 2 -->
+                      <tr class='fweight500 mtop20'>
+                        <td colspan="2" class='ptopbottom20'>REIMBURSEMENT INFO FOR ALL INDICATIONS</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">STATUS</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="DEFINE REIMBURSEMENT STATUS">
+                              <option>Status 1</option>
+                              <option>Status 2</option>
+                              <option>Status 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">REIMBURSEMENT AMOUNT</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="DEFINE REIMBURSEMENT AMOUNT" class='w370'>
+                          <div class='split-input fright'>
+                            <span>$</span>
+                            <span class='active'>%</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">COPAYMENT AMOUNT</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="DEFINE COPAYMENT AMOUNT" class='w370'>
+                          <div class='split-input fright'>
+                            <span>$</span>
+                            <span class='active'>%</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">REIMBURSEMENT NOTES</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="DEFINE REIMBURSEMENT NOTES">
+                        </td>
+                      </tr>
+
+                    <!-- GROUP 2 -->
+                      <tr class='fweight500 mtop20 add-indication-form'>
+                        <td colspan="2" class='ptopbottom20'>INDICATION 1</td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">STATUS</td>
+                        <td class='value-col'>
+                          <div class="dropdown-box">
+                            <select class="selectpicker" title="DEFINE REIMBURSEMENT STATUS">
+                              <option>Status 1</option>
+                              <option>Status 2</option>
+                              <option>Status 3</option>
+                            </select>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">REIMBURSEMENT AMOUNT</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="DEFINE REIMBURSEMENT AMOUNT" class='w370'>
+                          <div class='split-input fright'>
+                            <span>$</span>
+                            <span class='active'>%</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">COPAYMENT AMOUNT</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="DEFINE COPAYMENT AMOUNT" class='w370'>
+                          <div class='split-input fright'>
+                            <span>$</span>
+                            <span class='active'>%</span>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="attr-col bbottom0">REIMBURSEMENT NOTES</td>
+                        <td class='value-col'>
+                          <input type="text" placeholder="DEFINE REIMBURSEMENT NOTES">
+                        </td>
+                      </tr>
+                      <tr class='box-shadow-bottom'>
+                        <td class="attr-col bbottom0">REIMBURSEMENT DATE</td>
+                        <td class='value-col prelative'>
+                          <input type="text" placeholder="DEFINE REIMBURSEMENT DATE"  class='datepicker-current-single' id='ind-date-1'>
+                          <span class='icon icon-calendar icon-calendar-input'></span>
+                        </td>
+                      </tr>
+                      
+                    </tbody>
+                    <tbody class="btn-wrap">
+                      <tr class='btn-wrapper'>
+                        <td colSpan='2'>
+                          <button type="button" class="btn blue-btn w140-btn">Save</button>
+                          <button type="button" class="btn grey-type-btn cancel-btn">Edit</button>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <div class="tab-pane" id="4">
+                  <table class="table table2 custom-table">
+                    <tbody class="scroll scroll-without-btn no-hover">
+                    <!-- GROUP 1 -->
+                      <tr class='fweight500 '>
+                        <td colspan="2" class='ptopbottom20'>HISTORICAL DATA</td>
+                      </tr>
+                      <tr class='update-log thead-log'>
+                        <td>DATE MODIFIED</td>
+                        <td>MODIFIED BY</td>
+                        <td>AREAS MODIFIED</td>
+                      </tr>
+                      <tr class='update-log grey-bg'>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                      <tr class='update-log box-shadow-bottom'>
+                        <td>10/01/2017 - 10:28 AM EST</td>
+                        <td>LCA UPLOAD</td>
+                        <td>PRICING</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Datepicker JavaScript -->
+    <script src="../vendor/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
+    <!-- Bootstrap  tags input -->
+    <script src="../vendor/bootstrap-tagsinput/js/bootstrap-tagsinput.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/bootstrap-select/js/bootstrap-select.js"></script>
+    <!-- moment -->
+    <script src="../vendor/moment/moment.min.js"></script>
+    <!-- Bootstrap select JavaScript -->
+    <script src="../vendor/jquery-date-range-picker/jquery.daterangepicker.min.js"></script>
+    
+    <!-- Bootstrap  tags input -->
+    <script src="../dist/js/custom-batch2.js"></script>
+  </body>
+</html>

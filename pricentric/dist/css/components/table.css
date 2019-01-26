@@ -1,0 +1,343 @@
+/* LAYOUT GLOBAL TABLE*/
+table.table{
+	background: #fff;
+	border-radius: 5px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+	color:var(--battleship-grey);
+}
+table.table thead tr:first-child th{
+	padding: 17px;
+	text-transform: uppercase;
+}
+table.table tbody{
+	font-size: 12px;
+}
+table.table tbody tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover){
+	height: 37px;
+	cursor: pointer;
+	border-left:3px solid none;
+}
+table.table tbody tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover):hover{
+	color:var(--clear-blue);
+	/*border-left:2px solid blue;*/
+}
+table.table tbody tr td{
+	position: relative;
+}
+
+.tr-hover{
+	display: inline-block;
+	width: 2px!important;
+	background: blue;
+	height: 37px;
+	position: absolute;
+	left: 0;
+	top:0;
+}
+
+/* TR HOVER NOT ACTIVE WHEN ADD CLASS NO HOVER IN TBODY */
+table.table tbody.no-hover .tr-hover{
+	display: none;
+}
+
+table.table tbody.no-hover tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover):hover{
+	border-left: 0px;
+	color: inherit;
+	cursor: default;
+}
+table.table tbody.no-hover tr:not(.btn-wrapper):not(.empty-tr):not(.no-hover){
+	cursor: default;
+}
+table.table tbody tr td{
+	padding: 4px 20px 0px;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+table.table th{
+  font-weight: 500;
+}
+
+table .check-col{
+  width: 50px;
+}
+table .check-col input[type=checkbox]{
+  width: 16px;
+  height: 16px;
+  box-shadow: none;
+}
+table tbody .green-circle{
+  width: 10px;
+  height: 10px;
+  background-color: var(--apple);
+  border-radius: 100%;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+table tbody .grey-circle{
+  width: 10px;
+  height: 10px;
+  background-color: #707c84;
+  border-radius: 100%;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+table tbody .red-circle{
+  width: 10px;
+  height: 10px;
+  background-color: var(--rusty-red);
+  border-radius: 100%;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+table tbody .yellow-circle{
+  width: 10px;
+  height: 10px;
+  background-color: var(--yellow-orange);
+  border-radius: 100%;
+  display: block;
+  float: left;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+table thead tr:nth-child(2){
+	background: var(--pale-grey);
+}
+table tbody tr.btn-wrapper, .table-striped>tbody>tr.btn-wrapper{
+	height: 60px;
+	background-color: white;
+}
+table tbody td.status-col.modified{
+	padding: 5px 8px;
+}
+table .bootstrap-select button .bs-caret{
+	color: black;
+}
+table td.blue-font .bootstrap-select button{
+	color: var(--clear-blue);
+}
+.table>tbody.btn-wrap{
+	border-top:0px;
+}
+tbody.scroll {
+  display:block;
+  overflow:auto;
+}
+table:not(.month1) thead, table:not(.month1) tbody tr {
+    display:table;
+    width:100%;
+    /*table-layout:fixed; even columns width , fix width of table too*/
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
+  background-color: #fafbfd;
+  background-color: var(--pale-grey-five);
+}
+
+/* SIZE TABLE1 IN PAGE 2 */
+	table.table1 .org-col{
+		width: 30.6%;
+	}
+	table.table1 input[type="checkbox"]{
+		box-shadow: none;
+	}
+	table.table1 .org-col span, span.org-status{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	table.table1 .org-col span.org-status,span.org-status{
+		width: 10px;
+		height: 10px;
+		border-radius: 100%;
+		margin-right: 11px;
+	}
+	table.table1 .org-col span.org-name{
+		max-width: 225px;
+	}
+	table.table1 .org-col span.org-status.red,span.org-status.red{
+		background: var(--rusty-red);
+	}
+	table.table1 .org-col span.org-status.green,span.org-status.green{
+		background: var(--apple);
+	}
+	table.table1 .start-col{
+		width: 20%;
+	}
+	table.table1 .end-col{
+		width: 20%;
+	}
+	table.table1 .exp-col{
+		width: 20%;
+	}
+	table.table1 thead tr:first-child th:first-child{
+		border-left: 0px;
+	}
+	table.table1 thead tr:first-child th:last-child{
+		border-right: 0px;
+	}
+	table.table1 tbody:last-child tr:last-child, table.table1 tbody:last-child tr:last-child td:first-child{
+		border-bottom-left-radius: 5px;
+	}
+	table.table1 tbody:last-child tr:last-child, table.table1 tbody:last-child tr:last-child td:last-child{
+		border-bottom-right-radius: 5px;
+		padding-top: 0px;
+	}
+	table.table1 tbody tr td:first-child{
+		border-left: 0px;
+	}
+	table.table1 tbody tr td:last-child{
+		border-right: 0px;
+	}
+	table.table1 tbody tr:last-child td{
+		border-bottom: 1px solid var(--pale-grey);
+	}
+
+/* LAYOUT TABLE TYPE 2 */
+	table.table2 thead tr:first-child th{
+		background: var(--clear-blue);
+		border-top-left-radius: 5px; 
+		border-top-right-radius: 5px;
+		border-left: 0px;
+		border-right: 0px;
+		color:#fff;
+	}
+	table.table2 tbody tr td.value-col{
+		padding: 6px 8px;
+		text-transform: capitalize;
+	}
+
+/* SIZE TABLE 2 IN PAGE 2 */
+	table.table2 .attr-col{
+		width: 175px;
+		background: var(--pale-grey);
+		font-weight: 500;
+		border:1px solid var(--pale-grey-four);
+	}
+	table.table2 .value-col input{
+		width: 100%;
+		height: 26px;
+	  	border: solid 1px #e6ebf2;
+	  	color: var(--battleship-grey);
+	  	padding-left: 10px;
+	}
+	table.table2 .value-col .date span.datepicker-icon{
+		display: inline-block;
+		width: 19px;
+		height: 19px;
+		color:var(--cool-grey);
+	}
+
+	table.table2 tr.dropdown-wrapper td.value-col{
+		padding: 0px;
+	}
+	table.table2 .value-col .bootstrap-select:not([class*="col-"]):not([class*="form-control"]):not(.input-group-btn){
+		width: 100%;
+	}
+	table.table2 .value-col .bootstrap-select button{
+		padding: 7px;
+		border:0px;
+		border-radius: 0px;
+	}
+	table.table2 tr.btn-wrapper td{
+		text-align: right;
+		padding: 10px 8px;
+	}
+	table.table2 tr.btn-wrapper button{
+		font-size: 16px;
+		font-weight: 300;
+	}
+	table.table2 tr.btn-wrapper button:not(:last-child){
+		margin-right: 10px;
+	}
+	table.table2 tr span.org-status{
+		margin-right: 18px;
+	}
+
+	table.table2 .value-col .bootstrap-select button{
+		padding-right: 30px;
+	}
+	table.table2 .value-col .bootstrap-select button .glyphicon-menu-down{
+		color: #9aa5ad;
+	}
+	table.table2 tbody tr td.bbottom0{
+		border-bottom: 0px;
+	}
+
+	table.table2 tbody .dropdown-menu.open li a span.red-circle, table.table2 tbody .dropdown-menu.open li a span.green-circle{
+		display: none;
+	}
+	table.table1 tbody .dropdown-menu.open li a span.red-circle, table.table1 tbody .dropdown-menu.open li a span.green-circle{
+		display: none;
+	}
+
+/* CUSTOM TABLE2 - BATCH 4 */
+	table.table2.custom-table thead tr:first-child th{
+		font-weight: normal;
+	}
+	table.table2.custom-table tbody.scroll{
+		padding: 20px 11px;
+		background-color: #f6f9fd;
+	}
+	table.custom-table tbody tr{
+		height: 42px !important;
+	}
+	table.table2.custom-table tbody tr td{
+		padding-left: 12px;
+		padding-right: 12px;
+		border-color: #e6ebf2;
+	}
+	table.table2.custom-table .attr-col, table.table2.custom-table .value-col{
+		background-color: white;
+	}
+	table.table2.custom-table .bbottom1{
+		border-bottom: 1px solid #e6ebf2;
+	}
+	table.table.table2.custom-table tbody tr.fweight500{
+		height: 42px;
+		margin-top: 40px;
+		font-size: 14px;
+		background-color: #e8f2ff;
+		font-weight: 500;
+	}
+	table.table.table2.custom-table tbody tr.fweight500 td{
+		border: 0px;
+	}
+	table.table2.custom-table tbody tr td .dropdown-box{
+		width: 100%;
+	  height: 28px;
+	  border: solid 1px #e6ebf2;
+	  position: relative;
+	}
+	table.table2.custom-table tbody tr td .dropdown-box .bs-caret{
+		position: absolute;
+		right: 10px;
+	}
+	table.table2.custom-table tbody tr td .dropdown-box button{
+		padding: 5px 10px 0px;
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #707c84;
+	}
+
+	table.table2.custom-table .value-col input[type="checkbox"]{
+		width: 18px;
+		height: 18px;
+		margin-top: 0px;
+		vertical-align: middle;
+	}
+	table.table2.custom-table tbody tr.btn-wrapper{
+		background-color: #f6f9fd;
+	}
+	table.table2.custom-table tbody tr.btn-wrapper td{
+		border: 0px;
+		padding: 12px;
+	}
+	table.table2.custom-table tbody .dropdown-menu.open li a span.red-circle, table.table2.custom-table tbody .dropdown-menu.open li a span.green-circle{
+		display: block;
+	}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1440" height="1047" viewBox="0 0 1440 1047">
+    <defs>
+        <linearGradient id="a" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#788997"/>
+            <stop offset="100%" stop-color="#43515E"/>
+        </linearGradient>
+        <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#627389"/>
+            <stop offset="100%" stop-color="#333F51"/>
+        </linearGradient>
+        <path id="b" d="M0 0c225.116 53.333 460.154 80 705.116 80C950.077 80 1195.039 53.333 1440 0v961H0V0z"/>
+        <linearGradient id="d" x1="50%" x2="50%" y1="-7.43%" y2="100%">
+            <stop offset="0%" stop-color="#FFF"/>
+            <stop offset="100%" stop-opacity="0"/>
+        </linearGradient>
+        <linearGradient id="f" x1="10.788%" x2="71.304%" y1="22.255%" y2="68.373%">
+            <stop offset="0%" stop-color="#384355"/>
+            <stop offset="100%" stop-color="#FFF" stop-opacity="0"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" fill-opacity=".1" d="M0 395h1440V58.964c-247.099 57.906-487.099 82.355-720 73.348C487.099 123.306 247.099 79.202 0 0v395z"/>
+        <g transform="translate(0 86)">
+            <mask id="e" fill="#fff">
+                <use xlink:href="#b"/>
+            </mask>
+            <use fill="url(#c)" xlink:href="#b"/>
+            <path fill="url(#d)" fill-opacity=".4" d="M-231.877 515c163.488 215.264 323.588 261.17 480.3 137.72C483.49 467.544 718.56 828.076 483.49 985.588 326.78 1090.596 50.95 1097.64-344 1006.717V515" mask="url(#e)" opacity=".27"/>
+            <path fill="url(#f)" fill-opacity=".4" d="M1912.836-574c11.176 271.966-135.352 417.767-439.582 437.402-456.346 29.452-550.154 697.513 0 735.339C2023.408 636.566 1926.499 812.877 1955 998" mask="url(#e)" opacity=".324"/>
+            <path fill="url(#c)" d="M722.479 366.138C521.424 366.138 319.931 248.03 118 11.815L722.479-289l599.608 300.815C1123.403 248.03 923.534 366.138 722.479 366.138z" mask="url(#e)"/>
+        </g>
+    </g>
+</svg>

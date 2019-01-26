@@ -1,0 +1,11 @@
+/*-----------------------------------------------------
+
+  Title :  Jupiter
+  Usage :  Base
+  Author:  Stefi Rosadi & Rama N
+  Edited:  2018-06-08
+-------------------------------------------------------
+  Base include color, font, reset html, , setting padding margin, web size
+-------------------------------------------------------*/
+@import url("reset.css");
+@import url("variable.css");
